@@ -4,89 +4,90 @@
 
 > 说明：这里是项目清单版 — 项目以链接形式收录，不把上游仓库的代码本体复制进来。点击项目名即可跳转到原仓库。
 
-## 最新一期：2026-10-24（2026-10-18 至 2026-10-24）
+## 最新一期：2026-10-31（2026-10-25 至 2026-10-31）
 
-- 完整周报：[reports/2026-10-24/github-weekly-2026-10-24.md](reports/2026-10-24/github-weekly-2026-10-24.md)
+- 完整周报：[reports/2026-10-31/github-weekly-2026-10-31.md](reports/2026-10-31/github-weekly-2026-10-31.md)
 
-本周主线：几乎所有榜单都被 AI Agent / 编程助手占领。
-1. Agent 工程从拼功能转向拼成本 — context-mode、xerj、ECC、caveman 都在让 Agent 少读、少写、少烧 Token。
-2. 插件 / 技能分发制度化 — Anthropic 官方插件目录上线，方法论和科研流程被做成可安装的技能包。
-3. 推理与创作工具回落本地 — DeepInfer、VoiceStudio、ComfyUI 等强调本地运行，并预留 Agent 接口。
+本周主线：关键词仍然是 Agent 技能（skills），但风向从“做更多技能”转向了“管好技能”和“让 Agent 更有品味”。
+1. 技能安全与质量成为新焦点 — cloudflare/security-audit-skill 让 Agent 自己做多阶段安全审计；NVIDIA 的 SkillSpector 扫描技能里的提示注入与数据外泄。
+2. 大厂亲自下场发技能 — Anthropic 的 knowledge-work-plugins、AWS 的 agent-toolkit-for-aws 上线；技能分发从社区自发变成官方标配。
+3. Agent 开始讲“品味”和“审美” — pbakaus/impeccable 给 Agent 一套设计词汇，taste-skill 教 Agent 做界面、做艺术指导。
 
 ### 全站总榜 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [morluto/rea](https://github.com/morluto/rea) | 让 Agent 做逆向工程，从应用行为一路分析到原生二进制 |
-| 2 | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | Anthropic 官方维护的 Claude Code 插件目录 |
-| 3 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 多 Agent 集群 / 工作流 harness，带自适应记忆、RAG |
-| 4 | [android/skills](https://github.com/android/skills) | Android 官方技能库 |
-| 5 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 开源编程 Agent |
+| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 让编程 Agent 做多阶段安全审计，独立验证、机器可读 |
+| 2 | [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | Claude Code 通用 SEO 技能：26 个子技能 + 19 个子代理 |
+| 3 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 给编码 Agent 的设计词汇，拦截 AI 味页面 |
+| 4 | [obra/superpowers](https://github.com/obra/superpowers) | Agent 技能框架与软件开发方法论 |
+| 5 | [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 多智能体 LLM 金融交易框架 |
 
 ### Python / AI 与数据 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | Claude Code 官方插件目录 |
-| 2 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 让所有软件都变成 Agent-Native 的 CLI 工具集 |
-| 3 | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | 模块化扩散模型 GUI / API / 后端，节点图界面 |
-| 4 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 完全本地的 ElevenLabs 替代品，语音克隆/配音/转写，646 种语言 |
-| 5 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 把 Agent 变成 AI 科学家，177 个科研技能 + 100+ 科学数据库 |
+| 1 | [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | Claude Code 通用 SEO 技能，26 个子技能 + 19 个子代理 |
+| 2 | [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 多智能体 LLM 金融交易框架 |
+| 3 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Anthropic 官方插件库，面向 Claude Cowork 的知识工作者 |
+| 4 | [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 Agent Skills 公共仓库 |
+| 5 | [aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) | AWS 官方 MCP 服务器、技能与插件 |
 
 ### TypeScript / 前端与 Agent 工具 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [morluto/rea](https://github.com/morluto/rea) | Agent 逆向工程工具 |
+| 1 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | T3 团队的编程 Agent 工具 |
 | 2 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Agent 集群 harness |
-| 3 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 开源编程 Agent |
-| 4 | [stablyai/orca](https://github.com/stablyai/orca) | 统一管理一队编程 Agent 的平台，支持桌面、移动和远程 |
-| 5 | [cursor/plugins](https://github.com/cursor/plugins) | Cursor 插件规范和官方插件 |
+| 3 | [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | Agent 化社交媒体排期工具 |
+| 4 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 开源编程 Agent |
+| 5 | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | 把 Gemini 带进终端的开源 AI Agent |
 
 ### JavaScript Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [michael-denyer/pstack-claude](https://github.com/michael-denyer/pstack-claude) | 把 pstack 严谨 Agent 工作流移植到多个 harness |
-| 2 | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | 网盘直链下载工具，支持八大网盘 |
-| 3 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 让编程 Agent 做多阶段安全审计，独立验证、机器可读 |
-| 4 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 让 Agent 像“最懒的资深工程师”一样思考 |
-| 5 | [plugin87/ux-ui-agent-skills](https://github.com/plugin87/ux-ui-agent-skills) | 把 Claude 变成资深设计架构师的 UI/UX 技能包 |
+| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 让编程 Agent 做多阶段安全审计，独立验证、机器可读 |
+| 2 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | 给编码 Agent“品味”的技能：艺术指导、参考图、浏览器实测 |
+| 3 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | Agent harness 性能优化系统 |
+| 4 | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | 网盘直链下载工具，支持八大网盘 |
+| 5 | [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) | 给 AI Agent 的最快浏览器，共享已登录浏览器状态做自动化 |
 
 ### Rust / 系统工具 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 给编程 Agent CLI 做长期记忆，支持厂商间交接 |
-| 2 | [xerj-org/xerj](https://github.com/xerj-org/xerj) | 本地优先搜索引擎 + MCP Server，单个 Rust 二进制做混合检索 |
-| 3 | [oven-sh/bun](https://github.com/oven-sh/bun) | 极快的 JavaScript 运行时、打包器、测试器和包管理器 |
-| 4 | [mixelpixx/Konnect](https://github.com/mixelpixx/Konnect) | AI 辅助 PCB 设计，KiCad 10 原生 Rust 插件 |
-| 5 | [GCWing/OpenBitFun](https://github.com/GCWing/OpenBitFun) | Rust 高性能 Agent 运行时 + 桌面应用 |
+| 1 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 给编码 Agent 的设计词汇 |
+| 2 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 给编程 Agent CLI 做长期记忆，支持厂商间交接 |
+| 3 | [agentgateway/agentgateway](https://github.com/agentgateway/agentgateway) | 下一代 Agentic Proxy，面向 AI Agent 与 MCP 服务器 |
+| 4 | [pollen-robotics/microduck](https://github.com/pollen-robotics/microduck) | 微型双足鸭子机器人 |
+| 5 | [macro-inc/macro](https://github.com/macro-inc/macro) | 统一工作空间：邮件、聊天、文档、任务、Agent、通话与 CRM |
 
 ### Go / 云原生与 AI 服务 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [ollama/ollama](https://github.com/ollama/ollama) | 本地跑 Kimi、GLM、DeepSeek、Qwen、Gemma 等模型 |
-| 2 | [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | 扫描代码和提交里的密钥泄漏 |
-| 3 | [mudler/LocalAI](https://github.com/mudler/LocalAI) | 开源本地 AI 引擎，无 GPU 也可跑 LLM/视觉/语音/图像/视频 |
-| 4 | [etcd-io/etcd](https://github.com/etcd-io/etcd) | 分布式可靠键值存储 |
-| 5 | [Asymptote-Labs/agent-beacon](https://github.com/Asymptote-Labs/agent-beacon) | 跨 harness 的 Agent 自改进记忆层 |
+| 1 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 开源 RAG 引擎，RAG + Agent 的上下文层 |
+| 2 | [slavakurilyak/awesome-ai-agents](https://github.com/slavakurilyak/awesome-ai-agents) | 300+ Agent AI 资源精选清单 |
+| 3 | [multica-ai/multica](https://github.com/multica-ai/multica) | 让人类与 AI Agent 像一个团队协作，开源、可自托管 |
+| 4 | [QuantumNous/new-api](https://github.com/QuantumNous/new-api) | 开源 AI 网关，兼容 OpenAI / Claude / Gemini API |
+| 5 | [plandex-ai/plandex](https://github.com/plandex-ai/plandex) | 开源 AI 编程 Agent，面向大型项目与真实任务 |
 
 ### Java / Android 与逆向 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) | NSA 开源软件逆向工程（SRE）框架 |
-| 2 | [HMCL-dev/HMCL](https://github.com/HMCL-dev/HMCL) | 多功能、跨平台的 Minecraft 启动器 |
-| 3 | [iBotPeaches/Apktool](https://github.com/iBotPeaches/Apktool) | Android APK 逆向工程工具 |
-| 4 | [AbdurazaaqMohammed/MP-Manager](https://github.com/AbdurazaaqMohammed/MP-Manager) | 专注 APK 的双栏 Android 文件管理器 |
-| 5 | [modelcontextprotocol/java-sdk](https://github.com/modelcontextprotocol/java-sdk) | Model Context Protocol 官方 Java SDK，与 Spring AI 合作维护 |
+| 1 | [krahets/hello-algo](https://github.com/krahets/hello-algo) | 《Hello 算法》：动画图解的数据结构与算法教程 |
+| 2 | [TheAlgorithms/Java](https://github.com/TheAlgorithms/Java) | Java 实现的全部经典算法 |
+| 3 | [kksimp/Mac.apk](https://github.com/kksimp/Mac.apk) | 在 Apple Silicon Mac 上原生运行 Android 应用 |
+| 4 | [HMCL-dev/HMCL](https://github.com/HMCL-dev/HMCL) | 多功能、跨平台的 Minecraft 启动器 |
+| 5 | [DependencyTrack/dependency-track](https://github.com/DependencyTrack/dependency-track) | 智能组件分析平台，降低软件供应链风险 |
 
 ## 往期周报
 
 | 日期 | 完整周报 |
 |------|----------|
+| 2026-10-31 | [reports/2026-10-31/github-weekly-2026-10-31.md](reports/2026-10-31/github-weekly-2026-10-31.md) |
 | 2026-10-24 | [reports/2026-10-24/github-weekly-2026-10-24.md](reports/2026-10-24/github-weekly-2026-10-24.md) |
 
 ## 数据来源
