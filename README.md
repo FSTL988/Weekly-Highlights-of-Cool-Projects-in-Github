@@ -4,90 +4,91 @@
 
 > 说明：这里是项目清单版 — 项目以链接形式收录，不把上游仓库的代码本体复制进来。点击项目名即可跳转到原仓库。
 
-## 最新一期：2026-11-07（2026-11-01 至 2026-11-07）
+## 最新一期：2026-11-14（2026-11-08 至 2026-11-14）
 
-- 完整周报：[reports/2026-11-07/github-weekly-2026-11-07.md](reports/2026-11-07/github-weekly-2026-11-07.md)
+- 完整周报：[reports/2026-11-14/github-weekly-2026-11-14.md](reports/2026-11-14/github-weekly-2026-11-14.md)
 
-本周主线：从“技能”转向了 Agent 的记忆与协作基础设施。
-1. Agent 记忆成为新瓶颈 — thedotmack/claude-mem 做跨会话持久上下文；max-sixty/worktrunk 用 Git worktree 让多个 Agent 并行干活不打架。
-2. Agent 开始接管整条生产线 — Claude-Code-Game-Studios 把 Claude Code 变成游戏开发工作室（49 个 Agent、72 个工作流技能）；OpenMontage 是开源的 Agent 视频制作系统。
-3. 反 AI 味设计连续三周在榜 — hallmark、impeccable、taste-skill 同时霸榜。
-4. 基础设施老将回潮 — Go 榜前五几乎全是 moby、gitea、argo-cd、docker/compose 等云原生老牌项目。
+本周主线：Agent 工具从“技能包”走向“运行环境”，同时老牌工具意外回春。
+1. “技能”仍是分发主流，但开始分化 — anthropics/skills 连续第四周稳居全站前列，mattpocock/skills、addyosmani/agent-skills、google/skills 同周上榜。
+2. Agent 的手和眼落到桌面与浏览器 — vercel-labs/agent-browser 与 agent-desktop 同周上榜；milind-soni/OpenMausBot（全站第三）是开源 Grok Bot 替代品。
+3. 老项目回春 — 全站第一是 2018 年的老牌 OSINT 工具 sherlock-project/sherlock；google-deepmind/mujoco 也重回全站前十。
+4. Agent 安全成为新赛道 — openai/codex-security、NVIDIA/SkillSpector 同周上榜；cloudflare/security-audit-skill 本周再涨 10,700 星。
 
 ### 全站总榜 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 跨会话持久上下文，Agent 行为压缩后注入未来会话 |
-| 2 | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | 把 Claude Code 变成游戏开发工作室：49 个 Agent、72 个工作流技能 |
-| 3 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | T3 团队的编程 Agent 工具 |
-| 4 | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | 面向并行 AI Agent 工作流的 Git worktree 管理 CLI |
-| 5 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 反 AI 味设计技能，面向 Claude Code、Cursor 和 Codex |
+| 1 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 按用户名全网追踪社交账号的老牌 OSINT 工具 |
+| 2 | [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 Agent Skills 公共仓库 |
+| 3 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 开源 Grok Bot 替代品，自带虚拟机供 Bot 使用 |
+| 4 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | 给 AI Agent 的浏览器自动化 CLI |
+| 5 | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | 用 Agent 设计与评审软件的开源插件 |
 
 ### Python / AI 与数据 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 Agent Skills 公共仓库 |
-| 2 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | 终身个性化家教 |
-| 3 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | 开源 Agent 视频制作系统：12 条管线、700+ 技能文件 |
-| 4 | [The-PR-Agent/pr-agent](https://github.com/The-PR-Agent/pr-agent) | 开源 PR 评审 Agent |
-| 5 | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 高性能 Web 爬取框架 |
+| 1 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 按用户名全网找社交账号的 OSINT 工具 |
+| 2 | [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 Agent Skills 公共仓库 |
+| 3 | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | 用 Agent 设计与评审软件的开源插件 |
+| 4 | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | LLM 驱动的多市场股票智能分析系统 |
+| 5 | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | 为数据构建语义图谱推理层 |
 
 ### TypeScript / 前端与 Agent 工具 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Agent 跨会话持久上下文 |
-| 2 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | T3 团队的编程 Agent 工具 |
-| 3 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 开源 Grok Bot 替代品，自带虚拟机供 Bot 使用 |
-| 4 | [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | 本地优先的持久 AI 队友桌面工作区 |
-| 5 | [garrytan/gstack](https://github.com/garrytan/gstack) | Garry Tan 的 Claude Code 配置：23 个分工工具 |
+| 1 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 开源 Grok Bot 替代品，自带虚拟机供 Bot 使用 |
+| 2 | [lobehub/lobehub](https://github.com/lobehub/lobehub) | 把超级 Agent 接进已有的聊天工具 |
+| 3 | [openai/codex-security](https://github.com/openai/codex-security) | OpenAI 的 Codex 安全 CLI 与 TypeScript SDK |
+| 4 | [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) | 开源 AI 同事：每个 AI 同事配一台自己的电脑 |
+| 5 | [immich-app/immich](https://github.com/immich-app/immich) | 高性能自托管照片与视频管理方案 |
 
 ### JavaScript Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 让编程 Agent 做多阶段安全审计，独立验证、机器可读 |
-| 2 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | 给编码 Agent“品味”的技能：艺术指导、参考图、浏览器实测 |
-| 3 | [HunYiSage/dsh-purge](https://github.com/HunYiSage/dsh-purge) | DeepSeek Harness 破甲工具，让所有模型换提示词破甲 |
-| 4 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | Agent harness 性能优化系统 |
-| 5 | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 社区贡献的 Copilot 指令、Agent、技能与配置精选 |
+| 1 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 给 AI 编码 Agent 的生产级工程技能 |
+| 2 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 让编程 Agent 做多阶段安全审计，独立验证、机器可读 |
+| 3 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | Claude Code 与 AI Agent 的营销技能 |
+| 4 | [ConardLi/garden-skills](https://github.com/ConardLi/garden-skills) | 开源 Skills 合集：网页设计、知识检索、图像生成等 |
+| 5 | [Anil-matcha/Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) | 无审查的开源 AI 视频平台替代品，600+ 模型 |
 
 ### Rust / 系统工具 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | 面向并行 AI Agent 工作流的 Git worktree 管理 CLI |
-| 2 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 给编码 Agent 的设计词汇 |
-| 3 | [herdrdev/herdr](https://github.com/herdrdev/herdr) | “你的编码 Agent 住的运行时” |
-| 4 | [openai/codex](https://github.com/openai/codex) | 在终端运行的轻量编码 Agent |
-| 5 | [zed-industries/zed](https://github.com/zed-industries/zed) | 高性能多人代码编辑器 |
+| 1 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | 给 AI Agent 的浏览器自动化 CLI |
+| 2 | [zed-industries/zed](https://github.com/zed-industries/zed) | 高性能多人代码编辑器 |
+| 3 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | 给 AI Agent 的电脑操作 CLI |
+| 4 | [herdrdev/herdr](https://github.com/herdrdev/herdr) | “你的编码 Agent 住的运行时” |
+| 5 | [ruvnet/RuView](https://github.com/ruvnet/RuView) | 用普通 WiFi 信号做实时空间感知与生命体征监测 |
 
 ### Go / 云原生与 AI 服务 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [moby/moby](https://github.com/moby/moby) | Moby 项目：容器生态系统的协作项目 |
+| 1 | [prometheus/prometheus](https://github.com/prometheus/prometheus) | Prometheus 监控系统与时序数据库 |
 | 2 | [multica-ai/multica](https://github.com/multica-ai/multica) | 让人类与 AI Agent 像一个团队协作，开源、可自托管 |
-| 3 | [go-gitea/gitea](https://github.com/go-gitea/gitea) | 自托管一站式软件开发服务 |
-| 4 | [argoproj/argo-cd](https://github.com/argoproj/argo-cd) | 面向 Kubernetes 的声明式持续部署 |
-| 5 | [docker/compose](https://github.com/docker/compose) | 定义并运行多容器应用 |
+| 3 | [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | 面向 AI Agent 的安全、快速、可扩展沙箱运行时 |
+| 4 | [cli/cli](https://github.com/cli/cli) | GitHub 官方命令行工具 |
+| 5 | [dsx-ai-factory/nvke](https://github.com/dsx-ai-factory/nvke) | NVIDIA Kubernetes Engine：裸机 GPU Kubernetes 管理面 |
 
 ### Java / Android 与逆向 Top 5
 
 | # | 项目 | 说明 |
 |---|------|------|
-| 1 | [floci-io/floci](https://github.com/floci-io/floci) | 轻量免费的 AWS 本地模拟器替代品 |
-| 2 | [keycloak/keycloak](https://github.com/keycloak/keycloak) | 开源身份与访问管理 |
-| 3 | [elastic/elasticsearch](https://github.com/elastic/elasticsearch) | 免费开源的分布式 RESTful 搜索引擎 |
-| 4 | [cryptomator/cryptomator](https://github.com/cryptomator/cryptomator) | 云存储的客户端加密工具 |
-| 5 | [StarRocks/starrocks](https://github.com/StarRocks/starrocks) | 开源查询引擎，湖仓内外亚秒级分析 |
+| 1 | [TheAlgorithms/Java](https://github.com/TheAlgorithms/Java) | Java 实现的全部经典算法 |
+| 2 | [elastic/elasticsearch](https://github.com/elastic/elasticsearch) | 免费开源的分布式 RESTful 搜索引擎 |
+| 3 | [TeamNewPipe/NewPipe](https://github.com/TeamNewPipe/NewPipe) | 轻量自由的 Android 流媒体前端 |
+| 4 | [floci-io/floci](https://github.com/floci-io/floci) | 轻量免费的 AWS 本地模拟器替代品 |
+| 5 | [agentscope-ai/agentscope-java](https://github.com/agentscope-ai/agentscope-java) | 构建分布式、生产级、长期运行的 Agent |
 
 ## 往期周报
 
 | 日期 | 完整周报 |
 |------|----------|
+| 2026-11-14 | [reports/2026-11-14/github-weekly-2026-11-14.md](reports/2026-11-14/github-weekly-2026-11-14.md) |
 | 2026-11-07 | [reports/2026-11-07/github-weekly-2026-11-07.md](reports/2026-11-07/github-weekly-2026-11-07.md) |
 | 2026-10-31 | [reports/2026-10-31/github-weekly-2026-10-31.md](reports/2026-10-31/github-weekly-2026-10-31.md) |
 | 2026-10-24 | [reports/2026-10-24/github-weekly-2026-10-24.md](reports/2026-10-24/github-weekly-2026-10-24.md) |
