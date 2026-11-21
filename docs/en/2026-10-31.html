@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Trending Projects Weekly — This Past Week</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-10-31.html">中文</option><option value="en" data-url="2026-10-31.html" selected>English</option><option value="fr" data-url="../fr/2026-10-31.html">Français</option><option value="ja" data-url="../ja/2026-10-31.html">日本語</option><option value="ko" data-url="../ko/2026-10-31.html">한국어</option><option value="es" data-url="../es/2026-10-31.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← Home</a></p>
+<h1>GitHub Trending Projects Weekly — This Past Week</h1>
+<p><strong>Time window:</strong> 2026-10-25 to 2026-10-31 (GitHub Trending <code>since=weekly</code>)
+<strong>Verified at:</strong> 2026-10-31 07:58 CST (Asia/Shanghai)
+<strong>Methodology:</strong> Rankings follow GitHub&rsquo;s official Trending weekly chart display order; weekly stars gained cite a third-party aggregator snapshot (2026-10-31 02:08 Beijing time), and figures may differ across aggregators due to different crawl times. The official chart&rsquo;s display order does not exactly follow stars gained.</p>
+<hr />
+<h2>This Week at a Glance</h2>
+<p>This week&rsquo;s keyword is still <strong>agent skills</strong>, but the wind has shifted from &ldquo;building more skills&rdquo; to &ldquo;managing skills well&rdquo; and &ldquo;giving agents better taste&rdquo;.</p>
+<ol>
+<li><strong>Skill security and quality become the new focus</strong> — cloudflare/security-audit-skill, #1 overall (+14,320 stars in a week), lets agents run multi-stage security audits themselves; NVIDIA&rsquo;s SkillSpector scans skills for prompt injection, malicious code, and data exfiltration. The more skills you install, the more someone needs to check the skills themselves.</li>
+<li><strong>Big tech ships skills directly</strong> — Anthropic launches knowledge-work-plugins for knowledge workers, AWS launches the official agent-toolkit-for-aws, and Anthropic&rsquo;s skills repository keeps trending; skill distribution moves from community-driven to an official default.</li>
+<li><strong>Agents start minding &ldquo;taste&rdquo; and &ldquo;aesthetics&rdquo;</strong> — pbakaus/impeccable (+9,713 stars in a week) gives agents a design vocabulary, while taste-skill and jakubkrehel/skills teach agents to design interfaces and do art direction; whether AI-written pages look good is now taken seriously.</li>
+<li><strong>Finance agents heat up again</strong> — TauricResearch/TradingAgents (+5,557 stars in a week) returns to the overall top five, and multi-agent trading frameworks draw attention again; the Rust chart also features crossover projects such as WiFi signal sensing and a robot duck.</li>
+</ol>
+<hr />
+<h2>1. Overall Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Project</th>
+<th>Language</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>cloudflare/security-audit-skill</td>
+<td>JavaScript</td>
+<td>Lets coding agents run multi-stage security audits, with independent verification and machine-readable results. Gained about 14,320 stars this week</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AgriciDaniel/claude-seo</td>
+<td>Python</td>
+<td>A general-purpose Claude Code SEO skill: 26 sub-skills + 19 sub-agents, covering technical SEO, E-E-A-T, schema, GEO/AEO, and more. Gained about 4,110 stars this week</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pbakaus/impeccable</td>
+<td>Rust</td>
+<td>A design vocabulary for coding agents: guides them to write refined, bold designs, critiques and audits at review time, and intercepts AI-looking pages before they ship. Gained about 9,713 stars this week</td>
+</tr>
+<tr>
+<td>4</td>
+<td>obra/superpowers</td>
+<td>Shell</td>
+<td>An agent skills framework and software development methodology. Gained about 4,894 stars this week</td>
+</tr>
+<tr>
+<td>5</td>
+<td>TauricResearch/TradingAgents</td>
+<td>Python</td>
+<td>A multi-agent LLM financial trading framework. Gained about 5,557 stars this week</td>
+</tr>
+</tbody>
+</table></div>
+<p>Close behind: multica-ai/andrej-karpathy-skills (+4,250 this week), Leonxlnx/taste-skill (+4,359 this week), jakubkrehel/skills, pingdotgg/t3code, anthropics/knowledge-work-plugins, affaan-m/ECC (+6,594 this week), anthropics/skills, ruvnet/ruflo.</p>
+<p>Project links:
+- https://github.com/cloudflare/security-audit-skill
+- https://github.com/AgriciDaniel/claude-seo
+- https://github.com/pbakaus/impeccable
+- https://github.com/obra/superpowers
+- https://github.com/TauricResearch/TradingAgents</p>
+<hr />
+<h2>2. Python / AI &amp; Data Top 5</h2>
+<ol>
+<li><strong>AgriciDaniel/claude-seo</strong> — A general-purpose Claude Code SEO skill, 26 sub-skills + 19 sub-agents
+   https://github.com/AgriciDaniel/claude-seo</li>
+<li><strong>TauricResearch/TradingAgents</strong> — A multi-agent LLM financial trading framework
+   https://github.com/TauricResearch/TradingAgents</li>
+<li><strong>anthropics/knowledge-work-plugins</strong> — Anthropic&rsquo;s official plugin library, mainly for Claude Cowork knowledge workers
+   https://github.com/anthropics/knowledge-work-plugins</li>
+<li><strong>anthropics/skills</strong> — Anthropic&rsquo;s official public Agent Skills repository
+   https://github.com/anthropics/skills</li>
+<li><strong>aws/agent-toolkit-for-aws</strong> — AWS&rsquo;s official MCP servers, skills, and plugins to help AI agents build on AWS
+   https://github.com/aws/agent-toolkit-for-aws</li>
+</ol>
+<p>Also worth noting: higgsfield-ai/skills, NVIDIA/SkillSpector (scans skills for security risks), sgl-project/sglang, debpalash/VoiceStudio, vllm-project/vllm, HKUDS/DeepTutor (a lifelong personalized tutor).</p>
+<hr />
+<h2>3. TypeScript / Frontend &amp; Agent Tools Top 5</h2>
+<ol>
+<li><strong>pingdotgg/t3code</strong> — The T3 team&rsquo;s coding agent tool
+   https://github.com/pingdotgg/t3code</li>
+<li><strong>ruvnet/ruflo</strong> — An agent cluster harness (second week in a row)
+   https://github.com/ruvnet/ruflo</li>
+<li><strong>gitroomhq/postiz-app</strong> — An agent-powered social media scheduling tool
+   https://github.com/gitroomhq/postiz-app</li>
+<li><strong>anomalyco/opencode</strong> — An open-source coding agent
+   https://github.com/anomalyco/opencode</li>
+<li><strong>google-gemini/gemini-cli</strong> — The open-source AI agent that brings Gemini to the terminal
+   https://github.com/google-gemini/gemini-cli</li>
+</ol>
+<p>Also worth noting: anthropics/sandbox-runtime (a lightweight process sandbox), heygen-com/hyperframes (write HTML, generate video), JetBrains/thinkrail, microsoft/skill-recorder (records screen actions into reusable skills), langfuse/langfuse.</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — Lets coding agents run multi-stage security audits, with independent verification and machine-readable results. Gained about 14,320 stars this week
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>Leonxlnx/taste-skill</strong> — A skill that gives coding agents &ldquo;taste&rdquo;: art direction, reference images, and real browser testing, rejecting generic AI pages
+   https://github.com/Leonxlnx/taste-skill</li>
+<li><strong>affaan-m/ECC</strong> — An agent harness performance optimization system: skills, instincts, memory, security, and research-first development
+   https://github.com/affaan-m/ECC</li>
+<li><strong>hmjz100/LinkSwift</strong> — A direct-download-link tool for cloud drives, supporting eight major services: Baidu Netdisk / Alibaba Cloud Drive / China Mobile Cloud Drive / Tianyi Cloud Drive / Xunlei Cloud Drive / Quark Cloud Drive / UC Cloud Drive / 123 Cloud Drive
+   https://github.com/hmjz100/LinkSwift</li>
+<li><strong>citrolabs/ego-lite</strong> — The fastest browser for AI agents: shares your logged-in browser state for browser automation, zero cost, zero setup
+   https://github.com/citrolabs/ego-lite</li>
+</ol>
+<p>Also worth noting: OpenWhispr/openwhispr (local speech-to-text), ulsklyc/yuvomi (a self-hosted family planner), nodejs/node.</p>
+<hr />
+<h2>5. Rust / System Tools Top 5</h2>
+<ol>
+<li><strong>pbakaus/impeccable</strong> — A design vocabulary for coding agents. Gained about 9,713 stars this week
+   https://github.com/pbakaus/impeccable</li>
+<li><strong>akitaonrails/ai-memory</strong> — Long-term memory for coding-agent CLIs, supporting handoffs between agents from different vendors
+   https://github.com/akitaonrails/ai-memory</li>
+<li><strong>agentgateway/agentgateway</strong> — A next-generation Agentic Proxy for AI agents and MCP servers
+   https://github.com/agentgateway/agentgateway</li>
+<li><strong>pollen-robotics/microduck</strong> — A tiny bipedal duck robot 🦆
+   https://github.com/pollen-robotics/microduck</li>
+<li><strong>macro-inc/macro</strong> — A unified workspace: email, chat, docs, tasks, agents, calls, and CRM, with shared AI memory
+   https://github.com/macro-inc/macro</li>
+</ol>
+<p>Also worth noting: xerj-org/xerj, ruvnet/RuView (uses WiFi signals for real-time spatial sensing and vital-sign monitoring), ZSeven-W/openpencil (an AI-native vector design tool), NVIDIA/cuda-rust, rustdesk/rustdesk.</p>
+<hr />
+<h2>6. Go / Cloud-Native &amp; AI Services Top 5</h2>
+<ol>
+<li><strong>infiniflow/ragflow</strong> — An open-source RAG engine, merging cutting-edge RAG and agent capabilities into an LLM context layer
+   https://github.com/infiniflow/ragflow</li>
+<li><strong>slavakurilyak/awesome-ai-agents</strong> — A curated list of 300+ agentic AI resources
+   https://github.com/slavakurilyak/awesome-ai-agents</li>
+<li><strong>multica-ai/multica</strong> — Lets humans and AI agents collaborate like one team; open-source and self-hostable
+   https://github.com/multica-ai/multica</li>
+<li><strong>QuantumNous/new-api</strong> — An open-source AI gateway: a self-hosted LLM gateway compatible with OpenAI / Claude / Gemini APIs, with model routing, access control, and usage billing
+   https://github.com/QuantumNous/new-api</li>
+<li><strong>plandex-ai/plandex</strong> — An open-source AI coding agent for large projects and real tasks
+   https://github.com/plandex-ai/plandex</li>
+</ol>
+<p>Also worth noting: router-for-me/CLIProxyAPI, grafana/loki, wailsapp/wails, chaitin/SafeLine, ollama/ollama, tailscale/tailscale, github/gh-aw (GitHub Agentic Workflows).</p>
+<hr />
+<h2>7. Java / Android &amp; Reverse Engineering Top 5</h2>
+<p><em>In GitHub Trending Java weekly chart display order</em></p>
+<ol>
+<li><strong>krahets/hello-algo</strong> — &ldquo;Hello Algo&rdquo;: data structures and algorithms explained with animated diagrams and one-click runnable code, in multiple languages with multi-language code implementations
+   https://github.com/krahets/hello-algo</li>
+<li><strong>TheAlgorithms/Java</strong> — All classic algorithms implemented in Java
+   https://github.com/TheAlgorithms/Java</li>
+<li><strong>kksimp/Mac.apk</strong> — Run Android apps natively on Apple Silicon Macs
+   https://github.com/kksimp/Mac.apk</li>
+<li><strong>HMCL-dev/HMCL</strong> — A versatile, cross-platform Minecraft launcher (second week in a row)
+   https://github.com/HMCL-dev/HMCL</li>
+<li><strong>DependencyTrack/dependency-track</strong> — An intelligent component analysis platform that identifies and reduces software supply-chain risk
+   https://github.com/DependencyTrack/dependency-track</li>
+</ol>
+<p>Also worth noting: halo-dev/halo, alibaba/nacos, iBotPeaches/Apktool, spring-projects/spring-framework, elastic/elasticsearch, apache/flink, cryptomator/cryptomator.</p>
+<hr />
+<h2>4 Picks Worth Trying Yourself, Xtop</h2>
+<p>Based on directions you&rsquo;ve starred before (AI/agent tools, local models, MCP) and the projects you&rsquo;re working on:</p>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — #1 overall this week. The idea of letting agents audit security themselves applies directly to your Pro Crypto project: auditing API keys and database configuration</li>
+<li><strong>NVIDIA/SkillSpector</strong> — The more skills you install, the more you need to guard against poisoning: scan skills for prompt injection and data exfiltration, and run it before installing a new skill</li>
+<li><strong>pbakaus/impeccable</strong> — If you have agents write frontend pages, this design vocabulary directly improves the finished look and intercepts that &ldquo;AI look&rdquo;</li>
+<li><strong>anthropics/sandbox-runtime</strong> — A lightweight process sandbox that adds filesystem and network restrictions to any process without containers; good for locking agent tool calls inside a sandbox</li>
+</ol>
+<hr />
+<h2>Data Sources</h2>
+<ul>
+<li>GitHub Trending official weekly chart: https://github.com/trending?since=weekly and its per-language sub-charts (python / typescript / javascript / rust / go / java), verified 2026-10-31 07:58 CST</li>
+<li>Third-party aggregator snapshot: gaojihao.github.io/github-hot/trending-weekly.html (updated 2026-10-31 02:08 Beijing time)</li>
+<li>Compared with the previous issue (2026-10-24): the overall chart has almost entirely turned over, with only a few projects — ruflo, opencode, ECC, LinkSwift, ai-memory, xerj, ollama, HMCL, Apktool, and others — trending two weeks in a row; the agent-skills theme carries over from last week, but the focus shifts from &ldquo;how many skills&rdquo; to &ldquo;skill security and quality&rdquo;</li>
+</ul>
+<p><em>Note: performance figures stated by projects themselves (such as token reduction and inference speed) are the projects&rsquo; own benchmarks and have not been independently reproduced; before adopting one, re-test it with your own workload.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Highlights</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/index.html">中文</option><option value="en" data-url="../en/index.html">English</option><option value="fr" data-url="../fr/index.html">Français</option><option value="ja" data-url="../ja/index.html">日本語</option><option value="ko" data-url="index.html" selected>한국어</option><option value="es" data-url="../es/index.html">Español</option></select></label></header>
+<main>
+<h1>Weekly Highlights</h1>
+<p>매주 GitHub 인기 프로젝트 선별. 출처는 GitHub Trending 공식 주간 순위(<code>since=weekly</code>) 및 각 언어별 하위 순위이며, 분야별로 정리한 목록입니다. 매주 토요일 오전 8시에 한 호씩 업데이트되며, 전체 주보는 <code>reports/&lt;날짜&gt;/</code>에서 볼 수 있습니다.</p>
+<blockquote>
+<p>안내: 이곳은 프로젝트 목록판입니다 — 프로젝트는 링크 형태로 수록되며, 업스트림 저장소의 코드 본문을 복사해 오지 않습니다. 프로젝트 이름을 클릭하면 원본 저장소로 이동합니다.</p>
+</blockquote>
+<h2>최신 호: 2026-11-21 (2026-11-15 ~ 2026-11-21)</h2>
+<ul>
+<li>전체 주보: <a href="2026-11-21.html">reports/2026-11-21/github-weekly-2026-11-21.md</a></li>
+</ul>
+<p>이번 주 핵심 흐름: Agent가 &ldquo;일을 할 수 있는&rdquo; 단계에서 &ldquo;안심하고 일을 맡길 수 있는&rdquo; 단계로 나아가고, 동시에 &ldquo;스킬&rdquo;은 계속해서 수직 분야로 확산되고 있습니다.
+1. 휴먼 인 더 루프가 정상에 오름 — backnotprop/plannotator가 전체 1위. 앤드류 응(Andrew Ng) 팀의 andrewyng/openworker는 승인, 감사, 샌드박스를 기본 아키텍처로 삼았고, Tencent/LoopForge도 딜리버리 과정에 인간 승인 단계를 추가했습니다.
+2. &ldquo;스킬&rdquo;의 계속되는 수직화 — last30days-skill(조사), claude-trading-skills(거래), ffmpeg-skill(영상 편집), marketingskills(마케팅)가 같은 주에 순위에 올랐습니다.
+3. 코드 리뷰 Agent가 대기업 실전 수준에 진입 — 알리바바 alibaba/open-code-review(전체 4위), GoogleChrome/modern-web-guidance-src(전체 3위)가 같은 주에 순위에 올랐습니다.
+4. 중국 팀 프로젝트가 집중적으로 부상 — 알리바바, 텐센트, dream-num/univer, jeecgboot/JeecgBoot, jiangshan-map이 같은 주에 순위에 올랐고, Java 순위는 전반적으로 조용했습니다.</p>
+<h3>전체 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a></td>
+<td>Agent 루프 안에서 사람이 주도권을 유지할 수 있게 하는 워크스페이스</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></td>
+<td>Stitch MCP 서버를 위해 설계된 Agent Skills 라이브러리</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></td>
+<td>코딩 Agent가 최신 웹 모범 사례를 따라가게 함</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></td>
+<td>알리바바 규모로 검증된 코드 리뷰 도구</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></td>
+<td>어떤 주제든 플랫폼을 넘나들며 조사하는 Agent 스킬</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Python / AI 및 데이터 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></td>
+<td>Reddit, X, YouTube, HN 등 플랫폼을 넘나들며 어떤 주제든 조사하는 Agent 스킬</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/tradermonty/claude-trading-skills">tradermonty/claude-trading-skills</a></td>
+<td>개인 투자자를 위한 Claude Code 트레이딩 스킬</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a></td>
+<td>코딩 Agent를 위한 로컬 영상 편집기</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a></td>
+<td>LLM 기반 다중 시장 주식 지능형 분석 시스템</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/andrewyng/openworker">andrewyng/openworker</a></td>
+<td>앤드류 응 팀의 데스크톱 Agent: AI 협업자 + Harness SDK</td>
+</tr>
+</tbody>
+</table></div>
+<h3>TypeScript / 프론트엔드 및 Agent 도구 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a></td>
+<td>Agent 루프 안에서 사람이 주도권을 유지할 수 있게 하는 워크스페이스</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></td>
+<td>Stitch MCP 서버를 위해 설계된 Agent Skills 라이브러리</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></td>
+<td>코딩 Agent가 최신 웹 모범 사례를 따라가게 함</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a></td>
+<td>코딩 Agent를 위한 Chrome DevTools</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui-protocol/ag-ui</a></td>
+<td>Agent-User Interaction Protocol: Agent를 프론트엔드 앱으로 들여옴</td>
+</tr>
+</tbody>
+</table></div>
+<h3>JavaScript Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/Anil-matcha/Open-Generative-AI">Anil-matcha/Open-Generative-AI</a></td>
+<td>검열 없는 오픈소스 AI 영상 플랫폼 대안, 800+ 모델</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/DeanChensj/jiangshan-map">DeanChensj/jiangshan-map</a></td>
+<td>강산시서 · 중국 역사 인터랙티브 지도 타임라인</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/coreyhaines31/marketingskills">coreyhaines31/marketingskills</a></td>
+<td>Claude Code 및 AI Agent를 위한 마케팅 스킬</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/jquery/jquery">jquery/jquery</a></td>
+<td>jQuery JavaScript 라이브러리</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></td>
+<td>Agent harness 성능 최적화 시스템</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Rust / 시스템 도구 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a></td>
+<td>AI Agent를 위한 브라우저 자동화 CLI</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/block/buzz">block/buzz</a></td>
+<td>스웜 사고 커뮤니케이션 플랫폼</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/ModernRelay/omnigraph">ModernRelay/omnigraph</a></td>
+<td>오브젝트 스토리지 네이티브 그래프 데이터베이스</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/martin-olivier/airgorah">martin-olivier/airgorah</a></td>
+<td>WiFi 보안 감사 소프트웨어</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/crmne/zapfast">crmne/zapfast</a></td>
+<td>Rust + egui로 만든 빠른 네이티브 WhatsApp 클라이언트</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Go / 클라우드 네이티브 및 AI 서비스 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></td>
+<td>알리바바 규모로 검증된 코드 리뷰 도구</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/getarcaneapp/arcane">getarcaneapp/arcane</a></td>
+<td>모두를 위한 모던 Docker 관리 도구</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/agent-substrate/substrate">agent-substrate/substrate</a></td>
+<td>Agent Substrate 핵심 시스템</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/runkids/skillshare">runkids/skillshare</a></td>
+<td>한 번의 명령으로 스킬을 모든 AI CLI 도구에 동기화</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/Tencent/LoopForge">Tencent/LoopForge</a></td>
+<td>셀프 호스팅 코딩 Agent 딜리버리 워크플로</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Java / Android 및 리버싱 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/openjdk/jdk">openjdk/jdk</a></td>
+<td>JDK 메인라인 개발</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/jeecgboot/JeecgBoot">jeecgboot/JeecgBoot</a></td>
+<td>무료 오픈소스 AI 로우코드 플랫폼</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/SeleniumHQ/selenium">SeleniumHQ/selenium</a></td>
+<td>브라우저 자동화 프레임워크 및 생태계</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/jean-voila/FeurStagram">jean-voila/FeurStagram</a></td>
+<td>Reels와 광고가 없는 오픈소스 Instagram 앱</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/TGX-Android/Telegram-X">TGX-Android/Telegram-X</a></td>
+<td>Telegram X 공식 대체 클라이언트(Android)</td>
+</tr>
+</tbody>
+</table></div>
+<h2>지난 주보</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>전체 주보</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-21</td>
+<td><a href="2026-11-21.html">reports/2026-11-21/github-weekly-2026-11-21.md</a></td>
+</tr>
+<tr>
+<td>2026-11-14</td>
+<td><a href="2026-11-14.html">reports/2026-11-14/github-weekly-2026-11-14.md</a></td>
+</tr>
+<tr>
+<td>2026-11-07</td>
+<td><a href="2026-11-07.html">reports/2026-11-07/github-weekly-2026-11-07.md</a></td>
+</tr>
+<tr>
+<td>2026-10-31</td>
+<td><a href="2026-10-31.html">reports/2026-10-31/github-weekly-2026-10-31.md</a></td>
+</tr>
+<tr>
+<td>2026-10-24</td>
+<td><a href="2026-10-24.html">reports/2026-10-24/github-weekly-2026-10-24.md</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2>데이터 출처</h2>
+<ul>
+<li>GitHub Trending 공식 주간 순위: https://github.com/trending?since=weekly 및 각 언어별 하위 순위</li>
+<li>순위는 공식 주간 순위의 표시 순서를 기준으로 하며, 스타 수/증가 스타 수는 제3자 집계 사이트 스냅샷에서 가져왔으므로, 출처마다 수집 시점이 달라 차이가 있을 수 있습니다</li>
+<li>프로젝트가 스스로 밝힌 성능 수치는 모두 프로젝트 측 자체 벤치마크이며, 제3자가 재현한 바 없습니다</li>
+</ul>
+<h2>지난 호</h2>
+<ul class="issue-list">
+<li><a href="2026-10-24.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-10-24</span></li><li><a href="2026-10-31.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-10-31</span></li><li><a href="2026-11-07.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-07</span></li><li><a href="2026-11-14.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-14</span></li><li><a href="2026-11-21.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-21</span></li>
+</ul>
+
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

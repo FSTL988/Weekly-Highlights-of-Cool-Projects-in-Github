@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 인기 프로젝트 주보 — 최근 한 주</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-07.html">中文</option><option value="en" data-url="../en/2026-11-07.html">English</option><option value="fr" data-url="../fr/2026-11-07.html">Français</option><option value="ja" data-url="../ja/2026-11-07.html">日本語</option><option value="ko" data-url="2026-11-07.html" selected>한국어</option><option value="es" data-url="../es/2026-11-07.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← 홈</a></p>
+<h1>GitHub 인기 프로젝트 주보 — 최근 한 주</h1>
+<p><strong>기간:</strong> 2026-11-01 ~ 2026-11-07 (GitHub Trending <code>since=weekly</code>)
+<strong>확인 시간:</strong> 2026-11-07 08:00 CST (Asia/Shanghai)
+<strong>집계 기준:</strong> 순위는 GitHub 공식 Trending 주간 순위의 표시 순서를 기준으로 합니다. 이번 주 증가 스타 수는 제3자 집계 사이트 스냅샷(2026-11-07 03:38 베이징 시간)을 인용했으며, 집계 사이트마다 수집 시점이 달라 증가 스타 수에 차이가 있을 수 있습니다. 공식 순위의 표시 순서는 증가 스타 수 순서와 완전히 일치하지 않습니다.</p>
+<hr />
+<h2>이번 주 개요</h2>
+<p>이번 주의 핵심 흐름은 &ldquo;스킬&rdquo;에서 <strong>Agent의 기억과 협업 인프라</strong> 로 옮겨갔습니다.</p>
+<ol>
+<li><strong>Agent 기억이 새로운 병목</strong> — 전체 1위 thedotmack/claude-mem(한 주 +9,318 스타)은 세션을 넘나드는 영속적 컨텍스트를 만듭니다. Agent가 매 세션마다 한 일을 압축해 다음 세션에 주입합니다. max-sixty/worktrunk(Rust 순위 1위)은 Git worktree로 여러 Agent가 충돌 없이 병렬로 일하게 하고, herdrdev/herdr는 &ldquo;Agent가 사는 런타임&rdquo;을 지향합니다. 스킬 설치가 끝났으니, 다음 단계는 Agent가 기억하고 협업하게 하는 것입니다.</li>
+<li><strong>Agent가 생산 라인 전체를 맡기 시작</strong> — Donchitos/Claude-Code-Game-Studios(전체 2위)는 Claude Code를 게임 개발 스튜디오로 바꿉니다. 49개의 Agent와 72개의 워크플로 스킬이 실제 스튜디오의 계층 구조대로 분업합니다. calesthio/OpenMontage는 오픈소스 Agent 영상 제작 시스템으로, 12개의 제작 파이프라인과 700개 이상의 스킬 파일을 갖췄습니다. Agent는 &ldquo;코드 작성&rdquo;에서 &ldquo;프로젝트 전체 운영&rdquo;으로 나아가고 있습니다.</li>
+<li><strong>반 AI 티 디자인이 3주 연속 순위 진입</strong> — Nutlope/hallmark(전체 5위), pbakaus/impeccable, Leonxlnx/taste-skill 등 세 개의 디자인 취향 프로젝트가 동시에 순위를 점령했습니다. AI 생성 콘텐츠의 &ldquo;미감 세금&rdquo;이 정식 인프라로 자리 잡고 있습니다.</li>
+<li><strong>인프라 베테랑의 귀환</strong> — Go 순위 상위 5개가 거의 전부 moby, gitea, argo-cd, docker/compose 등 클라우드 네이티브 베테랑 프로젝트이고, Java 순위도 keycloak, elasticsearch, cryptomator, StarRocks가 차지했습니다. Agent 신흥 강자와 대비되면서, 이번 주 관심도가 하위 인프라로 다시 흘러들고 있음을 보여줍니다.</li>
+<li><strong>금융 AI의 등장</strong> — shiyu-coder/Kronos(Python 순위 6위)는 금융 시장을 대상으로 한 언어 기초 모델로, 트레이딩/시세 관련 프로젝트를 하는 사람이 주목할 만합니다.</li>
+</ol>
+<hr />
+<h2>1. 전체 Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>언어</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>thedotmack/claude-mem</td>
+<td>TypeScript</td>
+<td>세션을 넘나드는 영속적 컨텍스트: Agent가 매 세션마다 한 행동을 기록하고 AI가 압축해 다음 세션에 주입합니다. Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode 등을 지원합니다. 이번 주 약 9,318 스타 증가</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Donchitos/Claude-Code-Game-Studios</td>
+<td>Shell</td>
+<td>Claude Code를 완전한 게임 개발 스튜디오로 만듦: 49개의 AI Agent와 72개의 워크플로 스킬이 실제 스튜디오 계층 구조대로 협업합니다. 이번 주 약 6,685 스타 증가</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pingdotgg/t3code</td>
+<td>TypeScript</td>
+<td>T3 팀의 프로그래밍 Agent 도구(2주 연속 순위 진입). 이번 주 약 16,235 스타 증가(제3자 집계 기준. 공식 표시 순서는 증가 스타 수 순서와 완전히 일치하지 않습니다)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>max-sixty/worktrunk</td>
+<td>Rust</td>
+<td>병렬 AI Agent 워크플로를 위한 Git worktree 관리 CLI. 이번 주 약 1,802 스타 증가</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Nutlope/hallmark</td>
+<td>CSS</td>
+<td>반 AI 티 디자인 스킬. Claude Code, Cursor, Codex를 대상으로 합니다. 이번 주 약 6,994 스타 증가</td>
+</tr>
+</tbody>
+</table></div>
+<p>바로 뒤를 잇는 프로젝트: anthropics/skills(이번 주 +3,072), milind-soni/OpenMausBot(이번 주 +5,580), pbakaus/impeccable(이번 주 +9,303), obra/superpowers(이번 주 +5,131), HKUDS/DeepTutor(이번 주 +6,229).</p>
+<p>프로젝트 링크:
+- https://github.com/thedotmack/claude-mem
+- https://github.com/Donchitos/Claude-Code-Game-Studios
+- https://github.com/pingdotgg/t3code
+- https://github.com/max-sixty/worktrunk
+- https://github.com/Nutlope/hallmark</p>
+<hr />
+<h2>2. Python / AI 및 데이터 Top 5</h2>
+<ol>
+<li><strong>anthropics/skills</strong> — Anthropic 공식 Agent Skills 공개 저장소(3주 연속 순위 진입)
+   https://github.com/anthropics/skills</li>
+<li><strong>HKUDS/DeepTutor</strong> — 평생 개인 맞춤형 가정교사: Lifelong Personalized Tutoring. 이번 주 약 6,229 스타 증가
+   https://github.com/HKUDS/DeepTutor</li>
+<li><strong>calesthio/OpenMontage</strong> — 세계 최초의 오픈소스 Agent 영상 제작 시스템: 12개의 제작 파이프라인, 100개 이상의 도구, 700개 이상의 Agent 스킬 및 제작 지식 파일. 이번 주 약 4,132 스타 증가
+   https://github.com/calesthio/OpenMontage</li>
+<li><strong>The-PR-Agent/pr-agent</strong> — 오픈소스 PR 리뷰 Agent
+   https://github.com/The-PR-Agent/pr-agent</li>
+<li><strong>D4Vinci/Scrapling</strong> — 고성능 웹 크롤링 프레임워크. 단발 요청부터 대규모 크롤링까지 다룹니다. 이번 주 약 7,487 스타 증가
+   https://github.com/D4Vinci/Scrapling</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: shiyu-coder/Kronos(금융 시장 언어 기초 모델, 이번 주 +2,979), github/spec-kit(사양 주도 개발 도구 키트), blader/humanizer(AI 글쓰기 흔적을 지우는 Agent 스킬), AgriciDaniel/claude-seo, ethanplusai/sellbird(오픈소스 아웃리치 플랫폼).</p>
+<hr />
+<h2>3. TypeScript / 프론트엔드 및 Agent 도구 Top 5</h2>
+<ol>
+<li><strong>thedotmack/claude-mem</strong> — Agent 세션을 넘나드는 영속적 컨텍스트
+   https://github.com/thedotmack/claude-mem</li>
+<li><strong>pingdotgg/t3code</strong> — T3 팀의 프로그래밍 Agent 도구
+   https://github.com/pingdotgg/t3code</li>
+<li><strong>milind-soni/OpenMausBot</strong> — 오픈소스 Grok Bot 대안. Bot이 쓸 가상 머신을 자체 제공합니다. 이번 주 약 5,580 스타 증가
+   https://github.com/milind-soni/OpenMausBot</li>
+<li><strong>nightly-labs/openbot</strong> — 로컬 우선의 영속적 AI 팀원 데스크톱 워크스페이스: Codex, Claude, Grok이 각각 전용 워크스페이스, 작업 큐, 파일 공유, Agent 간 협업을 갖습니다. 이번 주 약 2,085 스타 증가
+   https://github.com/nightly-labs/openbot</li>
+<li><strong>garrytan/gstack</strong> — Garry Tan의 Claude Code 설정: CEO, 디자이너, 엔지니어링 매니저, 릴리스 매니저, 문서 엔지니어, QA로 분업하는 23개의 도구
+   https://github.com/garrytan/gstack</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: Vincentwei1021/video-shotcraft(AI 영상 스킬, Remotion으로 제품 홍보 영상 제작), CopilotKit/OpenBot(각 AI 동료마다 자기 컴퓨터 한 대씩), tashfeenahmed/freellmapi(34개의 무료 LLM 공급자를 하나의 /v1 인터페이스로 통합), remotion/remotion, openclaw/openclaw, stablyai/orca.</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — 프로그래밍 Agent가 다단계 보안 감사를 수행하도록 함. 독립 검증, 기계가 읽을 수 있는 결과(JS 순위 3주 연속 1위)
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>Leonxlnx/taste-skill</strong> — 코딩 Agent에게 &ldquo;취향&rdquo;을 주는 스킬: 아트 디렉션, 참고 이미지, 브라우저 실측으로 보편적인 AI 페이지를 거부합니다
+   https://github.com/Leonxlnx/taste-skill</li>
+<li><strong>HunYiSage/dsh-purge</strong> — DeepSeek Harness 탈옥(break) 도구: 모든 모델이 프롬프트를 바꿔 탈옥할 수 있게 하며, 기본 프롬프트는 국산 모델을 겨냥합니다
+   https://github.com/HunYiSage/dsh-purge</li>
+<li><strong>affaan-m/ECC</strong> — Agent harness 성능 최적화 시스템: 스킬, 본능, 기억, 보안 및 연구 우선 개발
+   https://github.com/affaan-m/ECC</li>
+<li><strong>github/awesome-copilot</strong> — 커뮤니티가 기여한 Copilot 지침, Agent, 스킬 및 설정 엄선 모음
+   https://github.com/github/awesome-copilot</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: techjarves/Portable-Local-Studio(휴대용 로컬 AI 스튜디오: 텍스트-이미지 생성, GGUF 로컬 모델, 음성 합성 및 전사), DeanChensj/jiangshan-map(강산시서 · 중국 역사 인터랙티브 지도), coreyhaines31/marketingskills, ConardLi/garden-skills.</p>
+<hr />
+<h2>5. Rust / 시스템 도구 Top 5</h2>
+<ol>
+<li><strong>max-sixty/worktrunk</strong> — 병렬 AI Agent 워크플로를 위한 Git worktree 관리 CLI
+   https://github.com/max-sixty/worktrunk</li>
+<li><strong>pbakaus/impeccable</strong> — 코딩 Agent를 위한 디자인 어휘(3주 연속 순위 진입)
+   https://github.com/pbakaus/impeccable</li>
+<li><strong>herdrdev/herdr</strong> — &ldquo;당신의 코딩 Agent가 사는 런타임&rdquo;
+   https://github.com/herdrdev/herdr</li>
+<li><strong>openai/codex</strong> — 터미널에서 실행하는 경량 코딩 Agent
+   https://github.com/openai/codex</li>
+<li><strong>zed-industries/zed</strong> — 고성능 다인용 코드 에디터. Atom과 Tree-sitter 원년 멤버들이 만들었습니다
+   https://github.com/zed-industries/zed</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: cjpais/Handy(완전 오프라인 오픈소스 음성-텍스트 변환), vercel-labs/agent-browser(AI Agent를 위한 브라우저 자동화 CLI), leepokai/Codync(오픈소스 Grok Bot 대안, Rust로 작성), xai-org/x-algorithm(X 추천 피드 알고리즘 오픈소스), agentgateway/agentgateway.</p>
+<hr />
+<h2>6. Go / 클라우드 네이티브 및 AI 서비스 Top 5</h2>
+<ol>
+<li><strong>moby/moby</strong> — Moby 프로젝트: 컨테이너 생태계의 협업 프로젝트
+   https://github.com/moby/moby</li>
+<li><strong>multica-ai/multica</strong> — 인간과 AI Agent가 한 팀처럼 협업하게 함. 오픈소스, 셀프 호스팅 가능(2주 연속 순위 진입)
+   https://github.com/multica-ai/multica</li>
+<li><strong>go-gitea/gitea</strong> — 셀프 호스팅 원스톱 소프트웨어 개발 서비스: Git 호스팅, 코드 리뷰, 협업, 패키지 레지스트리 및 CI/CD
+   https://github.com/go-gitea/gitea</li>
+<li><strong>argoproj/argo-cd</strong> — Kubernetes를 위한 선언적 지속적 배포
+   https://github.com/argoproj/argo-cd</li>
+<li><strong>docker/compose</strong> — 다중 컨테이너 앱을 정의하고 실행
+   https://github.com/docker/compose</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: netbirdio/netbird(WireGuard 기반 제로 트러스트 네트워킹), infiniflow/ragflow, prometheus/prometheus, golang/go, kubernetes/kubernetes, gastownhall/beads(코딩 Agent를 위한 기억 업그레이드).</p>
+<hr />
+<h2>7. Java / Android 및 리버싱 Top 5</h2>
+<p><em>GitHub Trending Java 주간 순위 표시 순서 기준</em></p>
+<ol>
+<li><strong>floci-io/floci</strong> — 가볍고 무료인 AWS 로컬 시뮬레이터 대안
+   https://github.com/floci-io/floci</li>
+<li><strong>keycloak/keycloak</strong> — 현대 앱과 서비스를 위한 오픈소스 신원 및 접근 관리
+   https://github.com/keycloak/keycloak</li>
+<li><strong>elastic/elasticsearch</strong> — 무료 오픈소스 분산 RESTful 검색 엔진
+   https://github.com/elastic/elasticsearch</li>
+<li><strong>cryptomator/cryptomator</strong> — 클라우드 스토리지용 클라이언트 측 암호화 도구. 프라이버시와 데이터 통제권을 보장합니다
+   https://github.com/cryptomator/cryptomator</li>
+<li><strong>StarRocks/starrocks</strong> — 세계에서 가장 빠른 오픈소스 쿼리 엔진 중 하나. 레이크하우스 안팎에서 서브초(sub-second) 분석을 수행합니다
+   https://github.com/StarRocks/starrocks</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: spring-projects/spring-framework, openjdk/jdk, skylot/jadx(Dex를 Java로 디컴파일), termux/termux-app, bazelbuild/bazel, floci-io/floci-az(로컬 Azure 시뮬레이터).</p>
+<hr />
+<h2>Xtop이 직접 써 볼 만한 4개</h2>
+<p>당신이 이전에 Star를 누른 방향(AI/Agent 도구, 로컬 모델, MCP)과 당신이 진행 중인 프로젝트를 고려하면:</p>
+<ol>
+<li><strong>thedotmack/claude-mem</strong> — 이번 주 전체 1위. Agent의 세션을 넘나드는 기억은 당신의 Pro Crypto 프로젝트와 AI 엔지니어 학습에서 반복해서 마주칠 pain point입니다. Agent가 지난번에 어디까지 했고 어떤 실수를 했는지 기억하게 하세요</li>
+<li><strong>max-sixty/worktrunk</strong> — Git worktree로 여러 Agent가 서로 다른 기능을 병렬로 수정하면서 간섭하지 않게 합니다. OpenCode/Claude Code와 함께 쓰면 잘 맞습니다</li>
+<li><strong>Donchitos/Claude-Code-Game-Studios</strong> — 49개의 Agent가 스튜디오 계층 구조대로 분업하는 협업 시스템. 그 아키텍처 접근법을 다중 Agent 협업 설계에 그대로 차용할 수 있습니다</li>
+<li><strong>shiyu-coder/Kronos</strong> — 금융 시장을 대상으로 한 언어 기초 모델. 당신이 관심을 두는 시세, 트레이딩 방향과 직접 관련이 있으니, 시장 데이터를 언어로 어떻게 바꾸는지 살펴볼 만합니다</li>
+</ol>
+<hr />
+<h2>데이터 출처</h2>
+<ul>
+<li>GitHub Trending 공식 주간 순위: https://github.com/trending?since=weekly 및 각 언어별 하위 순위(python / typescript / javascript / rust / go / java), 2026-11-07 08:00 CST에 확인</li>
+<li>제3자 집계 스냅샷: gaojihao.github.io/github-hot/trending-weekly.html(2026-11-07 03:38 베이징 시간에 업데이트)</li>
+<li>지난 호(2026-10-31)와 비교: 전체 순위가 거의 전부 바뀌었고, t3code, anthropics/skills, impeccable, superpowers 등 소수 프로젝트만 계속 순위에 올랐습니다. 주제는 &ldquo;스킬 개수와 안전&rdquo;에서 &ldquo;Agent 기억, 병렬 협업 및 생산 라인 전체의 Agent화&rdquo;로 옮겨갔고, 동시에 클라우드 네이티브와 Java 인프라 베테랑이 뚜렷하게 귀환했습니다</li>
+</ul>
+<p><em>안내: 프로젝트가 스스로 밝힌 성능 수치(예: 토큰 축소, 추론 속도)는 모두 프로젝트 측 자체 벤치마크이며 제3자가 재현한 바 없으므로, 도입 전에 자신의 작업 부하로 다시 측정해 보길 권장합니다.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

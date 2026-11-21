@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rapport hebdomadaire des projets populaires GitHub — la semaine écoulée</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-21.html">中文</option><option value="en" data-url="../en/2026-11-21.html">English</option><option value="fr" data-url="2026-11-21.html" selected>Français</option><option value="ja" data-url="../ja/2026-11-21.html">日本語</option><option value="ko" data-url="../ko/2026-11-21.html">한국어</option><option value="es" data-url="../es/2026-11-21.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← Accueil</a></p>
+<h1>Rapport hebdomadaire des projets populaires GitHub — la semaine écoulée</h1>
+<p><strong>Fenêtre temporelle :</strong> du 2026-11-15 au 2026-11-21 (GitHub Trending <code>since=weekly</code>)
+<strong>Heure de vérification :</strong> 2026-11-21 08:00 CST (Asia/Shanghai)
+<strong>Note méthodologique :</strong> le classement suit l&rsquo;ordre d&rsquo;affichage du classement hebdomadaire officiel GitHub Trending ; le nombre d&rsquo;étoiles gagnées cette semaine est tiré de la page du classement officiel elle-même (« X stars this week »), le total des étoiles provient d&rsquo;une requête en temps réel à l&rsquo;API GitHub (autour du 2026-11-21 08:00) et de l&rsquo;instantané d&rsquo;un site agrégateur tiers (2026-11-21 04:41, heure de Pékin). L&rsquo;ordre d&rsquo;affichage du classement officiel ne correspond pas entièrement au tri par étoiles gagnées.</p>
+<hr />
+<h2>Vue d&rsquo;ensemble de la semaine</h2>
+<p>Le fil conducteur de cette semaine est que <strong>l&rsquo;agent passe de « capable de travailler » à « digne de confiance pour travailler », tandis que les « skills » continuent de se diffuser vers des cas d&rsquo;usage verticaux</strong>.</p>
+<ol>
+<li><strong>L&rsquo;humain dans la boucle (human-in-the-loop) en tête</strong> — backnotprop/plannotator, premier du classement général, est un espace de travail qui « permet à l&rsquo;humain de garder le contrôle dans la boucle de l&rsquo;agent » ; andrewyng/openworker, 5ᵉ du classement Python (équipe d&rsquo;Andrew Ng), fait de « l&rsquo;approbation, de l&rsquo;audit et du sandbox » l&rsquo;architecture par défaut d&rsquo;un agent de bureau ; Tencent/LoopForge ajoute aussi une étape d&rsquo;approbation humaine dans son processus de livraison. Plus l&rsquo;agent est capable, plus l&rsquo;humain doit pouvoir le surveiller.</li>
+<li><strong>Les « skills » poursuivent leur verticalisation</strong> — la semaine dernière, c&rsquo;étaient encore des paquets de skills généralistes ; cette semaine, elles se sont différenciées par métier : mvanhorn/last30days-skill (une skill de recherche sur Reddit/X/YouTube/HN), tradermonty/claude-trading-skills (une skill de trading pour les investisseurs particuliers), kajisho5/ffmpeg-skill (une skill de montage vidéo local), coreyhaines31/marketingskills (une skill marketing). Les skills passent du statut de « plugin de l&rsquo;agent » à celui de « workflow d&rsquo;un métier ».</li>
+<li><strong>Les agents de revue de code entrent dans la pratique des grandes entreprises</strong> — alibaba/open-code-review (4ᵉ du classement général, 54 766 étoiles au total) mise sur « un pipeline déterministe validé à l&rsquo;échelle d&rsquo;Alibaba + un agent LLM » ; GoogleChrome/modern-web-guidance-src (3ᵉ du classement général) vise à faire suivre aux agents de codage les dernières bonnes pratiques du Web. La revue et les normes deviennent la prochaine étape de l&rsquo;adoption des agents.</li>
+<li><strong>La couche de protocole entre agents et frontend apparaît</strong> — ag-ui-protocol/ag-ui (Agent-User Interaction Protocol) et a2ui-project/a2ui (un framework d&rsquo;UI générative) figurent au classement la même semaine : l&rsquo;agent ne se contente plus de produire du texte, il doit « faire pousser » des composants directement dans l&rsquo;interface de l&rsquo;application.</li>
+<li><strong>Les projets d&rsquo;équipes chinoises émergent en nombre</strong> — Alibaba, Tencent, dream-num/univer, jeecgboot/JeecgBoot et DeanChensj/jiangshan-map (une carte interactive de l&rsquo;histoire de la Chine) figurent au classement la même semaine, couvrant la revue de code, la livraison d&rsquo;agents, les suites bureautiques, le low-code et le contenu culturel.</li>
+<li><strong>Les anciens continuent de se faire remarquer aux marges du classement</strong> — jquery revient à la 4ᵉ place du classement JS, openjdk/jdk et SeleniumHQ/selenium mènent le classement Java ; affaan-m/ECC gagne encore 5 598 étoiles cette semaine, pour un total de 307 847 étoiles. Dans la vague des agents, la base d&rsquo;étoiles des infrastructures établies reste très solide.</li>
+</ol>
+<hr />
+<h2>1. Top 5 du classement général</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Langage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>backnotprop/plannotator</td>
+<td>TypeScript</td>
+<td>Un espace de travail qui permet à l&rsquo;humain de garder le contrôle dans la boucle de l&rsquo;agent : mise en forme, décision, planification, annotation, revue de code, et envoi des retours à l&rsquo;agent en un clic. Environ 3 468 étoiles gagnées cette semaine, 13 888 au total</td>
+</tr>
+<tr>
+<td>2</td>
+<td>google-labs-code/stitch-skills</td>
+<td>TypeScript</td>
+<td>Une bibliothèque d&rsquo;Agent Skills conçue pour le serveur MCP Stitch, conforme au standard ouvert des Agent Skills, compatible avec Antigravity, Gemini CLI, Claude Code et Cursor. Environ 1 829 étoiles gagnées cette semaine, 11 022 au total</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GoogleChrome/modern-web-guidance-src</td>
+<td>TypeScript</td>
+<td>Pour que les agents de codage suivent les dernières bonnes pratiques du Web. Environ 6 858 étoiles gagnées cette semaine, 9 522 au total</td>
+</tr>
+<tr>
+<td>4</td>
+<td>alibaba/open-code-review</td>
+<td>Go</td>
+<td>Un outil de revue de code validé à l&rsquo;échelle d&rsquo;Alibaba : pipeline déterministe + agent LLM, commentaires précis à la ligne, avec un ensemble intégré de règles multi-langages (NPE, sécurité des threads, XSS, injection SQL). Environ 4 492 étoiles gagnées cette semaine, 54 766 au total</td>
+</tr>
+<tr>
+<td>5</td>
+<td>mvanhorn/last30days-skill</td>
+<td>Python</td>
+<td>Une skill d&rsquo;agent pour faire des recherches sur n&rsquo;importe quel sujet sur Reddit, X, YouTube, HN, Polymarket et tout le Web, avec des résumés étayés. Environ 3 179 étoiles gagnées cette semaine, 71 431 au total</td>
+</tr>
+</tbody>
+</table></div>
+<p>Juste derrière : dream-num/univer (+7 248 cette semaine), meta/astryx (+4 977 cette semaine), milind-soni/OpenMausBot (+4 228 cette semaine), ag-ui-protocol/ag-ui (+3 455 cette semaine), tradermonty/claude-trading-skills (+3 385 cette semaine), ChromeDevTools/chrome-devtools-mcp (+3 229 cette semaine), we-promise/sure (+3 226 cette semaine), kajisho5/ffmpeg-skill (+2 998 cette semaine).</p>
+<p>Liens des projets :
+- https://github.com/backnotprop/plannotator
+- https://github.com/google-labs-code/stitch-skills
+- https://github.com/GoogleChrome/modern-web-guidance-src
+- https://github.com/alibaba/open-code-review
+- https://github.com/mvanhorn/last30days-skill</p>
+<hr />
+<h2>2. Top 5 Python / IA et données</h2>
+<ol>
+<li><strong>mvanhorn/last30days-skill</strong> — Une skill d&rsquo;agent pour faire des recherches sur n&rsquo;importe quel sujet sur Reddit, X, YouTube, HN, Polymarket et tout le Web, avec des résumés étayés. Environ 3 179 étoiles gagnées cette semaine
+   https://github.com/mvanhorn/last30days-skill</li>
+<li><strong>tradermonty/claude-trading-skills</strong> — Des skills de trading Claude Code pour les investisseurs particuliers : analyse de marché, graphiques techniques, calendrier économique, sélection d&rsquo;actions et développement de stratégies de trading. Environ 3 385 étoiles gagnées cette semaine
+   https://github.com/tradermonty/claude-trading-skills</li>
+<li><strong>kajisho5/ffmpeg-skill</strong> — Un éditeur vidéo local pour les agents de codage : 42 outils FFmpeg + un contrat lisible par machine + un serveur MCP, pour le montage, les sous-titres, la restructuration, le loudness et l&rsquo;export multi-plateformes, sans cloud ni clé API. Environ 2 998 étoiles gagnées cette semaine
+   https://github.com/kajisho5/ffmpeg-skill</li>
+<li><strong>ZhuLinsen/daily_stock_analysis</strong> — Un système d&rsquo;analyse boursière intelligente LLM multi-marchés : cours multi-sources, actualités en temps réel, tableau de bord décisionnel et envois automatiques, avec prise en charge de l&rsquo;exécution planifiée à coût zéro (deuxième semaine consécutive au classement). Environ 2 595 étoiles gagnées cette semaine
+   https://github.com/ZhuLinsen/daily_stock_analysis</li>
+<li><strong>andrewyng/openworker</strong> — L&rsquo;agent de bureau de l&rsquo;équipe d&rsquo;Andrew Ng : un collaborateur IA pour le travail quotidien + un Harness SDK pour construire des applications d&rsquo;agents, avec l&rsquo;approbation, la piste d&rsquo;audit et le sandbox comme architecture par défaut, ses propres modèles et une approche local-first. Environ 460 étoiles gagnées cette semaine
+   https://github.com/andrewyng/openworker</li>
+</ol>
+<p>À noter également : anthropics/skills (+4 235 cette semaine, cinquième semaine consécutive au classement), elementalsouls/Claude-BugHunter (+6 517 cette semaine, 82 skills de chasse aux bugs + 681 modèles de vulnérabilités divulguées), jingyaogong/minimind (entraîner un modèle de 64M de zéro en deux heures, +1 612 cette semaine), zhouxiaoka/autoclip (un outil de bureau de montage vidéo IA, +717 cette semaine), FujiwaraChoki/supoclip (une alternative open source à OpusClip, +711 cette semaine), soxoj/maigret (collecter des profils personnels à partir d&rsquo;un nom d&rsquo;utilisateur sur 6 000 sites, +548 cette semaine).</p>
+<hr />
+<h2>3. Top 5 TypeScript / Frontend et outils Agent</h2>
+<ol>
+<li><strong>backnotprop/plannotator</strong> — Un espace de travail qui permet à l&rsquo;humain de garder le contrôle dans la boucle de l&rsquo;agent. Environ 3 468 étoiles gagnées cette semaine
+   https://github.com/backnotprop/plannotator</li>
+<li><strong>google-labs-code/stitch-skills</strong> — Une bibliothèque d&rsquo;Agent Skills conçue pour le serveur MCP Stitch. Environ 1 829 étoiles gagnées cette semaine
+   https://github.com/google-labs-code/stitch-skills</li>
+<li><strong>GoogleChrome/modern-web-guidance-src</strong> — Pour que les agents de codage suivent les dernières bonnes pratiques du Web. Environ 6 858 étoiles gagnées cette semaine
+   https://github.com/GoogleChrome/modern-web-guidance-src</li>
+<li><strong>ChromeDevTools/chrome-devtools-mcp</strong> — Chrome DevTools pour les agents de codage. Environ 3 229 étoiles gagnées cette semaine
+   https://github.com/ChromeDevTools/chrome-devtools-mcp</li>
+<li><strong>ag-ui-protocol/ag-ui</strong> — Agent-User Interaction Protocol : amener l&rsquo;agent dans les applications frontend. Environ 3 455 étoiles gagnées cette semaine
+   https://github.com/ag-ui-protocol/ag-ui</li>
+</ol>
+<p>À noter également : dream-num/univer (+7 248 cette semaine, un SDK de suite bureautique IA), meta/astryx (+4 977 cette semaine, un design system open source prêt pour les agents), milind-soni/OpenMausBot (+4 228 cette semaine, deuxième semaine consécutive au classement), openai/codex-security (+2 150 cette semaine, deuxième semaine consécutive au classement), CopilotKit/OpenBot (+1 624 cette semaine), QwenLM/qwen-code (un agent de codage IA open source dans le terminal, +1 190 cette semaine), lobehub/lobehub (+751 cette semaine), a2ui-project/a2ui (un framework d&rsquo;UI générative, +480 cette semaine).</p>
+<hr />
+<h2>4. Top 5 JavaScript</h2>
+<ol>
+<li><strong>Anil-matcha/Open-Generative-AI</strong> — Une alternative open source non censurée aux plateformes vidéo IA : plus de 800 modèles gratuits pour générer images et vidéos, auto-hébergée, licence MIT (deuxième semaine consécutive en tête du classement JS). Environ 1 168 étoiles gagnées cette semaine
+   https://github.com/Anil-matcha/Open-Generative-AI</li>
+<li><strong>DeanChensj/jiangshan-map</strong> — Jiangshan Shixu · une frise chronologique interactive de l&rsquo;histoire de la Chine (403 av. J.-C. – présent), 18 dynasties, 198 instantanés de territoires, une généalogie des toponymes anciens et modernes et des itinéraires poétiques. Environ 2 960 étoiles gagnées cette semaine
+   https://github.com/DeanChensj/jiangshan-map</li>
+<li><strong>coreyhaines31/marketingskills</strong> — Des skills marketing pour Claude Code et les agents IA : CRO, copywriting, SEO, analyse de données et growth engineering (deuxième semaine consécutive au classement). Environ 1 572 étoiles gagnées cette semaine
+   https://github.com/coreyhaines31/marketingskills</li>
+<li><strong>jquery/jquery</strong> — La bibliothèque JavaScript jQuery, un projet établi de retour au classement. Environ 523 étoiles gagnées cette semaine
+   https://github.com/jquery/jquery</li>
+<li><strong>affaan-m/ECC</strong> — Un système d&rsquo;optimisation des performances des agent harnesses : skills, instincts, mémoire, sécurité et recherche en priorité, couvrant Claude Code, Codex, OpenCode, Cursor, entre autres. Environ 5 598 étoiles gagnées cette semaine, 307 847 au total
+   https://github.com/affaan-m/ECC</li>
+</ol>
+<p>À noter également : addyosmani/agent-skills (+2 765 cette semaine, deuxième semaine consécutive au classement), sveltejs/svelte (+1 669 cette semaine), louislam/uptime-kuma (+1 146 cette semaine), vercel-labs/agent-skills (la collection officielle de skills d&rsquo;agent de Vercel, +613 cette semaine), GoogleChrome/lighthouse (+115 cette semaine).</p>
+<hr />
+<h2>5. Top 5 Rust / Outils système</h2>
+<ol>
+<li><strong>vercel-labs/agent-browser</strong> — Un CLI d&rsquo;automatisation de navigateur pour les agents IA (deuxième semaine consécutive en tête du classement Rust). Environ 2 691 étoiles gagnées cette semaine, 53 079 au total
+   https://github.com/vercel-labs/agent-browser</li>
+<li><strong>block/buzz</strong> — Une plateforme de communication en essaim. Environ 549 étoiles gagnées cette semaine, 37 630 au total
+   https://github.com/block/buzz</li>
+<li><strong>ModernRelay/omnigraph</strong> — Une base de données graphe native du stockage objet, avec prise en charge des branches et des ontologies typées. Environ 1 094 étoiles gagnées cette semaine, 3 152 au total
+   https://github.com/ModernRelay/omnigraph</li>
+<li><strong>martin-olivier/airgorah</strong> — Un logiciel d&rsquo;audit de sécurité WiFi. Environ 1 560 étoiles gagnées cette semaine, 6 737 au total
+   https://github.com/martin-olivier/airgorah</li>
+<li><strong>crmne/zapfast</strong> — Un client WhatsApp natif rapide, écrit en Rust + egui. Environ 523 étoiles gagnées cette semaine, 4 819 au total
+   https://github.com/crmne/zapfast</li>
+</ol>
+<p>À noter également : rustfs/rustfs (un stockage objet haute performance compatible S3, +310 cette semaine), ViceVerse-cz/Serein (un client Discord 100 % Rust natif, +215 cette semaine).</p>
+<hr />
+<h2>6. Top 5 Go / Cloud native et services IA</h2>
+<ol>
+<li><strong>alibaba/open-code-review</strong> — Un outil de revue de code validé à l&rsquo;échelle d&rsquo;Alibaba. Environ 4 492 étoiles gagnées cette semaine
+   https://github.com/alibaba/open-code-review</li>
+<li><strong>getarcaneapp/arcane</strong> — Un outil moderne de gestion Docker pour tout le monde. Environ 1 820 étoiles gagnées cette semaine
+   https://github.com/getarcaneapp/arcane</li>
+<li><strong>agent-substrate/substrate</strong> — Le système central d&rsquo;Agent Substrate. Environ 1 263 étoiles gagnées cette semaine
+   https://github.com/agent-substrate/substrate</li>
+<li><strong>runkids/skillshare</strong> — Une seule commande pour synchroniser les skills, agents, MCP et plugins vers tous les outils CLI d&rsquo;IA, pratique pour le partage en équipe. Environ 178 étoiles gagnées cette semaine
+   https://github.com/runkids/skillshare</li>
+<li><strong>Tencent/LoopForge</strong> — Un workflow de livraison d&rsquo;agents de codage auto-hébergé : orchestrer CodeBuddy, Codex et Claude Code avec des scripts et des étapes d&rsquo;approbation humaine. Environ 3 540 étoiles gagnées cette semaine, 5 271 au total
+   https://github.com/Tencent/LoopForge</li>
+</ol>
+<p>À noter également : JuliusBrussee/caveman (+2 279 cette semaine, deuxième semaine consécutive au classement), docker/compose (+641 cette semaine), opensandbox-group/OpenSandbox (+416 cette semaine, deuxième semaine consécutive au classement), aquasecurity/trivy (+289 cette semaine), cli/cli (+156 cette semaine).</p>
+<hr />
+<h2>7. Top 5 Java / Android et rétro-ingénierie</h2>
+<p><em>Selon l&rsquo;ordre d&rsquo;affichage du classement hebdomadaire Java de GitHub Trending ; le classement Java est globalement en retrait cette semaine, et le top 5 est majoritairement composé de projets établis ayant gagné moins de 200 étoiles dans la semaine</em></p>
+<ol>
+<li><strong>openjdk/jdk</strong> — Le développement de la ligne principale du JDK. Environ 34 étoiles gagnées cette semaine, 23 556 au total
+   https://github.com/openjdk/jdk</li>
+<li><strong>jeecgboot/JeecgBoot</strong> — Une plateforme low-code IA gratuite et open source, la base open source pour construire des systèmes métier complexes à l&rsquo;ère de l&rsquo;IA ; les AI Skills génèrent un système complet en une phrase. Environ 95 étoiles gagnées cette semaine, 48 550 au total
+   https://github.com/jeecgboot/JeecgBoot</li>
+<li><strong>SeleniumHQ/selenium</strong> — Un framework d&rsquo;automatisation de navigateur et son écosystème. Environ 27 étoiles gagnées cette semaine, 34 601 au total
+   https://github.com/SeleniumHQ/selenium</li>
+<li><strong>jean-voila/FeurStagram</strong> — Un Instagram sans Reels, sans flux ni publicité : une application Instagram Android open source et mise à jour, qui conserve les messages privés et les Stories. Environ 154 étoiles gagnées cette semaine, 1 410 au total
+   https://github.com/jean-voila/FeurStagram</li>
+<li><strong>TGX-Android/Telegram-X</strong> — Le client alternatif officiel de Telegram X (Android). Environ 39 étoiles gagnées cette semaine, 6 223 au total
+   https://github.com/TGX-Android/Telegram-X</li>
+</ol>
+<p>À noter également : termux/termux-app (+560 cette semaine, le plus grand nombre d&rsquo;étoiles gagnées du classement Java cette semaine), elastic/elasticsearch (+389 cette semaine), TeamNewPipe/NewPipe (+248 cette semaine), MewX/light-novel-library_Wenku8_Android (+151 cette semaine), keycloak/keycloak (+148 cette semaine), LSPosed/LSPosed (+125 cette semaine).</p>
+<hr />
+<h2>4 projets à essayer pour Xtop</h2>
+<p>En lien avec les directions que vous avez déjà mises en favori (outils IA/Agent, modèles locaux, MCP) et les projets sur lesquels vous travaillez :</p>
+<ol>
+<li><strong>tradermonty/claude-trading-skills</strong> — Un paquet de skills de trading : analyse de marché, graphiques techniques, calendrier économique, sélection d&rsquo;actions et développement de stratégies, dans le même workflow que votre plateforme de trading et votre rapport crypto du soir ; vous pouvez comparer directement la structure de ses skills pour organiser votre propre processus d&rsquo;analyse des cours</li>
+<li><strong>andrewyng/openworker</strong> — L&rsquo;agent de bureau de l&rsquo;équipe d&rsquo;Andrew Ng, avec l&rsquo;architecture par défaut « approbation, audit, sandbox » ; si votre plateforme de trading doit ajouter des alertes automatisées ou une exécution automatique, sa conception de contrôle à quatre niveaux (ligne rouge stricte, autorisation graduée, piste d&rsquo;audit, sandbox) est le modèle le plus intéressant à copier</li>
+<li><strong>backnotprop/plannotator</strong> — Le premier du classement général cette semaine, un espace de travail pour « l&rsquo;humain dans la boucle de l&rsquo;agent » ; quand vous utilisez un agent pour écrire le code de votre plateforme de trading, l&rsquo;utiliser comme centre pour relire le code, annoter et envoyer des retours économise plus de contexte que de coller du code dans la fenêtre de chat</li>
+<li><strong>alibaba/open-code-review</strong> — Une revue de code combinant pipeline déterministe et agent LLM, avec des ensembles de règles intégrés pour les NPE, la sécurité des threads, les XSS, les injections SQL, entre autres ; faites-le tourner sur le backend de votre plateforme de trading pour voir quels problèmes il détecte</li>
+</ol>
+<hr />
+<h2>Sources des données</h2>
+<ul>
+<li>Classement hebdomadaire officiel GitHub Trending : https://github.com/trending?since=weekly et ses classements par langage (python / typescript / javascript / rust / go / java), vérifié le 2026-11-21 08:00 CST ; le nombre d&rsquo;étoiles gagnées cette semaine est tiré de la page du classement officiel elle-même</li>
+<li>Instantané d&rsquo;un agrégateur tiers : gaojihao.github.io/github-hot/trending-weekly.html (mis à jour le 2026-11-21 à 04:41, heure de Pékin), utilisé pour recouper l&rsquo;ordre et les étoiles gagnées des 13 premiers du classement général</li>
+<li>Le total des étoiles provient d&rsquo;une requête en temps réel à l&rsquo;API GitHub (autour du 2026-11-21 08:00) ; le total de l&rsquo;instantané diffère légèrement du nombre en temps réel de l&rsquo;API (par exemple plannotator : 13 855 dans l&rsquo;instantané, 13 888 en temps réel via l&rsquo;API), la page officielle / l&rsquo;API faisant foi</li>
+<li>Par rapport au numéro précédent (2026-11-14) : le top 5 du classement général a entièrement changé, seuls anthropics/skills, OpenMausBot, agent-browser, codex-security, daily_stock_analysis, marketingskills, agent-skills, caveman, OpenSandbox, termux, elasticsearch, NewPipe, keycloak et quelques autres projets figurent au classement en continu ; le thème passe de l&rsquo;« environnement d&rsquo;exécution des agents + sécurité des agents » au « contrôle par l&rsquo;humain dans la boucle + verticalisation des skills + revue de code en conditions réelles », tandis que les projets d&rsquo;équipes chinoises comme Alibaba et Tencent émergent en nombre et que le classement Java est globalement en retrait</li>
+</ul>
+<p><em>Note : les chiffres de performance annoncés par les projets (comme la réduction de tokens ou la vitesse d&rsquo;inférence) sont leurs propres benchmarks et n&rsquo;ont pas été reproduits par des tiers ; avant d&rsquo;adopter un projet, il est recommandé de le retester avec votre propre charge de travail.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

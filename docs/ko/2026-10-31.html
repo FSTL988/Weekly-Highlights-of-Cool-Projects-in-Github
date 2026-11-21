@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 인기 프로젝트 주보 — 최근 한 주</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-10-31.html">中文</option><option value="en" data-url="../en/2026-10-31.html">English</option><option value="fr" data-url="../fr/2026-10-31.html">Français</option><option value="ja" data-url="../ja/2026-10-31.html">日本語</option><option value="ko" data-url="2026-10-31.html" selected>한국어</option><option value="es" data-url="../es/2026-10-31.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← 홈</a></p>
+<h1>GitHub 인기 프로젝트 주보 — 최근 한 주</h1>
+<p><strong>기간:</strong> 2026-10-25 ~ 2026-10-31 (GitHub Trending <code>since=weekly</code>)
+<strong>확인 시간:</strong> 2026-10-31 07:58 CST (Asia/Shanghai)
+<strong>집계 기준:</strong> 순위는 GitHub 공식 Trending 주간 순위의 표시 순서를 기준으로 합니다. 이번 주 증가 스타 수는 제3자 집계 사이트 스냅샷(2026-10-31 02:08 베이징 시간)을 인용했으며, 집계 사이트마다 수집 시점이 달라 증가 스타 수에 차이가 있을 수 있습니다. 공식 순위의 표시 순서는 증가 스타 수 순서와 완전히 일치하지 않습니다.</p>
+<hr />
+<h2>이번 주 개요</h2>
+<p>이번 주의 키워드는 여전히 <strong>Agent 스킬(skills)</strong> 이지만, 흐름은 &ldquo;스킬을 더 많이 만드는 것&rdquo;에서 &ldquo;스킬을 잘 관리하고 Agent에게 더 좋은 취향을 갖게 하는 것&rdquo;으로 바뀌었습니다.</p>
+<ol>
+<li><strong>스킬 안전과 품질이 새로운 초점</strong> — 전체 1위 cloudflare/security-audit-skill(한 주 +14,320 스타)은 Agent 스스로 다단계 보안 감사를 하게 합니다. NVIDIA의 SkillSpector는 스킬 안의 프롬프트 인젝션, 악성 코드, 데이터 유출을 전문적으로 스캔합니다. 스킬을 많이 설치할수록 스킬 자체를 검사해 줄 누군가가 더 필요합니다.</li>
+<li><strong>대기업이 직접 스킬을 내놓기 시작</strong> — Anthropic이 지식 근로자를 위한 knowledge-work-plugins를 출시했고, AWS가 공식 agent-toolkit-for-aws를 출시했으며, Anthropic의 skills 저장소도 계속 순위에 오르고 있습니다. 스킬 배포가 커뮤니티 자발적 움직임에서 공식 기본 사양으로 바뀌고 있습니다.</li>
+<li><strong>Agent가 &ldquo;취향&rdquo;과 &ldquo;미감&rdquo;을 말하기 시작</strong> — pbakaus/impeccable(한 주 +9,713 스타)은 Agent에게 디자인 어휘를 주고, taste-skill과 jakubkrehel/skills는 Agent에게 인터페이스를 만들고 아트 디렉션을 하도록 가르칩니다. AI가 쓴 페이지가 볼 만한지, 이제 진지하게 관리하는 사람이 생겼습니다.</li>
+<li><strong>금융 Agent 열기가 다시 상승</strong> — TauricResearch/TradingAgents(한 주 +5,557 스타)가 전체 상위 5위권으로 돌아오면서 다중 Agent 트레이딩 프레임워크가 다시 주목받고 있습니다. 동시에 Rust 순위에는 WiFi 신호 감지, 로봇 오리 등 경계를 넘나드는 프로젝트가 등장했습니다.</li>
+</ol>
+<hr />
+<h2>1. 전체 Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>언어</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>cloudflare/security-audit-skill</td>
+<td>JavaScript</td>
+<td>프로그래밍 Agent가 다단계 보안 감사를 수행하도록 함. 독립 검증, 기계가 읽을 수 있는 결과. 이번 주 약 14,320 스타 증가</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AgriciDaniel/claude-seo</td>
+<td>Python</td>
+<td>Claude Code 범용 SEO 스킬: 26개 하위 스킬 + 19개 하위 에이전트. 기술 SEO, E-E-A-T, schema, GEO/AEO 등을 다룹니다. 이번 주 약 4,110 스타 증가</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pbakaus/impeccable</td>
+<td>Rust</td>
+<td>코딩 Agent를 위한 디자인 어휘: 정교하고 대담한 디자인을 쓰도록 이끌고, 리뷰 시 critique와 audit을 하며, AI 티 나는 페이지가 배포되기 전에 가로챕니다. 이번 주 약 9,713 스타 증가</td>
+</tr>
+<tr>
+<td>4</td>
+<td>obra/superpowers</td>
+<td>Shell</td>
+<td>Agent 스킬 프레임워크 및 소프트웨어 개발 방법론. 이번 주 약 4,894 스타 증가</td>
+</tr>
+<tr>
+<td>5</td>
+<td>TauricResearch/TradingAgents</td>
+<td>Python</td>
+<td>다중 Agent LLM 금융 트레이딩 프레임워크. 이번 주 약 5,557 스타 증가</td>
+</tr>
+</tbody>
+</table></div>
+<p>바로 뒤를 잇는 프로젝트: multica-ai/andrej-karpathy-skills(이번 주 +4,250), Leonxlnx/taste-skill(이번 주 +4,359), jakubkrehel/skills, pingdotgg/t3code, anthropics/knowledge-work-plugins, affaan-m/ECC(이번 주 +6,594), anthropics/skills, ruvnet/ruflo.</p>
+<p>프로젝트 링크:
+- https://github.com/cloudflare/security-audit-skill
+- https://github.com/AgriciDaniel/claude-seo
+- https://github.com/pbakaus/impeccable
+- https://github.com/obra/superpowers
+- https://github.com/TauricResearch/TradingAgents</p>
+<hr />
+<h2>2. Python / AI 및 데이터 Top 5</h2>
+<ol>
+<li><strong>AgriciDaniel/claude-seo</strong> — Claude Code 범용 SEO 스킬, 26개 하위 스킬 + 19개 하위 에이전트
+   https://github.com/AgriciDaniel/claude-seo</li>
+<li><strong>TauricResearch/TradingAgents</strong> — 다중 Agent LLM 금융 트레이딩 프레임워크
+   https://github.com/TauricResearch/TradingAgents</li>
+<li><strong>anthropics/knowledge-work-plugins</strong> — Anthropic 공식 플러그인 라이브러리. 주로 Claude Cowork의 지식 근로자를 대상으로 합니다
+   https://github.com/anthropics/knowledge-work-plugins</li>
+<li><strong>anthropics/skills</strong> — Anthropic 공식 Agent Skills 공개 저장소
+   https://github.com/anthropics/skills</li>
+<li><strong>aws/agent-toolkit-for-aws</strong> — AWS 공식 MCP 서버, 스킬 및 플러그인. AI Agent가 AWS 위에서 구축하도록 돕습니다
+   https://github.com/aws/agent-toolkit-for-aws</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: higgsfield-ai/skills, NVIDIA/SkillSpector(스킬의 보안 위험을 스캔), sgl-project/sglang, debpalash/VoiceStudio, vllm-project/vllm, HKUDS/DeepTutor(평생 개인 맞춤형 가정교사).</p>
+<hr />
+<h2>3. TypeScript / 프론트엔드 및 Agent 도구 Top 5</h2>
+<ol>
+<li><strong>pingdotgg/t3code</strong> — T3 팀의 프로그래밍 Agent 도구
+   https://github.com/pingdotgg/t3code</li>
+<li><strong>ruvnet/ruflo</strong> — Agent 클러스터 harness(2주 연속 순위 진입)
+   https://github.com/ruvnet/ruflo</li>
+<li><strong>gitroomhq/postiz-app</strong> — Agent화된 소셜 미디어 스케줄링 도구
+   https://github.com/gitroomhq/postiz-app</li>
+<li><strong>anomalyco/opencode</strong> — 오픈소스 프로그래밍 Agent
+   https://github.com/anomalyco/opencode</li>
+<li><strong>google-gemini/gemini-cli</strong> — Gemini를 터미널로 가져오는 오픈소스 AI Agent
+   https://github.com/google-gemini/gemini-cli</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: anthropics/sandbox-runtime(경량 프로세스 샌드박스), heygen-com/hyperframes(HTML을 써서 영상 생성), JetBrains/thinkrail, microsoft/skill-recorder(화면 조작을 녹화해 재사용 가능한 스킬로 만듦), langfuse/langfuse.</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — 프로그래밍 Agent가 다단계 보안 감사를 수행하도록 함. 독립 검증, 기계가 읽을 수 있는 결과. 이번 주 약 14,320 스타 증가
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>Leonxlnx/taste-skill</strong> — 코딩 Agent에게 &ldquo;취향&rdquo;을 주는 스킬: 아트 디렉션, 참고 이미지, 브라우저 실측으로 보편적인 AI 페이지를 거부합니다
+   https://github.com/Leonxlnx/taste-skill</li>
+<li><strong>affaan-m/ECC</strong> — Agent harness 성능 최적화 시스템: 스킬, 본능, 기억, 보안 및 연구 우선 개발
+   https://github.com/affaan-m/ECC</li>
+<li><strong>hmjz100/LinkSwift</strong> — 클라우드 드라이브 직링크 다운로드 도구. 바이두 클라우드 / 알리윈 드라이브 / 중국이동 클라우드 / 톈이 클라우드 / Xunlei 클라우드 / Quark 클라우드 / UC 클라우드 / 123 클라우드 등 8대 클라우드 드라이브를 지원합니다
+   https://github.com/hmjz100/LinkSwift</li>
+<li><strong>citrolabs/ego-lite</strong> — AI Agent를 위한 가장 빠른 브라우저: 이미 로그인된 브라우저 상태를 공유해 브라우저 자동화를 하며, 비용도 설정도 들지 않습니다
+   https://github.com/citrolabs/ego-lite</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: OpenWhispr/openwhispr(로컬 음성-텍스트 변환), ulsklyc/yuvomi(셀프 호스팅 가족 플래너), nodejs/node.</p>
+<hr />
+<h2>5. Rust / 시스템 도구 Top 5</h2>
+<ol>
+<li><strong>pbakaus/impeccable</strong> — 코딩 Agent를 위한 디자인 어휘. 이번 주 약 9,713 스타 증가
+   https://github.com/pbakaus/impeccable</li>
+<li><strong>akitaonrails/ai-memory</strong> — 프로그래밍 Agent CLI를 위한 장기 기억. 서로 다른 Agent 벤더 간 핸드오프(handoff)를 지원합니다
+   https://github.com/akitaonrails/ai-memory</li>
+<li><strong>agentgateway/agentgateway</strong> — 차세대 Agentic Proxy. AI Agent와 MCP 서버를 대상으로 합니다
+   https://github.com/agentgateway/agentgateway</li>
+<li><strong>pollen-robotics/microduck</strong> — 아주 작은 이족 보행 오리 로봇 🦆
+   https://github.com/pollen-robotics/microduck</li>
+<li><strong>macro-inc/macro</strong> — 통합 워크스페이스: 메일, 채팅, 문서, 작업, Agent, 통화 및 CRM을 한곳에 모아 AI 기억을 공유합니다
+   https://github.com/macro-inc/macro</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: xerj-org/xerj, ruvnet/RuView(WiFi 신호로 실시간 공간 감지 및 생체 신호 모니터링), ZSeven-W/openpencil(AI 네이티브 벡터 디자인 도구), NVIDIA/cuda-rust, rustdesk/rustdesk.</p>
+<hr />
+<h2>6. Go / 클라우드 네이티브 및 AI 서비스 Top 5</h2>
+<ol>
+<li><strong>infiniflow/ragflow</strong> — 오픈소스 RAG 엔진. 최신 RAG와 Agent 능력을 융합해 LLM의 컨텍스트 레이어로 만듭니다
+   https://github.com/infiniflow/ragflow</li>
+<li><strong>slavakurilyak/awesome-ai-agents</strong> — 300개 이상의 Agent AI 리소스 엄선 목록
+   https://github.com/slavakurilyak/awesome-ai-agents</li>
+<li><strong>multica-ai/multica</strong> — 인간과 AI Agent가 한 팀처럼 협업하게 함. 오픈소스, 셀프 호스팅 가능합니다
+   https://github.com/multica-ai/multica</li>
+<li><strong>QuantumNous/new-api</strong> — 오픈소스 AI 게이트웨이: 셀프 호스팅 LLM 게이트웨이로 OpenAI / Claude / Gemini API와 호환되며, 모델 라우팅, 접근 제어, 사용량 과금을 제공합니다
+   https://github.com/QuantumNous/new-api</li>
+<li><strong>plandex-ai/plandex</strong> — 오픈소스 AI 프로그래밍 Agent. 대규모 프로젝트와 실제 작업을 대상으로 합니다
+   https://github.com/plandex-ai/plandex</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: router-for-me/CLIProxyAPI, grafana/loki, wailsapp/wails, chaitin/SafeLine, ollama/ollama, tailscale/tailscale, github/gh-aw(GitHub Agentic Workflows).</p>
+<hr />
+<h2>7. Java / Android 및 리버싱 Top 5</h2>
+<p><em>GitHub Trending Java 주간 순위 표시 순서 기준</em></p>
+<ol>
+<li><strong>krahets/hello-algo</strong> — 《Hello 알고리즘》: 애니메이션 그림 설명과 원클릭 실행이 가능한 자료구조 및 알고리즘 튜토리얼. 여러 언어와 여러 언어의 코드 구현을 지원합니다
+   https://github.com/krahets/hello-algo</li>
+<li><strong>TheAlgorithms/Java</strong> — Java로 구현한 모든 고전 알고리즘
+   https://github.com/TheAlgorithms/Java</li>
+<li><strong>kksimp/Mac.apk</strong> — Apple Silicon Mac에서 Android 앱을 네이티브로 실행
+   https://github.com/kksimp/Mac.apk</li>
+<li><strong>HMCL-dev/HMCL</strong> — 다기능 크로스플랫폼 Minecraft 런처(2주 연속 순위 진입)
+   https://github.com/HMCL-dev/HMCL</li>
+<li><strong>DependencyTrack/dependency-track</strong> — 지능형 컴포넌트 분석 플랫폼. 소프트웨어 공급망 위험을 식별하고 낮춥니다
+   https://github.com/DependencyTrack/dependency-track</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: halo-dev/halo, alibaba/nacos, iBotPeaches/Apktool, spring-projects/spring-framework, elastic/elasticsearch, apache/flink, cryptomator/cryptomator.</p>
+<hr />
+<h2>Xtop이 직접 써 볼 만한 4개</h2>
+<p>당신이 이전에 Star를 누른 방향(AI/Agent 도구, 로컬 모델, MCP)과 당신이 진행 중인 프로젝트를 고려하면:</p>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — 이번 주 전체 1위. Agent 스스로 보안 감사를 하는 접근법은 당신의 Pro Crypto 프로젝트에 바로 쓸 수 있습니다. API key와 데이터베이스 설정을 감사해 보세요</li>
+<li><strong>NVIDIA/SkillSpector</strong> — 스킬을 많이 설치할수록 투독(poisoning)을 막아야 합니다. 스킬 안의 프롬프트 인젝션과 데이터 유출을 스캔하니, 새 스킬을 설치하기 전에 먼저 한 번 돌려보세요</li>
+<li><strong>pbakaus/impeccable</strong> — Agent에게 프론트엔드 페이지를 쓰게 한다면, 이 디자인 어휘가 완성품의 인상을 바로 끌어올리고 &ldquo;AI 티&rdquo;를 차단합니다</li>
+<li><strong>anthropics/sandbox-runtime</strong> — 경량 프로세스 샌드박스. 컨테이너 없이도 어떤 프로세스에든 파일 시스템과 네트워크 제한을 걸 수 있어, Agent의 도구 호출을 샌드박스에 가두기에 적합합니다</li>
+</ol>
+<hr />
+<h2>데이터 출처</h2>
+<ul>
+<li>GitHub Trending 공식 주간 순위: https://github.com/trending?since=weekly 및 각 언어별 하위 순위(python / typescript / javascript / rust / go / java), 2026-10-31 07:58 CST에 확인</li>
+<li>제3자 집계 스냅샷: gaojihao.github.io/github-hot/trending-weekly.html(2026-10-31 02:08 베이징 시간에 업데이트)</li>
+<li>지난 호(2026-10-24)와 비교: 전체 순위가 거의 전부 바뀌었고, ruflo, opencode, ECC, LinkSwift, ai-memory, xerj, ollama, HMCL, Apktool 등 소수 프로젝트만 2주 연속 순위에 올랐습니다. Agent 스킬 주제는 지난주부터 이어졌지만, 초점은 &ldquo;스킬 개수&rdquo;에서 &ldquo;스킬 안전과 품질&rdquo;로 옮겨갔습니다</li>
+</ul>
+<p><em>안내: 프로젝트가 스스로 밝힌 성능 수치(예: 토큰 축소, 추론 속도)는 모두 프로젝트 측 자체 벤치마크이며 제3자가 재현한 바 없으므로, 도입 전에 자신의 작업 부하로 다시 측정해 보길 권장합니다.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

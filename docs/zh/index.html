@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Highlights</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="index.html" selected>中文</option><option value="en" data-url="../en/index.html">English</option><option value="fr" data-url="../fr/index.html">Français</option><option value="ja" data-url="../ja/index.html">日本語</option><option value="ko" data-url="../ko/index.html">한국어</option><option value="es" data-url="../es/index.html">Español</option></select></label></header>
+<main>
+<h1>Weekly Highlights</h1>
+<p>每周 GitHub 热门项目精选。来源是 GitHub Trending 官方周榜（<code>since=weekly</code>）及各语言子榜，按领域整理成清单；每周六早上 8 点更新一期，完整周报见 <code>reports/&lt;日期&gt;/</code>。</p>
+<blockquote>
+<p>说明：这里是项目清单版 — 项目以链接形式收录，不把上游仓库的代码本体复制进来。点击项目名即可跳转到原仓库。</p>
+</blockquote>
+<h2>最新一期：2026-11-21（2026-11-15 至 2026-11-21）</h2>
+<ul>
+<li>完整周报：<a href="2026-11-21.html">reports/2026-11-21/github-weekly-2026-11-21.md</a></li>
+</ul>
+<p>本周主线：Agent 从“能干活”走向“让人放心地干活”，同时“技能”继续向垂直场景扩散。
+1. 人在回路登顶 — backnotprop/plannotator 全站第一；吴恩达团队的 andrewyng/openworker 把审批、审计、沙箱做成默认架构；Tencent/LoopForge 也在交付流程里加了人工审批关卡。
+2. “技能”继续垂直化 — last30days-skill（调研）、claude-trading-skills（交易）、ffmpeg-skill（视频剪辑）、marketingskills（营销）同周上榜。
+3. 代码评审 Agent 进入大厂实战口径 — 阿里 alibaba/open-code-review（全站第四）、GoogleChrome/modern-web-guidance-src（全站第三）同周上榜。
+4. 中国团队项目集中冒头 — 阿里、腾讯、dream-num/univer、jeecgboot/JeecgBoot、jiangshan-map 同周在榜；Java 榜整体偏冷。</p>
+<h3>全站总榜 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a></td>
+<td>让人在 Agent 循环里保持掌控的工作区</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></td>
+<td>为 Stitch MCP 服务器设计的 Agent Skills 库</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></td>
+<td>让编码 Agent 跟上最新 Web 最佳实践</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></td>
+<td>阿里规模验证的代码评审工具</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></td>
+<td>跨平台调研任意话题的 Agent 技能</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Python / AI 与数据 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></td>
+<td>跨 Reddit、X、YouTube、HN 等平台调研任意话题的 Agent 技能</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/tradermonty/claude-trading-skills">tradermonty/claude-trading-skills</a></td>
+<td>给散户投资者的 Claude Code 交易技能</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a></td>
+<td>给编码 Agent 的本地视频编辑器</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a></td>
+<td>LLM 驱动的多市场股票智能分析系统</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/andrewyng/openworker">andrewyng/openworker</a></td>
+<td>吴恩达团队的桌面 Agent：AI 协作者 + Harness SDK</td>
+</tr>
+</tbody>
+</table></div>
+<h3>TypeScript / 前端与 Agent 工具 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a></td>
+<td>让人在 Agent 循环里保持掌控的工作区</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></td>
+<td>为 Stitch MCP 服务器设计的 Agent Skills 库</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></td>
+<td>让编码 Agent 跟上最新 Web 最佳实践</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a></td>
+<td>给编码 Agent 的 Chrome DevTools</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui-protocol/ag-ui</a></td>
+<td>Agent-User Interaction Protocol：把 Agent 带进前端应用</td>
+</tr>
+</tbody>
+</table></div>
+<h3>JavaScript Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/Anil-matcha/Open-Generative-AI">Anil-matcha/Open-Generative-AI</a></td>
+<td>无审查的开源 AI 视频平台替代品，800+ 模型</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/DeanChensj/jiangshan-map">DeanChensj/jiangshan-map</a></td>
+<td>江山时序 · 中国历史交互地图时间轴</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/coreyhaines31/marketingskills">coreyhaines31/marketingskills</a></td>
+<td>给 Claude Code 与 AI Agent 的营销技能</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/jquery/jquery">jquery/jquery</a></td>
+<td>jQuery JavaScript 库</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></td>
+<td>Agent harness 性能优化系统</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Rust / 系统工具 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a></td>
+<td>给 AI Agent 的浏览器自动化 CLI</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/block/buzz">block/buzz</a></td>
+<td>蜂群思维通信平台</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/ModernRelay/omnigraph">ModernRelay/omnigraph</a></td>
+<td>对象存储原生的图数据库</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/martin-olivier/airgorah">martin-olivier/airgorah</a></td>
+<td>WiFi 安全审计软件</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/crmne/zapfast">crmne/zapfast</a></td>
+<td>Rust + egui 的快速原生 WhatsApp 客户端</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Go / 云原生与 AI 服务 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></td>
+<td>阿里规模验证的代码评审工具</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/getarcaneapp/arcane">getarcaneapp/arcane</a></td>
+<td>面向所有人的现代 Docker 管理工具</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/agent-substrate/substrate">agent-substrate/substrate</a></td>
+<td>Agent Substrate 核心系统</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/runkids/skillshare">runkids/skillshare</a></td>
+<td>一条命令把技能同步到所有 AI CLI 工具</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/Tencent/LoopForge">Tencent/LoopForge</a></td>
+<td>自托管的编码 Agent 交付工作流</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Java / Android 与逆向 Top 5</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/openjdk/jdk">openjdk/jdk</a></td>
+<td>JDK 主线开发</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/jeecgboot/JeecgBoot">jeecgboot/JeecgBoot</a></td>
+<td>免费开源的 AI 低代码平台</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/SeleniumHQ/selenium">SeleniumHQ/selenium</a></td>
+<td>浏览器自动化框架与生态</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/jean-voila/FeurStagram">jean-voila/FeurStagram</a></td>
+<td>没有 Reels 与广告的开源 Instagram 应用</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/TGX-Android/Telegram-X">TGX-Android/Telegram-X</a></td>
+<td>Telegram X 官方替代客户端（Android）</td>
+</tr>
+</tbody>
+</table></div>
+<h2>往期周报</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>完整周报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-21</td>
+<td><a href="2026-11-21.html">reports/2026-11-21/github-weekly-2026-11-21.md</a></td>
+</tr>
+<tr>
+<td>2026-11-14</td>
+<td><a href="2026-11-14.html">reports/2026-11-14/github-weekly-2026-11-14.md</a></td>
+</tr>
+<tr>
+<td>2026-11-07</td>
+<td><a href="2026-11-07.html">reports/2026-11-07/github-weekly-2026-11-07.md</a></td>
+</tr>
+<tr>
+<td>2026-10-31</td>
+<td><a href="2026-10-31.html">reports/2026-10-31/github-weekly-2026-10-31.md</a></td>
+</tr>
+<tr>
+<td>2026-10-24</td>
+<td><a href="2026-10-24.html">reports/2026-10-24/github-weekly-2026-10-24.md</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2>数据来源</h2>
+<ul>
+<li>GitHub Trending 官方周榜：https://github.com/trending?since=weekly 及各语言子榜</li>
+<li>排名以官方周榜展示顺序为准；星数/增星来自第三方汇总站快照，不同来源因抓取时间不同会有差异</li>
+<li>项目自述的性能数字均为项目方自家基准，未经第三方复现</li>
+</ul>
+<h2>往期周报</h2>
+<ul class="issue-list">
+<li><a href="2026-10-24.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-10-24</span></li><li><a href="2026-10-31.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-10-31</span></li><li><a href="2026-11-07.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-07</span></li><li><a href="2026-11-14.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-14</span></li><li><a href="2026-11-21.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-21</span></li>
+</ul>
+
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

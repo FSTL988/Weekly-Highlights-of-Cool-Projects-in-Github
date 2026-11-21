@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 인기 프로젝트 주보 — 최근 한 주</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-21.html">中文</option><option value="en" data-url="../en/2026-11-21.html">English</option><option value="fr" data-url="../fr/2026-11-21.html">Français</option><option value="ja" data-url="../ja/2026-11-21.html">日本語</option><option value="ko" data-url="2026-11-21.html" selected>한국어</option><option value="es" data-url="../es/2026-11-21.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← 홈</a></p>
+<h1>GitHub 인기 프로젝트 주보 — 최근 한 주</h1>
+<p><strong>기간:</strong> 2026-11-15 ~ 2026-11-21 (GitHub Trending <code>since=weekly</code>)
+<strong>확인 시간:</strong> 2026-11-21 08:00 CST (Asia/Shanghai)
+<strong>집계 기준:</strong> 순위는 GitHub 공식 Trending 주간 순위의 표시 순서를 기준으로 합니다. 이번 주 증가 스타 수는 공식 순위 페이지 자체(&ldquo;X stars this week&rdquo;)에서 가져왔고, 전체 스타 수는 GitHub API 실시간 조회(2026-11-21 08:00 전후)와 제3자 집계 사이트 스냅샷(2026-11-21 04:41 베이징 시간)에서 가져왔습니다. 공식 순위의 표시 순서는 증가 스타 수 순서와 완전히 일치하지 않습니다.</p>
+<hr />
+<h2>이번 주 개요</h2>
+<p>이번 주의 핵심 흐름은 <strong>Agent가 &ldquo;일을 할 수 있는&rdquo; 단계에서 &ldquo;안심하고 일을 맡길 수 있는&rdquo; 단계로 나아가고, 동시에 &ldquo;스킬&rdquo;이 계속 수직 분야로 확산되는 것</strong> 입니다.</p>
+<ol>
+<li><strong>휴먼 인 더 루프(human-in-the-loop)가 정상에 오름</strong> — 전체 1위 backnotprop/plannotator는 &ldquo;Agent 루프 안에서 사람이 주도권을 유지하게 하는&rdquo; 워크스페이스입니다. Python 순위 5위 andrewyng/openworker(앤드류 응 팀)는 &ldquo;승인, 감사, 샌드박스&rdquo;를 데스크톱 Agent의 기본 아키텍처로 삼았습니다. Tencent/LoopForge도 딜리버리 과정에 인간 승인 단계를 추가했습니다. Agent가 일을 잘할수록 사람은 더 잘 지켜봐야 합니다.</li>
+<li><strong>&ldquo;스킬&rdquo;의 계속되는 수직화</strong> — 지난주까지만 해도 범용 스킬 팩이었는데, 이번 주에는 이미 구체적인 직종으로 갈라졌습니다. mvanhorn/last30days-skill(Reddit/X/YouTube/HN을 넘나드는 조사 스킬), tradermonty/claude-trading-skills(개인 투자자를 위한 트레이딩 스킬), kajisho5/ffmpeg-skill(로컬 영상 편집 스킬), coreyhaines31/marketingskills(마케팅 스킬)입니다. 스킬은 &ldquo;Agent의 플러그인&rdquo;에서 &ldquo;어떤 직업의 워크플로&rdquo;로 바뀌고 있습니다.</li>
+<li><strong>코드 리뷰 Agent가 대기업 실전 수준에 진입</strong> — 알리바바 alibaba/open-code-review(전체 4위, 전체 스타 54,766)는 &ldquo;알리바바 규모로 검증된 결정적 파이프라인 + LLM Agent&rdquo;를 내세웁니다. GoogleChrome/modern-web-guidance-src(전체 3위)는 코딩 Agent가 최신 웹 모범 사례를 따라가게 합니다. 리뷰와 규범이 Agent 정착의 다음 관문이 되었습니다.</li>
+<li><strong>Agent와 프론트엔드의 프로토콜 계층 등장</strong> — ag-ui-protocol/ag-ui(Agent-User Interaction Protocol), a2ui-project/a2ui(생성형 UI 프레임워크)가 같은 주에 순위에 올랐습니다. Agent는 더 이상 텍스트만 출력하지 않고, 앱 인터페이스 안에 직접 컴포넌트를 &ldquo;자라게&rdquo; 합니다.</li>
+<li><strong>중국 팀 프로젝트의 집중 등장</strong> — 알리바바, 텐센트, dream-num/univer, jeecgboot/JeecgBoot, DeanChensj/jiangshan-map(중국 역사 인터랙티브 지도)이 같은 주에 순위에 올라 코드 리뷰, Agent 딜리버리, 오피스 스위트, 로우코드, 문화 콘텐츠를 아울렀습니다.</li>
+<li><strong>베테랑이 순위 가장자리에서 계속 존재감 과시</strong> — jquery가 JS 순위 4위로 돌아왔고, openjdk/jdk, SeleniumHQ/selenium이 Java 순위를 이끌었습니다. affaan-m/ECC는 이번 주에 다시 5,598 스타가 늘어 전체 스타가 이미 307,847에 달했습니다. Agent 열풍 속에서도 베테랑 인프라의 스타 수 기반은 여전히 탄탄합니다.</li>
+</ol>
+<hr />
+<h2>1. 전체 Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>프로젝트</th>
+<th>언어</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>backnotprop/plannotator</td>
+<td>TypeScript</td>
+<td>Agent 루프 안에서 사람이 주도권을 유지할 수 있게 하는 워크스페이스: 다듬기, 의사결정, 계획, 주석 달기, 코드 리뷰를 하고, 피드백을 한 번의 클릭으로 Agent에 보냅니다. 이번 주 약 3,468 스타 증가, 전체 스타 13,888</td>
+</tr>
+<tr>
+<td>2</td>
+<td>google-labs-code/stitch-skills</td>
+<td>TypeScript</td>
+<td>Stitch MCP 서버를 위해 설계된 Agent Skills 라이브러리. Agent Skills 개방 표준을 따르며 Antigravity, Gemini CLI, Claude Code, Cursor와 호환됩니다. 이번 주 약 1,829 스타 증가, 전체 스타 11,022</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GoogleChrome/modern-web-guidance-src</td>
+<td>TypeScript</td>
+<td>코딩 Agent가 최신 웹 모범 사례를 따라가게 함. 이번 주 약 6,858 스타 증가, 전체 스타 9,522</td>
+</tr>
+<tr>
+<td>4</td>
+<td>alibaba/open-code-review</td>
+<td>Go</td>
+<td>알리바바 규모로 검증된 코드 리뷰 도구: 결정적 파이프라인 + LLM Agent. 행 단위의 정확한 코멘트와 내장 다국어 규칙 세트(NPE, 스레드 안전, XSS, SQL 인젝션)를 갖췄습니다. 이번 주 약 4,492 스타 증가, 전체 스타 54,766</td>
+</tr>
+<tr>
+<td>5</td>
+<td>mvanhorn/last30days-skill</td>
+<td>Python</td>
+<td>Reddit, X, YouTube, HN, Polymarket 및 전 웹을 넘나들며 어떤 주제든 조사하는 Agent 스킬. 근거 있는 요약을 출력합니다. 이번 주 약 3,179 스타 증가, 전체 스타 71,431</td>
+</tr>
+</tbody>
+</table></div>
+<p>바로 뒤를 잇는 프로젝트: dream-num/univer(이번 주 +7,248), meta/astryx(이번 주 +4,977), milind-soni/OpenMausBot(이번 주 +4,228), ag-ui-protocol/ag-ui(이번 주 +3,455), tradermonty/claude-trading-skills(이번 주 +3,385), ChromeDevTools/chrome-devtools-mcp(이번 주 +3,229), we-promise/sure(이번 주 +3,226), kajisho5/ffmpeg-skill(이번 주 +2,998).</p>
+<p>프로젝트 링크:
+- https://github.com/backnotprop/plannotator
+- https://github.com/google-labs-code/stitch-skills
+- https://github.com/GoogleChrome/modern-web-guidance-src
+- https://github.com/alibaba/open-code-review
+- https://github.com/mvanhorn/last30days-skill</p>
+<hr />
+<h2>2. Python / AI 및 데이터 Top 5</h2>
+<ol>
+<li><strong>mvanhorn/last30days-skill</strong> — Reddit, X, YouTube, HN, Polymarket 및 전 웹을 넘나들며 어떤 주제든 조사하는 Agent 스킬. 근거 있는 요약을 출력합니다. 이번 주 약 3,179 스타 증가
+   https://github.com/mvanhorn/last30days-skill</li>
+<li><strong>tradermonty/claude-trading-skills</strong> — 개인 투자자를 위한 Claude Code 트레이딩 스킬: 시장 분석, 기술 차트, 경제 캘린더, 종목 선별기 및 트레이딩 전략 개발. 이번 주 약 3,385 스타 증가
+   https://github.com/tradermonty/claude-trading-skills</li>
+<li><strong>kajisho5/ffmpeg-skill</strong> — 코딩 Agent를 위한 로컬 영상 편집기: 42개의 FFmpeg 도구 + 기계가 읽을 수 있는 계약 + MCP 서버. 편집, 자막, 재구성, 라우드니스 및 다중 플랫폼 내보내기를 지원하며, 클라우드도 API Key도 없습니다. 이번 주 약 2,998 스타 증가
+   https://github.com/kajisho5/ffmpeg-skill</li>
+<li><strong>ZhuLinsen/daily_stock_analysis</strong> — LLM 기반 다중 시장 주식 지능형 분석 시스템: 다중 출처 시세, 실시간 뉴스, 의사결정 대시보드 및 자동 푸시를 갖추고 무비용 정기 실행을 지원합니다(2주 연속 순위 진입). 이번 주 약 2,595 스타 증가
+   https://github.com/ZhuLinsen/daily_stock_analysis</li>
+<li><strong>andrewyng/openworker</strong> — 앤드류 응 팀의 데스크톱 Agent: 일상 업무의 AI 협업자 + Agent 앱을 만드는 Harness SDK. 승인, 감사 기록, 샌드박스가 기본 아키텍처이며, 자체 모델을 갖추고 로컬을 우선합니다. 이번 주 약 460 스타 증가
+   https://github.com/andrewyng/openworker</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: anthropics/skills(이번 주 +4,235, 5주 연속 순위 진입), elementalsouls/Claude-BugHunter(이번 주 +6,517, 82개의 버그 사냥 스킬 + 681개의 이미 공개된 취약점 패턴), jingyaogong/minimind(2시간 만에 처음부터 64M 대형 모델을 학습, 이번 주 +1,612), zhouxiaoka/autoclip(AI 영상 편집 데스크톱 도구, 이번 주 +717), FujiwaraChoki/supoclip(오픈소스 OpusClip 대안, 이번 주 +711), soxoj/maigret(사용자 이름으로 6K개 사이트에서 개인 프로필을 수집, 이번 주 +548).</p>
+<hr />
+<h2>3. TypeScript / 프론트엔드 및 Agent 도구 Top 5</h2>
+<ol>
+<li><strong>backnotprop/plannotator</strong> — Agent 루프 안에서 사람이 주도권을 유지할 수 있게 하는 워크스페이스. 이번 주 약 3,468 스타 증가
+   https://github.com/backnotprop/plannotator</li>
+<li><strong>google-labs-code/stitch-skills</strong> — Stitch MCP 서버를 위해 설계된 Agent Skills 라이브러리. 이번 주 약 1,829 스타 증가
+   https://github.com/google-labs-code/stitch-skills</li>
+<li><strong>GoogleChrome/modern-web-guidance-src</strong> — 코딩 Agent가 최신 웹 모범 사례를 따라가게 함. 이번 주 약 6,858 스타 증가
+   https://github.com/GoogleChrome/modern-web-guidance-src</li>
+<li><strong>ChromeDevTools/chrome-devtools-mcp</strong> — 코딩 Agent를 위한 Chrome DevTools. 이번 주 약 3,229 스타 증가
+   https://github.com/ChromeDevTools/chrome-devtools-mcp</li>
+<li><strong>ag-ui-protocol/ag-ui</strong> — Agent-User Interaction Protocol: Agent를 프론트엔드 앱으로 들여옴. 이번 주 약 3,455 스타 증가
+   https://github.com/ag-ui-protocol/ag-ui</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: dream-num/univer(이번 주 +7,248, AI 오피스 스위트 SDK), meta/astryx(이번 주 +4,977, Agent-ready 오픈소스 디자인 시스템), milind-soni/OpenMausBot(이번 주 +4,228, 2주 연속 순위 진입), openai/codex-security(이번 주 +2,150, 2주 연속 순위 진입), CopilotKit/OpenBot(이번 주 +1,624), QwenLM/qwen-code(터미널 안의 오픈소스 AI 코딩 Agent, 이번 주 +1,190), lobehub/lobehub(이번 주 +751), a2ui-project/a2ui(생성형 UI 프레임워크, 이번 주 +480).</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>Anil-matcha/Open-Generative-AI</strong> — 검열 없는 오픈소스 AI 영상 플랫폼 대안: 800개 이상의 모델로 이미지와 영상을 무료로 생성하며, 셀프 호스팅, MIT 라이선스(JS 순위 2주 연속 1위). 이번 주 약 1,168 스타 증가
+   https://github.com/Anil-matcha/Open-Generative-AI</li>
+<li><strong>DeanChensj/jiangshan-map</strong> — 강산시서 · 중국 역사 인터랙티브 지도 타임라인(403 BCE – Present). 18개 왕조, 198개 영토 스냅샷, 고금 지명 계보 및 시 노선. 이번 주 약 2,960 스타 증가
+   https://github.com/DeanChensj/jiangshan-map</li>
+<li><strong>coreyhaines31/marketingskills</strong> — Claude Code와 AI Agent를 위한 마케팅 스킬: CRO, 카피라이팅, SEO, 데이터 분석 및 성장 엔지니어링(2주 연속 순위 진입). 이번 주 약 1,572 스타 증가
+   https://github.com/coreyhaines31/marketingskills</li>
+<li><strong>jquery/jquery</strong> — jQuery JavaScript 라이브러리. 베테랑 프로젝트가 순위에 복귀했습니다. 이번 주 약 523 스타 증가
+   https://github.com/jquery/jquery</li>
+<li><strong>affaan-m/ECC</strong> — Agent harness 성능 최적화 시스템: 스킬, 본능, 기억, 보안 및 연구 우선 개발. Claude Code, Codex, OpenCode, Cursor 등을 다룹니다. 이번 주 약 5,598 스타 증가, 전체 스타 307,847
+   https://github.com/affaan-m/ECC</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: addyosmani/agent-skills(이번 주 +2,765, 2주 연속 순위 진입), sveltejs/svelte(이번 주 +1,669), louislam/uptime-kuma(이번 주 +1,146), vercel-labs/agent-skills(Vercel 공식 Agent 스킬 모음, 이번 주 +613), GoogleChrome/lighthouse(이번 주 +115).</p>
+<hr />
+<h2>5. Rust / 시스템 도구 Top 5</h2>
+<ol>
+<li><strong>vercel-labs/agent-browser</strong> — AI Agent를 위한 브라우저 자동화 CLI(2주 연속 Rust 순위 1위). 이번 주 약 2,691 스타 증가, 전체 스타 53,079
+   https://github.com/vercel-labs/agent-browser</li>
+<li><strong>block/buzz</strong> — 스웜 사고 커뮤니케이션 플랫폼. 이번 주 약 549 스타 증가, 전체 스타 37,630
+   https://github.com/block/buzz</li>
+<li><strong>ModernRelay/omnigraph</strong> — 오브젝트 스토리지 네이티브 그래프 데이터베이스. 분기와 타입화된 온톨로지를 지원합니다. 이번 주 약 1,094 스타 증가, 전체 스타 3,152
+   https://github.com/ModernRelay/omnigraph</li>
+<li><strong>martin-olivier/airgorah</strong> — WiFi 보안 감사 소프트웨어. 이번 주 약 1,560 스타 증가, 전체 스타 6,737
+   https://github.com/martin-olivier/airgorah</li>
+<li><strong>crmne/zapfast</strong> — Rust + egui로 쓴 빠른 네이티브 WhatsApp 클라이언트. 이번 주 약 523 스타 증가, 전체 스타 4,819
+   https://github.com/crmne/zapfast</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: rustfs/rustfs(S3 호환 고성능 오브젝트 스토리지, 이번 주 +310), ViceVerse-cz/Serein(100% 네이티브 Rust Discord 클라이언트, 이번 주 +215).</p>
+<hr />
+<h2>6. Go / 클라우드 네이티브 및 AI 서비스 Top 5</h2>
+<ol>
+<li><strong>alibaba/open-code-review</strong> — 알리바바 규모로 검증된 코드 리뷰 도구. 이번 주 약 4,492 스타 증가
+   https://github.com/alibaba/open-code-review</li>
+<li><strong>getarcaneapp/arcane</strong> — 모두를 위한 모던 Docker 관리 도구. 이번 주 약 1,820 스타 증가
+   https://github.com/getarcaneapp/arcane</li>
+<li><strong>agent-substrate/substrate</strong> — Agent Substrate 핵심 시스템. 이번 주 약 1,263 스타 증가
+   https://github.com/agent-substrate/substrate</li>
+<li><strong>runkids/skillshare</strong> — 한 번의 명령으로 스킬, Agent, MCP, 플러그인을 모든 AI CLI 도구에 동기화해 팀 공유를 편하게 합니다. 이번 주 약 178 스타 증가
+   https://github.com/runkids/skillshare</li>
+<li><strong>Tencent/LoopForge</strong> — 셀프 호스팅 코딩 Agent 딜리버리 워크플로: 스크립트와 인간 승인 단계로 CodeBuddy, Codex, Claude Code를 편성합니다. 이번 주 약 3,540 스타 증가, 전체 스타 5,271
+   https://github.com/Tencent/LoopForge</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: JuliusBrussee/caveman(이번 주 +2,279, 2주 연속 순위 진입), docker/compose(이번 주 +641), opensandbox-group/OpenSandbox(이번 주 +416, 2주 연속 순위 진입), aquasecurity/trivy(이번 주 +289), cli/cli(이번 주 +156).</p>
+<hr />
+<h2>7. Java / Android 및 리버싱 Top 5</h2>
+<p><em>GitHub Trending Java 주간 순위 표시 순서 기준. 이번 주 Java 순위는 전반적으로 조용했고, 상위 5개는 대부분 주간 증가 스타가 200을 밑도는 베테랑 프로젝트입니다</em></p>
+<ol>
+<li><strong>openjdk/jdk</strong> — JDK 메인라인 개발. 이번 주 약 34 스타 증가, 전체 스타 23,556
+   https://github.com/openjdk/jdk</li>
+<li><strong>jeecgboot/JeecgBoot</strong> — 무료 오픈소스 AI 로우코드 플랫폼. AI 시대에 복잡한 비즈니스 시스템을 구축하는 오픈소스 기반이며, AI Skills로 한 문장만으로 완전한 시스템을 생성합니다. 이번 주 약 95 스타 증가, 전체 스타 48,550
+   https://github.com/jeecgboot/JeecgBoot</li>
+<li><strong>SeleniumHQ/selenium</strong> — 브라우저 자동화 프레임워크 및 생태계. 이번 주 약 27 스타 증가, 전체 스타 34,601
+   https://github.com/SeleniumHQ/selenium</li>
+<li><strong>jean-voila/FeurStagram</strong> — Reels, 피드, 광고가 없는 Instagram: 오픈소스이며 업데이트 가능한 Android용 Instagram 앱으로, 다이렉트 메시지와 Stories를 유지합니다. 이번 주 약 154 스타 증가, 전체 스타 1,410
+   https://github.com/jean-voila/FeurStagram</li>
+<li><strong>TGX-Android/Telegram-X</strong> — Telegram X 공식 대체 클라이언트(Android). 이번 주 약 39 스타 증가, 전체 스타 6,223
+   https://github.com/TGX-Android/Telegram-X</li>
+</ol>
+<p>뒤이어 주목할 만한 프로젝트: termux/termux-app(이번 주 +560, 이번 주 Java 순위에서 실제 증가 스타가 가장 많음), elastic/elasticsearch(이번 주 +389), TeamNewPipe/NewPipe(이번 주 +248), MewX/light-novel-library_Wenku8_Android(이번 주 +151), keycloak/keycloak(이번 주 +148), LSPosed/LSPosed(이번 주 +125).</p>
+<hr />
+<h2>Xtop이 직접 써 볼 만한 4개</h2>
+<p>당신이 이전에 Star를 누른 방향(AI/Agent 도구, 로컬 모델, MCP)과 당신이 진행 중인 프로젝트를 고려하면:</p>
+<ol>
+<li><strong>tradermonty/claude-trading-skills</strong> — 트레이딩 스킬 팩: 시장 분석, 기술 차트, 경제 캘린더, 종목 선별기 및 전략 개발. 당신의 트레이딩 플랫폼, 암호화폐 저녁 일보와 같은 워크플로이니, 그 스킬 구조를 그대로 대조해 당신만의 시세 분석 흐름을 정리할 수 있습니다</li>
+<li><strong>andrewyng/openworker</strong> — 앤드류 응 팀의 데스크톱 Agent. &ldquo;승인, 감사, 샌드박스&rdquo;가 기본 아키텍처입니다. 당신의 트레이딩 플랫폼에 자동 알림이나 자동 실행을 추가하려 한다면, 그 4단계 통제 설계(하드 라인, 단계별 승인, 감사 기록, 샌드박스)가 가장 베낄 만한 모범 답안입니다</li>
+<li><strong>backnotprop/plannotator</strong> — 이번 주 전체 1위인 &ldquo;Agent 루프 안에 사람이 있는&rdquo; 워크스페이스. Agent로 트레이딩 플랫폼 코드를 쓸 때, 코드 리뷰, 주석 달기, 피드백 전송의 중심축으로 쓰면 채팅창에 코드를 왔다 갔다 붙이는 것보다 컨텍스트를 훨씬 아낄 수 있습니다</li>
+<li><strong>alibaba/open-code-review</strong> — 결정적 파이프라인 + LLM Agent의 코드 리뷰. NPE, 스레드 안전, XSS, SQL 인젝션 등의 규칙 세트가 내장되어 있습니다. 당신의 트레이딩 플랫폼 백엔드에 한 번 돌려서 어떤 문제를 잡아내는지 확인해 보세요</li>
+</ol>
+<hr />
+<h2>데이터 출처</h2>
+<ul>
+<li>GitHub Trending 공식 주간 순위: https://github.com/trending?since=weekly 및 각 언어별 하위 순위(python / typescript / javascript / rust / go / java), 2026-11-21 08:00 CST에 확인. 이번 주 증가 스타 수는 공식 순위 페이지 자체에서 가져왔습니다</li>
+<li>제3자 집계 스냅샷: gaojihao.github.io/github-hot/trending-weekly.html(2026-11-21 04:41 베이징 시간에 업데이트). 전체 상위 13위의 순서와 증가 스타 수를 교차 확인하는 데 사용했습니다</li>
+<li>전체 스타 수는 GitHub API 실시간 조회(2026-11-21 08:00 전후)에서 가져왔습니다. 스냅샷 사이트의 전체 스타 수와 API 실시간 수치에는 작은 차이가 있습니다(예: plannotator는 스냅샷 13,855, API 실시간 13,888). 공식 페이지/API를 기준으로 합니다</li>
+<li>지난 호(2026-11-14)와 비교: 전체 상위 5개가 모두 새로 바뀌었고, anthropics/skills, OpenMausBot, agent-browser, codex-security, daily_stock_analysis, marketingskills, agent-skills, caveman, OpenSandbox, termux, elasticsearch, NewPipe, keycloak 등 소수 프로젝트만 계속 순위에 올랐습니다. 주제는 &ldquo;Agent 실행 환경 + Agent 보안&rdquo;에서 &ldquo;휴먼 인 더 루프 통제 + 스킬 수직화 + 코드 리뷰 실전&rdquo;으로 옮겨갔고, 동시에 알리바바, 텐센트 등 중국 팀 프로젝트가 집중적으로 등장했으며, Java 순위는 전반적으로 조용했습니다</li>
+</ul>
+<p><em>안내: 프로젝트가 스스로 밝힌 성능 수치(예: 토큰 축소, 추론 속도)는 모두 프로젝트 측 자체 벤치마크이며 제3자가 재현한 바 없으므로, 도입 전에 자신의 작업 부하로 다시 측정해 보길 권장합니다.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

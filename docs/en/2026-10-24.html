@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Trending Projects Weekly — This Past Week</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-10-24.html">中文</option><option value="en" data-url="2026-10-24.html" selected>English</option><option value="fr" data-url="../fr/2026-10-24.html">Français</option><option value="ja" data-url="../ja/2026-10-24.html">日本語</option><option value="ko" data-url="../ko/2026-10-24.html">한국어</option><option value="es" data-url="../es/2026-10-24.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← Home</a></p>
+<h1>GitHub Trending Projects Weekly — This Past Week</h1>
+<p><strong>Time window:</strong> 2026-10-18 to 2026-10-24 (GitHub Trending <code>since=weekly</code>)
+<strong>Verified at:</strong> 2026-10-24 13:54 CST (Asia/Shanghai)
+<strong>Methodology:</strong> Rankings follow GitHub&rsquo;s official Trending weekly chart display order; weekly stars gained cite a third-party aggregator snapshot (2026-10-24 12:55 Beijing time), and figures may differ across aggregators due to different crawl times.</p>
+<hr />
+<h2>This Week at a Glance</h2>
+<p>This week&rsquo;s main thread is unmistakable: nearly every chart is dominated by AI agents / coding assistants.</p>
+<ol>
+<li><strong>Agent engineering shifts from adding features to cutting costs</strong> — context-mode, xerj, ECC, and caveman are all solving the same problem: making agents read less, write less, and burn fewer tokens. The context window is a finite resource, and tool outputs and file reads are the biggest sources of consumption.</li>
+<li><strong>Plugin / skill distribution becomes institutionalized</strong> — Anthropic launches an official plugin directory, superpowers turns development methodology into installable artifacts, and K-Dense-AI packs the research workflow into 177 skills.</li>
+<li><strong>Inference and creative tools land locally at the same time</strong> — DeepSeek&rsquo;s DeepInfer, TokenSpeed, VoiceStudio, ComfyUI, and FilmCraft all emphasize running locally, with interfaces reserved for agents to call.</li>
+</ol>
+<hr />
+<h2>1. Overall Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Project</th>
+<th>Language</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>morluto/rea</td>
+<td>TypeScript</td>
+<td>Lets agents do reverse engineering, analyzing all the way from app behavior down to native binaries. Gained about 88,243 stars this week (third-party aggregator figures)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>anthropics/claude-plugins-official</td>
+<td>Python</td>
+<td>Anthropic&rsquo;s officially maintained Claude Code plugin directory. Gained about 4,250 stars this week</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ruvnet/ruflo</td>
+<td>TypeScript</td>
+<td>A multi-agent cluster / workflow harness with adaptive memory, self-learning, federated collaboration, and vector RAG, integrating Claude Code / Codex / Hermes and more</td>
+</tr>
+<tr>
+<td>4</td>
+<td>android/skills</td>
+<td>Kotlin</td>
+<td>The official Android skills library. Gained about 1,471 stars this week</td>
+</tr>
+<tr>
+<td>5</td>
+<td>anomalyco/opencode</td>
+<td>TypeScript</td>
+<td>An open-source coding agent. Gained about 6,765 stars this week</td>
+</tr>
+</tbody>
+</table></div>
+<p>Close behind: stablyai/orca (+9,545 this week), cursor/plugins, akitaonrails/ai-memory, HKUDS/CLI-Anything, Comfy-Org/ComfyUI, debpalash/VoiceStudio, heygen-com/hyperframes, K-Dense-AI/scientific-agent-skills, NationalSecurityAgency/ghidra.</p>
+<blockquote>
+<p>Note: another weekly chart ranked purely by stars gained (2026-10-23) had rea, orca, hyperframes, claude-plugins-official, and ghidra as its top five; the ranking differences come from methodology and crawl times.</p>
+</blockquote>
+<p>Project links:
+- https://github.com/morluto/rea
+- https://github.com/anthropics/claude-plugins-official
+- https://github.com/ruvnet/ruflo
+- https://github.com/android/skills
+- https://github.com/anomalyco/opencode</p>
+<hr />
+<h2>2. Python / AI &amp; Data Top 5</h2>
+<ol>
+<li><strong>anthropics/claude-plugins-official</strong> — The official Claude Code plugin directory
+   https://github.com/anthropics/claude-plugins-official</li>
+<li><strong>HKUDS/CLI-Anything</strong> — A CLI toolkit for &ldquo;making all software agent-native&rdquo;, CLI-Hub: clianything.cc
+   https://github.com/HKUDS/CLI-Anything</li>
+<li><strong>Comfy-Org/ComfyUI</strong> — A modular diffusion-model GUI / API / backend with a node-graph interface and local inference
+   https://github.com/Comfy-Org/ComfyUI</li>
+<li><strong>debpalash/VoiceStudio</strong> — A fully local ElevenLabs alternative: voice cloning, voice design, video dubbing, dictation, transcription, and audiobooks, supporting 646 languages
+   https://github.com/debpalash/VoiceStudio</li>
+<li><strong>K-Dense-AI/scientific-agent-skills</strong> — Turns agents into AI scientists: 177 verified research skills + 100+ scientific databases, covering biology, chemistry, medicine, and drug discovery, compatible with Cursor / Claude Code / Codex and more
+   https://github.com/K-Dense-AI/scientific-agent-skills</li>
+</ol>
+<p>Also worth noting: vllm-project/vllm, fastapi/fastapi, sgl-project/sglang, and yt-dlp/yt-dlp keep trending.</p>
+<hr />
+<h2>3. TypeScript / Frontend &amp; Agent Tools Top 5</h2>
+<ol>
+<li><strong>morluto/rea</strong> — An agent reverse-engineering tool
+   https://github.com/morluto/rea</li>
+<li><strong>ruvnet/ruflo</strong> — An agent cluster harness
+   https://github.com/ruvnet/ruflo</li>
+<li><strong>anomalyco/opencode</strong> — An open-source coding agent
+   https://github.com/anomalyco/opencode</li>
+<li><strong>stablyai/orca</strong> — A platform for managing a team of coding agents (Grok Bot, Claude Code, and more) together, running on your own subscriptions, with desktop, mobile, and remote runtimes
+   https://github.com/stablyai/orca</li>
+<li><strong>cursor/plugins</strong> — The Cursor plugin spec and official plugins
+   https://github.com/cursor/plugins</li>
+</ol>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>michael-denyer/pstack-claude</strong> — Ports pstack&rsquo;s rigorous agent workflow to multiple harnesses: Claude Code, Codex, Copilot, Pi, OpenCode, Gemini, and more
+   https://github.com/michael-denyer/pstack-claude</li>
+<li><strong>hmjz100/LinkSwift</strong> — A direct-download-link tool for cloud drives, supporting eight major services: Baidu Netdisk / Alibaba Cloud Drive / China Mobile Cloud Drive / Tianyi Cloud Drive / Xunlei Cloud Drive / Quark Cloud Drive / UC Cloud Drive / 123 Cloud Drive
+   https://github.com/hmjz100/LinkSwift</li>
+<li><strong>cloudflare/security-audit-skill</strong> — Lets coding agents run multi-stage security audits, with independent verification and machine-readable results
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>DietrichGebert/ponytail</strong> — Makes AI agents think like &ldquo;the laziest senior engineer&rdquo;: the best code is the code you didn&rsquo;t write
+   https://github.com/DietrichGebert/ponytail</li>
+<li><strong>plugin87/ux-ui-agent-skills</strong> — Turns Claude into a senior design architect: DTCG tokens, 52 components, WCAG 2.2, and 138 design systems
+   https://github.com/plugin87/ux-ui-agent-skills</li>
+</ol>
+<hr />
+<h2>5. Rust / System Tools Top 5</h2>
+<ol>
+<li><strong>akitaonrails/ai-memory</strong> — Long-term memory for coding-agent CLIs, supporting handoffs between agents from different vendors
+   https://github.com/akitaonrails/ai-memory</li>
+<li><strong>xerj-org/xerj</strong> — A local-first search engine + MCP Server: a single Rust binary indexes code, docs, logs, JSONL/CSV, and PDFs, with BM25 full-text, vector, and hybrid search, and an Elasticsearch-compatible API
+   https://github.com/xerj-org/xerj</li>
+<li><strong>oven-sh/bun</strong> — An extremely fast JavaScript runtime, bundler, test runner, and package manager, all in one
+   https://github.com/oven-sh/bun</li>
+<li><strong>mixelpixx/Konnect</strong> — AI-assisted PCB design: a native Rust plugin for KiCad 10 exposing 217 schematic / layout / routing / review tools to LLMs
+   https://github.com/mixelpixx/Konnect</li>
+<li><strong>GCWing/OpenBitFun</strong> — A high-performance Rust agent runtime + polished desktop app, combining Code Agent depth with general-purpose working ability
+   https://github.com/GCWing/OpenBitFun</li>
+</ol>
+<hr />
+<h2>6. Go / Cloud-Native &amp; AI Services Top 5</h2>
+<ol>
+<li><strong>ollama/ollama</strong> — Run large models locally: Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma, and more
+   https://github.com/ollama/ollama</li>
+<li><strong>gitleaks/gitleaks</strong> — Scans code and commits for leaked secrets
+   https://github.com/gitleaks/gitleaks</li>
+<li><strong>mudler/LocalAI</strong> — An open-source local AI engine running LLMs, vision, speech, image, and video on any hardware, even without a GPU
+   https://github.com/mudler/LocalAI</li>
+<li><strong>etcd-io/etcd</strong> — A distributed, reliable key-value store for the most critical data in distributed systems
+   https://github.com/etcd-io/etcd</li>
+<li><strong>Asymptote-Labs/agent-beacon</strong> — A cross-harness self-improving memory layer for agents
+   https://github.com/Asymptote-Labs/agent-beacon</li>
+</ol>
+<p>Also worth noting: gin-gonic/gin, helm/helm, vxcontrol/pentagi (an autonomous penetration-testing agent), github/github-mcp-server, and hashicorp/terraform.</p>
+<hr />
+<h2>7. Java / Android &amp; Reverse Engineering Top 5</h2>
+<p><em>In GitHub Trending Java weekly chart display order</em></p>
+<ol>
+<li><strong>NationalSecurityAgency/ghidra</strong> — The NSA&rsquo;s open-source software reverse engineering (SRE) framework, +4,221 stars this week, a veteran project boosted by rea
+   https://github.com/NationalSecurityAgency/ghidra</li>
+<li><strong>HMCL-dev/HMCL</strong> — A versatile, cross-platform Minecraft launcher
+   https://github.com/HMCL-dev/HMCL</li>
+<li><strong>iBotPeaches/Apktool</strong> — An Android APK reverse-engineering tool, +660 stars this week
+   https://github.com/iBotPeaches/Apktool</li>
+<li><strong>AbdurazaaqMohammed/MP-Manager</strong> — A dual-pane Android file manager focused on APKs
+   https://github.com/AbdurazaaqMohammed/MP-Manager</li>
+<li><strong>modelcontextprotocol/java-sdk</strong> — The official Java SDK for the Model Context Protocol, maintained with Spring AI
+   https://github.com/modelcontextprotocol/java-sdk</li>
+</ol>
+<p>The Java chart&rsquo;s character is clear: reverse engineering (ghidra, Apktool, jadx) and Android / Minecraft launchers make up most of it.</p>
+<hr />
+<h2>4 Picks Worth Trying Yourself, Xtop</h2>
+<p>Based on directions you&rsquo;ve starred before (AI/agent tools, local models, MCP) and the projects you&rsquo;re working on:</p>
+<ol>
+<li><strong>morluto/rea</strong> — Agents + reverse engineering, a new paradigm; see how it uses Ghidra/Hopper as its backend</li>
+<li><strong>HKUDS/CLI-Anything</strong> — Turns any software into an agent-callable CLI, complementing the MCP approach</li>
+<li><strong>xerj-org/xerj</strong> — A single-binary Rust local search / RAG setup; the token-saving approach is directly useful for long-context projects</li>
+<li><strong>mksglu/context-mode</strong> (#15 on the TypeScript chart, a featured project in this week&rsquo;s report) — Locks tool outputs inside a sandbox, claiming 98% context reduction, with persistent session memory</li>
+</ol>
+<hr />
+<h2>Data Sources</h2>
+<ul>
+<li>GitHub Trending official weekly chart: https://github.com/trending?since=weekly and its per-language sub-charts (python / typescript / javascript / rust / go / java)</li>
+<li>Third-party aggregator snapshot: gaojihao.github.io/github-hot/trending-weekly.html (updated 2026-10-24 12:55 Beijing time)</li>
+<li>CyberQ GitHub Trends Weekly Vol.39 (verified 2026-10-23): https://cyberq.tw/2026/10/23/github-trends-weekly-report-vol-39-proxy/</li>
+<li>Korean weekly chart roundup (2026-10-23, ranked by stars gained): https://blog.amuse.ing/github-trending-2026-10-23/</li>
+</ul>
+<p><em>Note: performance figures stated by projects themselves (such as token reduction and inference speed) are the projects&rsquo; own benchmarks and have not been independently reproduced; before adopting one, re-test it with your own workload.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

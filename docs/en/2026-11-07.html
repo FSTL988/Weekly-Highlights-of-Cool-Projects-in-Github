@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Trending Projects Weekly — This Past Week</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-07.html">中文</option><option value="en" data-url="2026-11-07.html" selected>English</option><option value="fr" data-url="../fr/2026-11-07.html">Français</option><option value="ja" data-url="../ja/2026-11-07.html">日本語</option><option value="ko" data-url="../ko/2026-11-07.html">한국어</option><option value="es" data-url="../es/2026-11-07.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← Home</a></p>
+<h1>GitHub Trending Projects Weekly — This Past Week</h1>
+<p><strong>Time window:</strong> 2026-11-01 to 2026-11-07 (GitHub Trending <code>since=weekly</code>)
+<strong>Verified at:</strong> 2026-11-07 08:00 CST (Asia/Shanghai)
+<strong>Methodology:</strong> Rankings follow GitHub&rsquo;s official Trending weekly chart display order; weekly stars gained cite a third-party aggregator snapshot (2026-11-07 03:38 Beijing time), and figures may differ across aggregators due to different crawl times. The official chart&rsquo;s display order does not exactly follow stars gained.</p>
+<hr />
+<h2>This Week at a Glance</h2>
+<p>This week&rsquo;s main thread shifts from &ldquo;skills&rdquo; to <strong>agent memory and collaboration infrastructure</strong>.</p>
+<ol>
+<li><strong>Agent memory becomes the new bottleneck</strong> — thedotmack/claude-mem, #1 overall (+9,318 stars in a week), provides cross-session persistent context: it compresses what an agent does in each session and injects it into future sessions. max-sixty/worktrunk (#1 on the Rust chart) uses Git worktrees so multiple agents can work in parallel without colliding, and herdrdev/herdr aims to be &ldquo;the runtime agents live in&rdquo;. With skills installed, the next step is making agents remember and cooperate.</li>
+<li><strong>Agents start taking over entire production lines</strong> — Donchitos/Claude-Code-Game-Studios (#2 overall) turns Claude Code into a game development studio: 49 agents and 72 workflow skills, divided by real studio hierarchy; calesthio/OpenMontage is an open-source agentic video production system with 12 production pipelines and 700+ skill files. Agents move from &ldquo;writing code&rdquo; to &ldquo;running whole projects&rdquo;.</li>
+<li><strong>Anti-AI-look design trends for a third straight week</strong> — Nutlope/hallmark (#5 overall), pbakaus/impeccable, and Leonxlnx/taste-skill, three design-taste projects, dominate the charts together; the &ldquo;aesthetics tax&rdquo; on AI-generated content is becoming formal infrastructure.</li>
+<li><strong>Infrastructure veterans return</strong> — The Go top five is almost entirely established cloud-native projects — moby, gitea, argo-cd, docker/compose, and more — and the Java chart is likewise led by keycloak, elasticsearch, cryptomator, and StarRocks; against the new agentic arrivals, this shows attention flowing back toward underlying infrastructure.</li>
+<li><strong>Financial AI emerges</strong> — shiyu-coder/Kronos (#6 on the Python chart) is a language foundation model for financial markets, worth a look for anyone working on trading / market-related projects.</li>
+</ol>
+<hr />
+<h2>1. Overall Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Project</th>
+<th>Language</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>thedotmack/claude-mem</td>
+<td>TypeScript</td>
+<td>Cross-session persistent context: records what an agent does in each session, compresses it with AI, and injects it into future sessions; supports Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode, and more. Gained about 9,318 stars this week</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Donchitos/Claude-Code-Game-Studios</td>
+<td>Shell</td>
+<td>Turns Claude Code into a complete game development studio: 49 AI agents and 72 workflow skills, coordinated in real studio hierarchy. Gained about 6,685 stars this week</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pingdotgg/t3code</td>
+<td>TypeScript</td>
+<td>The T3 team&rsquo;s coding agent tool (second week in a row). Gained about 16,235 stars this week (third-party aggregator figures; official display order does not exactly follow stars gained)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>max-sixty/worktrunk</td>
+<td>Rust</td>
+<td>A Git worktree management CLI for parallel AI agent workflows. Gained about 1,802 stars this week</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Nutlope/hallmark</td>
+<td>CSS</td>
+<td>An anti-AI-look design skill for Claude Code, Cursor, and Codex. Gained about 6,994 stars this week</td>
+</tr>
+</tbody>
+</table></div>
+<p>Close behind: anthropics/skills (+3,072 this week), milind-soni/OpenMausBot (+5,580 this week), pbakaus/impeccable (+9,303 this week), obra/superpowers (+5,131 this week), HKUDS/DeepTutor (+6,229 this week).</p>
+<p>Project links:
+- https://github.com/thedotmack/claude-mem
+- https://github.com/Donchitos/Claude-Code-Game-Studios
+- https://github.com/pingdotgg/t3code
+- https://github.com/max-sixty/worktrunk
+- https://github.com/Nutlope/hallmark</p>
+<hr />
+<h2>2. Python / AI &amp; Data Top 5</h2>
+<ol>
+<li><strong>anthropics/skills</strong> — Anthropic&rsquo;s official public Agent Skills repository (third week in a row)
+   https://github.com/anthropics/skills</li>
+<li><strong>HKUDS/DeepTutor</strong> — Lifelong personalized tutoring. Gained about 6,229 stars this week
+   https://github.com/HKUDS/DeepTutor</li>
+<li><strong>calesthio/OpenMontage</strong> — The world&rsquo;s first open-source agentic video production system: 12 production pipelines, 100+ tools, and 700+ agent skills and production knowledge files. Gained about 4,132 stars this week
+   https://github.com/calesthio/OpenMontage</li>
+<li><strong>The-PR-Agent/pr-agent</strong> — An open-source PR review agent
+   https://github.com/The-PR-Agent/pr-agent</li>
+<li><strong>D4Vinci/Scrapling</strong> — A high-performance web scraping framework, from single requests to large-scale crawling. Gained about 7,487 stars this week
+   https://github.com/D4Vinci/Scrapling</li>
+</ol>
+<p>Also worth noting: shiyu-coder/Kronos (a language foundation model for financial markets, +2,979 this week), github/spec-kit (a spec-driven development toolkit), blader/humanizer (an agent skill for removing traces of AI writing), AgriciDaniel/claude-seo, ethanplusai/sellbird (an open-source outreach platform).</p>
+<hr />
+<h2>3. TypeScript / Frontend &amp; Agent Tools Top 5</h2>
+<ol>
+<li><strong>thedotmack/claude-mem</strong> — Cross-session persistent context for agents
+   https://github.com/thedotmack/claude-mem</li>
+<li><strong>pingdotgg/t3code</strong> — The T3 team&rsquo;s coding agent tool
+   https://github.com/pingdotgg/t3code</li>
+<li><strong>milind-soni/OpenMausBot</strong> — An open-source Grok Bot alternative with its own VM for the bot. Gained about 5,580 stars this week
+   https://github.com/milind-soni/OpenMausBot</li>
+<li><strong>nightly-labs/openbot</strong> — A local-first persistent AI teammate desktop workspace: Codex, Claude, and Grok each get a dedicated workspace, task queue, file sharing, and agent-to-agent collaboration. Gained about 2,085 stars this week
+   https://github.com/nightly-labs/openbot</li>
+<li><strong>garrytan/gstack</strong> — Garry Tan&rsquo;s Claude Code setup: 23 tools split by role — CEO, designer, engineering manager, release manager, docs engineer, QA
+   https://github.com/garrytan/gstack</li>
+</ol>
+<p>Also worth noting: Vincentwei1021/video-shotcraft (an AI video skill; Remotion-made product promo videos), CopilotKit/OpenBot (every AI colleague gets its own computer), tashfeenahmed/freellmapi (34 free LLM providers aggregated into one /v1 interface), remotion/remotion, openclaw/openclaw, stablyai/orca.</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — Lets coding agents run multi-stage security audits, with independent verification and machine-readable results (topping the JS chart for a third straight week)
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>Leonxlnx/taste-skill</strong> — A skill that gives coding agents &ldquo;taste&rdquo;: art direction, reference images, and real browser testing, rejecting generic AI pages
+   https://github.com/Leonxlnx/taste-skill</li>
+<li><strong>HunYiSage/dsh-purge</strong> — A DeepSeek Harness jailbreak tool: lets any model swap prompts to jailbreak, with default prompts aimed at Chinese-made models
+   https://github.com/HunYiSage/dsh-purge</li>
+<li><strong>affaan-m/ECC</strong> — An agent harness performance optimization system: skills, instincts, memory, security, and research-first development
+   https://github.com/affaan-m/ECC</li>
+<li><strong>github/awesome-copilot</strong> — A community-contributed selection of Copilot instructions, agents, skills, and configs
+   https://github.com/github/awesome-copilot</li>
+</ol>
+<p>Also worth noting: techjarves/Portable-Local-Studio (a portable local AI studio: text-to-image, local GGUF models, speech synthesis and transcription), DeanChensj/jiangshan-map (Jiangshan Timeline: an interactive map of Chinese history), coreyhaines31/marketingskills, ConardLi/garden-skills.</p>
+<hr />
+<h2>5. Rust / System Tools Top 5</h2>
+<ol>
+<li><strong>max-sixty/worktrunk</strong> — A Git worktree management CLI for parallel AI agent workflows
+   https://github.com/max-sixty/worktrunk</li>
+<li><strong>pbakaus/impeccable</strong> — A design vocabulary for coding agents (third week in a row)
+   https://github.com/pbakaus/impeccable</li>
+<li><strong>herdrdev/herdr</strong> — &ldquo;The runtime your coding agent lives in&rdquo;
+   https://github.com/herdrdev/herdr</li>
+<li><strong>openai/codex</strong> — A lightweight coding agent that runs in the terminal
+   https://github.com/openai/codex</li>
+<li><strong>zed-industries/zed</strong> — A high-performance multiplayer code editor from the original Atom and Tree-sitter team
+   https://github.com/zed-industries/zed</li>
+</ol>
+<p>Also worth noting: cjpais/Handy (a fully offline open-source speech-to-text tool), vercel-labs/agent-browser (a browser automation CLI for AI agents), leepokai/Codync (an open-source Grok Bot alternative, written in Rust), xai-org/x-algorithm (the X recommendation feed algorithm, open-sourced), agentgateway/agentgateway.</p>
+<hr />
+<h2>6. Go / Cloud-Native &amp; AI Services Top 5</h2>
+<ol>
+<li><strong>moby/moby</strong> — The Moby Project: a collaborative project for the container ecosystem
+   https://github.com/moby/moby</li>
+<li><strong>multica-ai/multica</strong> — Lets humans and AI agents collaborate like one team; open-source and self-hostable (second week in a row)
+   https://github.com/multica-ai/multica</li>
+<li><strong>go-gitea/gitea</strong> — A self-hosted all-in-one software development service: Git hosting, code review, collaboration, package registry, and CI/CD
+   https://github.com/go-gitea/gitea</li>
+<li><strong>argoproj/argo-cd</strong> — Declarative continuous deployment for Kubernetes
+   https://github.com/argoproj/argo-cd</li>
+<li><strong>docker/compose</strong> — Define and run multi-container apps
+   https://github.com/docker/compose</li>
+</ol>
+<p>Also worth noting: netbirdio/netbird (WireGuard-based zero-trust networking), infiniflow/ragflow, prometheus/prometheus, golang/go, kubernetes/kubernetes, gastownhall/beads (a memory upgrade for coding agents).</p>
+<hr />
+<h2>7. Java / Android &amp; Reverse Engineering Top 5</h2>
+<p><em>In GitHub Trending Java weekly chart display order</em></p>
+<ol>
+<li><strong>floci-io/floci</strong> — A lightweight, free local AWS simulator alternative
+   https://github.com/floci-io/floci</li>
+<li><strong>keycloak/keycloak</strong> — Open-source identity and access management for modern apps and services
+   https://github.com/keycloak/keycloak</li>
+<li><strong>elastic/elasticsearch</strong> — A free and open-source distributed RESTful search engine
+   https://github.com/elastic/elasticsearch</li>
+<li><strong>cryptomator/cryptomator</strong> — Client-side encryption for cloud storage, protecting privacy and data control
+   https://github.com/cryptomator/cryptomator</li>
+<li><strong>StarRocks/starrocks</strong> — One of the fastest open-source query engines in the world, with sub-second analytics inside and outside the lakehouse
+   https://github.com/StarRocks/starrocks</li>
+</ol>
+<p>Also worth noting: spring-projects/spring-framework, openjdk/jdk, skylot/jadx (a Dex-to-Java decompiler), termux/termux-app, bazelbuild/bazel, floci-io/floci-az (a local Azure simulator).</p>
+<hr />
+<h2>4 Picks Worth Trying Yourself, Xtop</h2>
+<p>Based on directions you&rsquo;ve starred before (AI/agent tools, local models, MCP) and the projects you&rsquo;re working on:</p>
+<ol>
+<li><strong>thedotmack/claude-mem</strong> — #1 overall this week. Cross-session agent memory is exactly the pain point you&rsquo;ll keep hitting in your Pro Crypto project and your AI engineer studies: letting agents remember where they left off and which pitfalls they&rsquo;ve already hit</li>
+<li><strong>max-sixty/worktrunk</strong> — Use Git worktrees to let multiple agents change different features in parallel without interfering; pairs smoothly with OpenCode/Claude Code</li>
+<li><strong>Donchitos/Claude-Code-Game-Studios</strong> — A coordination system with 49 agents working in studio hierarchy; its architecture can be borrowed directly for multi-agent collaboration design</li>
+<li><strong>shiyu-coder/Kronos</strong> — A language foundation model for financial markets, directly relevant to the market and trading work you follow; worth a look at how it turns market data into language</li>
+</ol>
+<hr />
+<h2>Data Sources</h2>
+<ul>
+<li>GitHub Trending official weekly chart: https://github.com/trending?since=weekly and its per-language sub-charts (python / typescript / javascript / rust / go / java), verified 2026-11-07 08:00 CST</li>
+<li>Third-party aggregator snapshot: gaojihao.github.io/github-hot/trending-weekly.html (updated 2026-11-07 03:38 Beijing time)</li>
+<li>Compared with the previous issue (2026-10-31): the overall chart has almost entirely turned over, with only a few projects — t3code, anthropics/skills, impeccable, superpowers, and others — trending consecutively; the theme shifts from &ldquo;skill quantity and security&rdquo; to &ldquo;agent memory, parallel collaboration, and agent-run production lines&rdquo;, while cloud-native and Java infrastructure veterans clearly return</li>
+</ul>
+<p><em>Note: performance figures stated by projects themselves (such as token reduction and inference speed) are the projects&rsquo; own benchmarks and have not been independently reproduced; before adopting one, re-test it with your own workload.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

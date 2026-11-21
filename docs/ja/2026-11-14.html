@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 人気プロジェクト週報 — 直近1週間</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-14.html">中文</option><option value="en" data-url="../en/2026-11-14.html">English</option><option value="fr" data-url="../fr/2026-11-14.html">Français</option><option value="ja" data-url="2026-11-14.html" selected>日本語</option><option value="ko" data-url="../ko/2026-11-14.html">한국어</option><option value="es" data-url="../es/2026-11-14.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← ホーム</a></p>
+<h1>GitHub 人気プロジェクト週報 — 直近1週間</h1>
+<p><strong>対象期間：</strong> 2026-11-08 〜 2026-11-14（GitHub Trending <code>since=weekly</code>）
+<strong>確認日時：</strong> 2026-11-14 08:00 CST（Asia/Shanghai）
+<strong>集計の注記：</strong> 順位は GitHub 公式 Trending 週間ランキングの表示順に準拠。週間スター増加数はサードパーティ集計サイトのスナップショット（2026-11-14 03:57 北京時間）を引用しており、集計サイトによって取得タイミングが異なるため増加数に差が出る場合があります。公式ランキングの表示順は、スター増加数順と完全には一致しません。</p>
+<hr />
+<h2>今週の概要</h2>
+<p>今週の主軸は <strong>Agent ツールが「スキルパック」から「実行環境」へ向かう一方で、老舗ツールが予想外に復活したこと</strong> です。</p>
+<ol>
+<li><strong>「スキル」は依然として配布の主流だが、分化が始まる</strong> — anthropics/skills が 4 週連続で全サイト上位を維持し、mattpocock/skills、addyosmani/agent-skills、google/skills が同週にランクイン。「スキル」はすでに Agent 能力のデフォルトの包装形式となり、競争のポイントは「スキルがあるかどうか」から「スキルの品質と安全性」へ移っています。</li>
+<li><strong>Agent の手と目がデスクトップとブラウザに届く</strong> — vercel-labs/agent-browser（Rust ランキング 1 位、全サイト 4 位）と agent-desktop が同週にランクインし、Agent にブラウザ自動化とコンピューター操作の能力を与えます。milind-soni/OpenMausBot（全サイト 3 位）はオープンソースの Grok Bot 代替品で、Bot 用の仮想マシンを内蔵しています。</li>
+<li><strong>老舗プロジェクトの復活</strong> — 全サイト 1 位は 2018 年の老舗 OSINT ツール sherlock-project/sherlock（ユーザー名で全網のソーシャルアカウントを探す）で、総スター数はすでに 11 万を突破。google-deepmind/mujoco（物理シミュレーター）も全サイト上位 10 位に返り咲きました。古典的なツールが Agent の波に乗って再発見されています。</li>
+<li><strong>Agent セキュリティが新たな競争分野に</strong> — openai/codex-security（TypeScript ランキング 3 位）、NVIDIA/SkillSpector（Agent スキル内のプロンプトインジェクションとサプライチェーンリスクをスキャン）が同週にランクイン。cloudflare/security-audit-skill は今週さらに 10,700 スター増え、JS ランキングで 4 週連続 1 位です。スキルを多く入れるほど、誰かが検証しなければなりません。</li>
+<li><strong>金融 AI が引き続き台頭</strong> — ZhuLinsen/daily_stock_analysis（LLM 駆動のマルチマーケット株式分析、ゼロコスト定期実行）が全サイト 6 位、Python ランキング 4 位に躍進。NVIDIA/auto-ontology（データにセマンティックグラフ推論層を構築）は Python ランキング 5 位です。</li>
+<li><strong>インフラのベテランが引き続き回帰</strong> — Go ランキング 1 位は prometheus で、cli/cli、etcd、trivy が同週にランクイン。Java ランキングは TheAlgorithms/Java、elasticsearch、NewPipe、floci といったおなじみの顔ぶれです。Agent の新興勢力と基盤インフラが半分ずつを占めています。</li>
+</ol>
+<hr />
+<h2>1. 全サイト総合 Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>プロジェクト</th>
+<th>言語</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>sherlock-project/sherlock</td>
+<td>Python</td>
+<td>ユーザー名で全網のソーシャルアカウントを追跡する老舗 OSINT ツール。総スター数 111,117（GitHub API、2026-11-14）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>anthropics/skills</td>
+<td>Python</td>
+<td>Anthropic 公式 Agent Skills 公開リポジトリ（4 週連続ランクイン）。今週の増加は約 6,055 スター</td>
+</tr>
+<tr>
+<td>3</td>
+<td>milind-soni/OpenMausBot</td>
+<td>TypeScript</td>
+<td>オープンソースの Grok Bot 代替品。Bot 用の仮想マシンを内蔵。今週の増加は約 9,104 スター</td>
+</tr>
+<tr>
+<td>4</td>
+<td>vercel-labs/agent-browser</td>
+<td>Rust</td>
+<td>AI Agent 向けのブラウザ自動化 CLI。今週の増加は約 4,601 スター</td>
+</tr>
+<tr>
+<td>5</td>
+<td>google/elephant-goldfish-model</td>
+<td>Python</td>
+<td>Agent でソフトウェアを設計・レビューするオープンソースプラグイン。今週の増加は約 5,555 スター</td>
+</tr>
+</tbody>
+</table></div>
+<p>その後に続くのは：ZhuLinsen/daily_stock_analysis（今週 +3,569）、NVIDIA/auto-ontology（今週 +5,802）、google-deepmind/mujoco（今週 +1,671）、mattpocock/skills（今週 +8,731）、addyosmani/agent-skills（今週 +3,199）、cloudflare/security-audit-skill（今週 +10,700）、zed-industries/zed（今週 +2,339）、vercel-labs/agent-desktop（今週 +6,414）。</p>
+<blockquote>
+<p>注：sherlock の週間スター増加数はサードパーティのスナップショットに表示されていないため、総スター数のみを掲載します。スナップショットサイトの総スター数と GitHub API のリアルタイム数値にはわずかな差があります（例：agent-browser はスナップショット 50,656、API リアルタイム 50,709）。公式ページの数値を基準としてください。</p>
+</blockquote>
+<p>プロジェクトリンク：
+- https://github.com/sherlock-project/sherlock
+- https://github.com/anthropics/skills
+- https://github.com/milind-soni/OpenMausBot
+- https://github.com/vercel-labs/agent-browser
+- https://github.com/google/elephant-goldfish-model</p>
+<hr />
+<h2>2. Python / AI・データ Top 5</h2>
+<ol>
+<li><strong>sherlock-project/sherlock</strong> — ユーザー名で全網のソーシャルアカウントを探す OSINT ツール
+   https://github.com/sherlock-project/sherlock</li>
+<li><strong>anthropics/skills</strong> — Anthropic 公式 Agent Skills 公開リポジトリ（4 週連続ランクイン）
+   https://github.com/anthropics/skills</li>
+<li><strong>google/elephant-goldfish-model</strong> — Agent でソフトウェアを設計・レビューするオープンソースプラグイン。今週の増加は約 5,555 スター
+   https://github.com/google/elephant-goldfish-model</li>
+<li><strong>ZhuLinsen/daily_stock_analysis</strong> — LLM 駆動のマルチマーケット株式インテリジェント分析システム：マルチソースの相場、リアルタイムニュース、意思決定ダッシュボード、自動プッシュを備え、ゼロコスト定期実行に対応。今週の増加は約 3,569 スター
+   https://github.com/ZhuLinsen/daily_stock_analysis</li>
+<li><strong>NVIDIA/auto-ontology</strong> — データにセマンティックグラフ推論層を構築：決定論的クエリ生成、より良いコンテキスト検索、LLM および Agent ワークフローの説明可能性を強化。今週の増加は約 5,802 スター
+   https://github.com/NVIDIA/auto-ontology</li>
+</ol>
+<p>そのほか注目すべきもの：anthropics/claude-quickstarts（Claude API クイックスタートプロジェクト集）、google/skills（Google 製品向け Agent スキル）、homeassistant-ai/ha-mcp（Claude／ChatGPT で Home Assistant を設定・自動化）、harry0703/MoneyPrinterTurbo（AI でワンクリック短尺動画生成）、bradautomates/claude-video（Claude に動画を「見せる」）、D4Vinci/Scrapling（高性能クローリングフレームワーク）、NVIDIA/SkillSpector（Agent スキルのセキュリティリスクをスキャン）。</p>
+<hr />
+<h2>3. TypeScript / フロントエンド・Agent ツール Top 5</h2>
+<ol>
+<li><strong>milind-soni/OpenMausBot</strong> — オープンソースの Grok Bot 代替品。Bot 用の仮想マシンを内蔵。今週の増加は約 9,104 スター
+   https://github.com/milind-soni/OpenMausBot</li>
+<li><strong>lobehub/lobehub</strong> — スーパー Agent を既存のチャットツールに接続し、自ら仕事を受けて毎週強くなる。今週の増加は約 1,186 スター
+   https://github.com/lobehub/lobehub</li>
+<li><strong>openai/codex-security</strong> — OpenAI の Codex セキュリティ CLI と TypeScript SDK：セキュリティ脆弱性を発見・検証・修正
+   https://github.com/openai/codex-security</li>
+<li><strong>CopilotKit/OpenBot</strong> — オープンソースの AI 同僚：AI 同僚 1 人につき 1 台の自分のコンピューター（ブラウザ、ファイル）。アクションは事前に判断し、事後に記録
+   https://github.com/CopilotKit/OpenBot</li>
+<li><strong>immich-app/immich</strong> — 高性能セルフホスト写真・動画管理ソリューション
+   https://github.com/immich-app/immich</li>
+</ol>
+<p>そのほか注目すべきもの：can1357/oh-my-pi（IDE をコーディング Agent に接続）、every-app/open-seo（オープンソースの Semrush／Ahrefs 代替品）、ranxianglei/billion-context（単一セッションで 10 億トークン級のコンテキスト圧縮プラグイン）、backnotprop/plannotator（Agent のループの中で人が主導権を握り続けられるワークスペース）、getpaseo/paseo（デスクトップとモバイルで複数のコーディング Agent を編成）、meta/astryx（Agent-ready のオープンソースデザインシステム）、nightly-labs/openbot（ローカル優先の永続 AI チームメイト・デスクトップワークスペース）、pingdotgg/t3code。</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>addyosmani/agent-skills</strong> — AI コーディング Agent 向けの本番レベルエンジニアリングスキル。今週の増加は約 3,199 スター
+   https://github.com/addyosmani/agent-skills</li>
+<li><strong>cloudflare/security-audit-skill</strong> — プログラミング Agent に多段階セキュリティ監査をさせる。独立検証が可能で、機械可読な結果（JS ランキングで 4 週連続 1 位）。今週の増加は約 10,700 スター
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>coreyhaines31/marketingskills</strong> — Claude Code と AI Agent 向けのマーケティングスキル：CRO、コピーライティング、SEO、データ分析、グロースエンジニアリング
+   https://github.com/coreyhaines31/marketingskills</li>
+<li><strong>ConardLi/garden-skills</strong> — オープンソース Skills コレクション：Web デザイン、知識検索、画像生成など
+   https://github.com/ConardLi/garden-skills</li>
+<li><strong>Anil-matcha/Open-Generative-AI</strong> — 検閲なしのオープンソース AI 動画プラットフォーム代替品：600 以上のモデルで無料の画像・動画生成。セルフホスト、MIT ライセンス
+   https://github.com/Anil-matcha/Open-Generative-AI</li>
+</ol>
+<p>そのほか注目すべきもの：Yu9191/wloc（Apple のネットワーク位置情報を改変して座標を返す。Surge／Quantumult X などと連携）、Leonxlnx/taste-skill（コーディング Agent に「品位」を与えるスキル）。</p>
+<hr />
+<h2>5. Rust / システムツール Top 5</h2>
+<ol>
+<li><strong>vercel-labs/agent-browser</strong> — AI Agent 向けのブラウザ自動化 CLI。今週の増加は約 4,601 スター
+   https://github.com/vercel-labs/agent-browser</li>
+<li><strong>zed-industries/zed</strong> — 高性能マルチプレイヤーコードエディタ。Atom と Tree-sitter のオリジナルチームによるもの。今週の増加は約 2,339 スター
+   https://github.com/zed-industries/zed</li>
+<li><strong>vercel-labs/agent-desktop</strong> — AI Agent 向けのコンピューター操作 CLI。今週の増加は約 6,414 スター
+   https://github.com/vercel-labs/agent-desktop</li>
+<li><strong>herdrdev/herdr</strong> — 「あなたのコーディング Agent が住むランタイム」
+   https://github.com/herdrdev/herdr</li>
+<li><strong>ruvnet/RuView</strong> — 通常の WiFi 信号でリアルタイム空間認識、バイタルサイン監視、在室検知を行う。カメラは一切不使用
+   https://github.com/ruvnet/RuView</li>
+</ol>
+<p>そのほか注目すべきもの：astral-sh/ruff（超高速 Python linter／フォーマッター）、longbridge/gpui-kit（GPUI ベースの Rust GUI コンポーネント）、rustdesk/rustdesk（オープンソースリモートデスクトップ）、max-sixty/worktrunk（並行 AI Agent の Git worktree 管理）、tokio-rs/topcoat（Web アプリのフルスタックフレームワーク）、openai/codex（ターミナルの軽量コーディング Agent）。</p>
+<hr />
+<h2>6. Go / クラウドネイティブ・AI サービス Top 5</h2>
+<ol>
+<li><strong>prometheus/prometheus</strong> — Prometheus モニタリングシステムと時系列データベース
+   https://github.com/prometheus/prometheus</li>
+<li><strong>multica-ai/multica</strong> — 人間と AI Agent がひとつのチームのように協働できる。オープンソース、セルフホスト可能（3 週連続ランクイン）
+   https://github.com/multica-ai/multica</li>
+<li><strong>opensandbox-group/OpenSandbox</strong> — AI Agent 向けの安全で高速、拡張可能なサンドボックスランタイム
+   https://github.com/opensandbox-group/OpenSandbox</li>
+<li><strong>cli/cli</strong> — GitHub 公式コマンドラインツール
+   https://github.com/cli/cli</li>
+<li><strong>dsx-ai-factory/nvke</strong> — NVIDIA Kubernetes Engine：ベアメタル GPU Kubernetes の管理面
+   https://github.com/dsx-ai-factory/nvke</li>
+</ol>
+<p>そのほか注目すべきもの：JuliusBrussee/caveman（「原始人の話し方」でコーディング Agent のトークンを 65% 節約するスキル＋エージェント）、trufflesecurity/trufflehog（漏洩した認証情報の検出）、henrygd/beszel（軽量サーバーモニタリング）、router-for-me/CLIProxyAPI（複数の Agent CLI を互換 API にラップ）、gitleaks/gitleaks、etcd-io/etcd、aquasecurity/trivy、agent-substrate/substrate。</p>
+<hr />
+<h2>7. Java / Android・リバースエンジニアリング Top 5</h2>
+<p><em>GitHub Trending Java 週間ランキングの表示順</em></p>
+<ol>
+<li><strong>TheAlgorithms/Java</strong> — Java で実装されたすべての古典アルゴリズム。今週の増加は約 493 スター
+   https://github.com/TheAlgorithms/Java</li>
+<li><strong>elastic/elasticsearch</strong> — 無料オープンソースの分散型 RESTful 検索エンジン。今週の増加は約 220 スター
+   https://github.com/elastic/elasticsearch</li>
+<li><strong>TeamNewPipe/NewPipe</strong> — 軽量で自由な Android ストリーミングフロントエンド。今週の増加は約 217 スター
+   https://github.com/TeamNewPipe/NewPipe</li>
+<li><strong>floci-io/floci</strong> — 軽量・無料の AWS ローカルシミュレーター代替品。今週の増加は約 1,417 スター
+   https://github.com/floci-io/floci</li>
+<li><strong>agentscope-ai/agentscope-java</strong> — 分散型・本番級・長期稼働の Agent を構築
+   https://github.com/agentscope-ai/agentscope-java</li>
+</ol>
+<p>そのほか注目すべきもの：yuliskov/SmartTube（Android TV プレイヤー）、keycloak/keycloak（ID・アクセス管理）、termux/termux-app（Android ターミナルエミュレーター、今週 +583）、halo-dev/halo（オープンソースのサイト構築ツール）、spring-projects/spring-boot。</p>
+<hr />
+<h2>Xtop がぜひ自分で試してほしい 4 つ</h2>
+<p>あなたがこれまで Star してきた方向性（AI／Agent ツール、ローカルモデル、MCP）と、取り組んでいるプロジェクトを踏まえて：</p>
+<ol>
+<li><strong>vercel-labs/agent-browser</strong> — Agent にブラウザ自動化 CLI を装備するもので、あなたの取引プラットフォームや相場取得の考え方と直接関連します。agent-desktop と合わせて見ると、Agent が「コンピューターを実際に操作する」という流れが形になりつつあります</li>
+<li><strong>ZhuLinsen/daily_stock_analysis</strong> — LLM マルチマーケット株式分析＋ゼロコスト定期実行。あなたの暗号資産イブニングレポートや取引プラットフォームと同じ種類のニーズで、マルチソース相場とプッシュ設計を参考にできます</li>
+<li><strong>sherlock-project/sherlock</strong> — 全サイト 1 位の老舗 OSINT ツール。単一ファイルのロジックが明快で、「小さなツールがどうやって 11 万スターを獲得したか」を学ぶコードサンプルに最適です</li>
+<li><strong>NVIDIA/SkillSpector</strong> — Agent スキル内のプロンプトインジェクションとサプライチェーンリスクをスキャンします。あなたは Claude Code／OpenCode のスキルを多く入れているので、入れる前に一度スキャンするのが良い習慣です</li>
+</ol>
+<hr />
+<h2>データ出典</h2>
+<ul>
+<li>GitHub Trending 公式週間ランキング：https://github.com/trending?since=weekly および各言語別サブランキング（python / typescript / javascript / rust / go / java）。2026-11-14 08:00 CST に確認</li>
+<li>サードパーティ集計スナップショット：gaojihao.github.io/github-hot/trending-weekly.html（2026-11-14 03:57 北京時間に更新）</li>
+<li>sherlock の総スター数 111,117 は GitHub API（2026-11-14 リアルタイム照会）によるもの。週間スター増加数はスナップショットに表示されていないため、掲載していません</li>
+<li>前号（2026-11-07）との比較：全サイトランキングは再び大幅に入れ替わり、anthropics/skills、OpenMausBot、agent-browser、zed、floci など少数のプロジェクトだけが連続ランクイン。テーマは「Agent の記憶と協働」から「Agent の実行環境（ブラウザ／デスクトップ／サンドボックス）＋ Agent セキュリティ」へ移り、sherlock、mujoco などの老舗プロジェクトが復活する一方、Go／Java ランキングではインフラのベテランが引き続き優位です</li>
+</ul>
+<p><em>注記：プロジェクトが自称する性能数値（トークン削減率や推論速度など）はすべてプロジェクト側の独自ベンチマークによるもので、第三者による再現は行われていません。導入前には自分のワークロードで再測定することをおすすめします。</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

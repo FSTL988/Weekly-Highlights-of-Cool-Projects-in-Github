@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informe semanal de proyectos populares de GitHub — última semana</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-14.html">中文</option><option value="en" data-url="../en/2026-11-14.html">English</option><option value="fr" data-url="../fr/2026-11-14.html">Français</option><option value="ja" data-url="../ja/2026-11-14.html">日本語</option><option value="ko" data-url="../ko/2026-11-14.html">한국어</option><option value="es" data-url="2026-11-14.html" selected>Español</option></select></label></header>
+<main>
+<p><a href="index.html">← Inicio</a></p>
+<h1>Informe semanal de proyectos populares de GitHub — última semana</h1>
+<p><strong>Ventana temporal:</strong> del 2026-11-08 al 2026-11-14 (GitHub Trending <code>since=weekly</code>)
+<strong>Fecha de verificación:</strong> 2026-11-14 08:00 CST (Asia/Shanghai)
+<strong>Nota sobre el criterio:</strong> el orden sigue el orden de presentación de la lista oficial semanal de GitHub Trending; el aumento de estrellas de la semana se cita a partir de una instantánea de un sitio agregador de terceros (2026-11-14 03:57, hora de Pekín), y puede variar entre agregadores según el momento de la captura. El orden de presentación de la lista oficial no se corresponde exactamente con el orden por estrellas ganadas.</p>
+<hr />
+<h2>Panorama de la semana</h2>
+<p>El tema principal de esta semana es que <strong>las herramientas de agente pasan del «paquete de skills» al «entorno de ejecución», mientras las herramientas veteranas vuelven por sorpresa</strong>.</p>
+<ol>
+<li><strong>Las «skills» siguen siendo la forma principal de distribución, pero empiezan a dividirse</strong> — anthropics/skills lleva cuatro semanas seguidas entre los primeros de todo el sitio, y mattpocock/skills, addyosmani/agent-skills y google/skills aparecen la misma semana; la «skill» ya se ha convertido en el formato de encapsulación por defecto de las capacidades de los agentes, y el punto de competencia pasa de «tener skills o no» a «la calidad y la seguridad de las skills».</li>
+<li><strong>Las manos y los ojos del agente llegan al escritorio y al navegador</strong> — vercel-labs/agent-browser (primero de la lista de Rust y cuarto de todo el sitio) y agent-desktop aparecen la misma semana, y dan al agente automatización de navegadores y capacidad de operar un ordenador; milind-soni/OpenMausBot (tercero de todo el sitio) es una alternativa abierta a Grok Bot, con su propia máquina virtual para el bot.</li>
+<li><strong>Vuelven los proyectos antiguos</strong> — El número uno de todo el sitio es sherlock-project/sherlock, una veterana herramienta OSINT de 2018 (busca cuentas sociales en toda la red por nombre de usuario), con un total de estrellas ya por encima de 110,000; google-deepmind/mujoco (un simulador de física) también vuelve al top 10 de todo el sitio. Las herramientas clásicas se redescubren con la ola de los agentes.</li>
+<li><strong>La seguridad de los agentes se convierte en una nueva pista</strong> — openai/codex-security (tercero de la lista de TypeScript) y NVIDIA/SkillSpector (escanea la inyección de prompts y los riesgos de la cadena de suministro en las skills de agente) aparecen la misma semana; cloudflare/security-audit-skill sube esta semana otras 10,700 estrellas y lleva cuatro semanas seguidas en lo más alto de la lista de JS. Cuantas más skills se instalan, más falta alguien que verifique la mercancía.</li>
+<li><strong>La IA financiera sigue asomando</strong> — ZhuLinsen/daily_stock_analysis (análisis bursátil impulsado por LLM, con ejecución programada a coste cero) entra en el sexto puesto de todo el sitio y el cuarto de la lista de Python; NVIDIA/auto-ontology (una capa de razonamiento con grafo semántico para los datos) es quinto de la lista de Python.</li>
+<li><strong>Los veteranos de la infraestructura siguen volviendo</strong> — En la lista de Go, el primero es prometheus, y cli/cli, etcd y trivy están en la lista la misma semana; en la lista de Java están las caras conocidas TheAlgorithms/Java, elasticsearch, NewPipe y floci. Los nuevos agentes y la infraestructura subyacente ocupan cada uno la mitad del panorama.</li>
+</ol>
+<hr />
+<h2>1. Top 5 general de todo el sitio</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Proyecto</th>
+<th>Lenguaje</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>sherlock-project/sherlock</td>
+<td>Python</td>
+<td>Una veterana herramienta OSINT que rastrea cuentas sociales en toda la red por nombre de usuario, con un total de 111,117 estrellas (API de GitHub, 2026-11-14)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>anthropics/skills</td>
+<td>Python</td>
+<td>El repositorio público oficial de Agent Skills de Anthropic (cuatro semanas seguidas en la lista). Esta semana sumó unas 6,055 estrellas</td>
+</tr>
+<tr>
+<td>3</td>
+<td>milind-soni/OpenMausBot</td>
+<td>TypeScript</td>
+<td>Una alternativa abierta a Grok Bot, con su propia máquina virtual para el bot. Esta semana sumó unas 9,104 estrellas</td>
+</tr>
+<tr>
+<td>4</td>
+<td>vercel-labs/agent-browser</td>
+<td>Rust</td>
+<td>Una CLI de automatización de navegadores para agentes de IA. Esta semana sumó unas 4,601 estrellas</td>
+</tr>
+<tr>
+<td>5</td>
+<td>google/elephant-goldfish-model</td>
+<td>Python</td>
+<td>Un plugin de código abierto que usa agentes para diseñar y revisar software. Esta semana sumó unas 5,555 estrellas</td>
+</tr>
+</tbody>
+</table></div>
+<p>Justo detrás: ZhuLinsen/daily_stock_analysis (esta semana +3,569), NVIDIA/auto-ontology (esta semana +5,802), google-deepmind/mujoco (esta semana +1,671), mattpocock/skills (esta semana +8,731), addyosmani/agent-skills (esta semana +3,199), cloudflare/security-audit-skill (esta semana +10,700), zed-industries/zed (esta semana +2,339), vercel-labs/agent-desktop (esta semana +6,414).</p>
+<blockquote>
+<p>Nota: el aumento de estrellas de la semana de sherlock no aparece en la instantánea de terceros, por eso solo se indica el total de estrellas; el total de estrellas de la instantánea y el número en tiempo real de la API de GitHub difieren ligeramente (por ejemplo, agent-browser: 50,656 en la instantánea y 50,709 en tiempo real en la API); manda la página oficial.</p>
+</blockquote>
+<p>Enlaces a los proyectos:
+- https://github.com/sherlock-project/sherlock
+- https://github.com/anthropics/skills
+- https://github.com/milind-soni/OpenMausBot
+- https://github.com/vercel-labs/agent-browser
+- https://github.com/google/elephant-goldfish-model</p>
+<hr />
+<h2>2. Python / IA y datos Top 5</h2>
+<ol>
+<li><strong>sherlock-project/sherlock</strong> — Una herramienta OSINT para buscar cuentas sociales en toda la red por nombre de usuario
+   https://github.com/sherlock-project/sherlock</li>
+<li><strong>anthropics/skills</strong> — El repositorio público oficial de Agent Skills de Anthropic (cuatro semanas seguidas en la lista)
+   https://github.com/anthropics/skills</li>
+<li><strong>google/elephant-goldfish-model</strong> — Un plugin de código abierto que usa agentes para diseñar y revisar software. Esta semana sumó unas 5,555 estrellas
+   https://github.com/google/elephant-goldfish-model</li>
+<li><strong>ZhuLinsen/daily_stock_analysis</strong> — Un sistema inteligente de análisis bursátil multimercado impulsado por LLM: cotizaciones de varias fuentes, noticias en tiempo real, panel de decisiones y envío automático, con ejecución programada a coste cero. Esta semana sumó unas 3,569 estrellas
+   https://github.com/ZhuLinsen/daily_stock_analysis</li>
+<li><strong>NVIDIA/auto-ontology</strong> — Construye una capa de razonamiento con grafo semántico para los datos: generación determinista de consultas, mejor recuperación de contexto y más explicabilidad para los flujos de trabajo de LLM y agentes. Esta semana sumó unas 5,802 estrellas
+   https://github.com/NVIDIA/auto-ontology</li>
+</ol>
+<p>También dignos de mención: anthropics/claude-quickstarts (un conjunto de proyectos para empezar rápido con la API de Claude), google/skills (skills de agente para productos de Google), homeassistant-ai/ha-mcp (configura y automatiza Home Assistant con Claude/ChatGPT), harry0703/MoneyPrinterTurbo (genera vídeos cortos con IA en un clic), bradautomates/claude-video (permite que Claude «vea» vídeos), D4Vinci/Scrapling (un framework de scraping de alto rendimiento), NVIDIA/SkillSpector (escanea los riesgos de seguridad de las skills de agente).</p>
+<hr />
+<h2>3. TypeScript / frontend y herramientas de agentes Top 5</h2>
+<ol>
+<li><strong>milind-soni/OpenMausBot</strong> — Una alternativa abierta a Grok Bot, con su propia máquina virtual para el bot. Esta semana sumó unas 9,104 estrellas
+   https://github.com/milind-soni/OpenMausBot</li>
+<li><strong>lobehub/lobehub</strong> — Conecta superagentes a las herramientas de chat que ya usas, para que tomen trabajo por su cuenta y mejoren cada semana. Esta semana sumó unas 1,186 estrellas
+   https://github.com/lobehub/lobehub</li>
+<li><strong>openai/codex-security</strong> — La CLI de seguridad de Codex y el SDK de TypeScript de OpenAI: descubre, verifica y corrige vulnerabilidades de seguridad
+   https://github.com/openai/codex-security</li>
+<li><strong>CopilotKit/OpenBot</strong> — Un colega de IA de código abierto: cada colega de IA tiene su propio ordenador (navegador, archivos), con decisiones antes de actuar y registro después
+   https://github.com/CopilotKit/OpenBot</li>
+<li><strong>immich-app/immich</strong> — Una solución autoalojada de gestión de fotos y vídeos de alto rendimiento
+   https://github.com/immich-app/immich</li>
+</ol>
+<p>También dignos de mención: can1357/oh-my-pi (conecta el IDE al agente de código), every-app/open-seo (una alternativa abierta a Semrush/Ahrefs), ranxianglei/billion-context (un plugin de compresión de contexto de mil millones de tokens en una sola sesión), backnotprop/plannotator (un espacio de trabajo para que las personas mantengan el control dentro del bucle del agente), getpaseo/paseo (orquesta varios agentes de código en escritorio y móvil), meta/astryx (un sistema de diseño de código abierto listo para agentes), nightly-labs/openbot (un espacio de trabajo de escritorio local prioritario para un compañero de IA persistente), pingdotgg/t3code.</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>addyosmani/agent-skills</strong> — Skills de ingeniería de nivel de producción para agentes de código de IA. Esta semana sumó unas 3,199 estrellas
+   https://github.com/addyosmani/agent-skills</li>
+<li><strong>cloudflare/security-audit-skill</strong> — Permite que un agente de programación haga auditorías de seguridad en varias fases, con verificación independiente y resultados legibles por máquina (cuatro semanas seguidas en lo más alto de la lista de JS). Esta semana sumó unas 10,700 estrellas
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>coreyhaines31/marketingskills</strong> — Skills de marketing para Claude Code y agentes de IA: CRO, copywriting, SEO, análisis de datos e ingeniería de crecimiento
+   https://github.com/coreyhaines31/marketingskills</li>
+<li><strong>ConardLi/garden-skills</strong> — Una colección abierta de skills: diseño web, recuperación de conocimiento, generación de imágenes, etc.
+   https://github.com/ConardLi/garden-skills</li>
+<li><strong>Anil-matcha/Open-Generative-AI</strong> — Una alternativa abierta y sin censura a las plataformas de vídeo con IA: más de 600 modelos gratuitos para generar imágenes y vídeos, autoalojada y con licencia MIT
+   https://github.com/Anil-matcha/Open-Generative-AI</li>
+</ol>
+<p>También dignos de mención: Yu9191/wloc (modifica la ubicación de red que devuelve Apple, junto con Surge/Quantumult X, etc.), Leonxlnx/taste-skill (una skill que da «gusto» al agente de código).</p>
+<hr />
+<h2>5. Rust / herramientas de sistema Top 5</h2>
+<ol>
+<li><strong>vercel-labs/agent-browser</strong> — Una CLI de automatización de navegadores para agentes de IA. Esta semana sumó unas 4,601 estrellas
+   https://github.com/vercel-labs/agent-browser</li>
+<li><strong>zed-industries/zed</strong> — Un editor de código multiusuario de alto rendimiento, del equipo original de Atom y Tree-sitter. Esta semana sumó unas 2,339 estrellas
+   https://github.com/zed-industries/zed</li>
+<li><strong>vercel-labs/agent-desktop</strong> — Una CLI de operación de ordenadores para agentes de IA. Esta semana sumó unas 6,414 estrellas
+   https://github.com/vercel-labs/agent-desktop</li>
+<li><strong>herdrdev/herdr</strong> — «El runtime en el que vive tu agente de código»
+   https://github.com/herdrdev/herdr</li>
+<li><strong>ruvnet/RuView</strong> — Usa señales WiFi normales para la percepción espacial en tiempo real, la monitorización de signos vitales y la detección de presencia, todo sin cámaras
+   https://github.com/ruvnet/RuView</li>
+</ol>
+<p>También dignos de mención: astral-sh/ruff (un linter / formateador de Python rapidísimo), longbridge/gpui-kit (componentes GUI en Rust basados en GPUI), rustdesk/rustdesk (escritorio remoto de código abierto), max-sixty/worktrunk (gestión de Git worktree para agentes de IA en paralelo), tokio-rs/topcoat (un framework todo en uno para aplicaciones web), openai/codex (un agente de código ligero para la terminal).</p>
+<hr />
+<h2>6. Go / cloud native y servicios de IA Top 5</h2>
+<ol>
+<li><strong>prometheus/prometheus</strong> — El sistema de monitorización Prometheus y su base de datos de series temporales
+   https://github.com/prometheus/prometheus</li>
+<li><strong>multica-ai/multica</strong> — Permite que humanos y agentes de IA colaboren como un equipo, de código abierto y autoalojable (tercera semana consecutiva en la lista)
+   https://github.com/multica-ai/multica</li>
+<li><strong>opensandbox-group/OpenSandbox</strong> — Un runtime de sandbox seguro, rápido y escalable para agentes de IA
+   https://github.com/opensandbox-group/OpenSandbox</li>
+<li><strong>cli/cli</strong> — La herramienta oficial de línea de comandos de GitHub
+   https://github.com/cli/cli</li>
+<li><strong>dsx-ai-factory/nvke</strong> — NVIDIA Kubernetes Engine: el plano de gestión de Kubernetes con GPU en bare metal
+   https://github.com/dsx-ai-factory/nvke</li>
+</ol>
+<p>También dignos de mención: JuliusBrussee/caveman (usa el «habla de cavernícola» para ahorrarle al agente de código un 65 % de tokens, con skill + agente), trufflesecurity/trufflehog (busca credenciales filtradas), henrygd/beszel (monitorización ligera de servidores), router-for-me/CLIProxyAPI (envuelve varias CLI de agente en una API compatible), gitleaks/gitleaks, etcd-io/etcd, aquasecurity/trivy, agent-substrate/substrate.</p>
+<hr />
+<h2>7. Java / Android e ingeniería inversa Top 5</h2>
+<p><em>Según el orden de presentación de la lista semanal de Java de GitHub Trending</em></p>
+<ol>
+<li><strong>TheAlgorithms/Java</strong> — Todos los algoritmos clásicos implementados en Java. Esta semana sumó unas 493 estrellas
+   https://github.com/TheAlgorithms/Java</li>
+<li><strong>elastic/elasticsearch</strong> — Un motor de búsqueda distribuido RESTful, gratuito y de código abierto. Esta semana sumó unas 220 estrellas
+   https://github.com/elastic/elasticsearch</li>
+<li><strong>TeamNewPipe/NewPipe</strong> — Un frontend ligero y libre de streaming para Android. Esta semana sumó unas 217 estrellas
+   https://github.com/TeamNewPipe/NewPipe</li>
+<li><strong>floci-io/floci</strong> — Una alternativa ligera y gratuita al emulador local de AWS. Esta semana sumó unas 1,417 estrellas
+   https://github.com/floci-io/floci</li>
+<li><strong>agentscope-ai/agentscope-java</strong> — Construye agentes distribuidos, de nivel de producción y de larga duración
+   https://github.com/agentscope-ai/agentscope-java</li>
+</ol>
+<p>También dignos de mención: yuliskov/SmartTube (un reproductor para Android TV), keycloak/keycloak (gestión de identidad y acceso), termux/termux-app (un emulador de terminal de Android, esta semana +583), halo-dev/halo (una herramienta abierta para crear sitios web), spring-projects/spring-boot.</p>
+<hr />
+<h2>4 para que Xtop los pruebe en persona</h2>
+<p>Según las direcciones que has marcado con Star antes (herramientas de IA/agentes, modelos locales, MCP) y los proyectos en los que trabajas:</p>
+<ol>
+<li><strong>vercel-labs/agent-browser</strong> — Una CLI de automatización de navegadores para el agente, directamente relacionada con tu plataforma de trading y tus ideas de captura de cotizaciones; mírala junto con agent-desktop: la línea del agente «operando el ordenador con sus propias manos» está tomando forma</li>
+<li><strong>ZhuLinsen/daily_stock_analysis</strong> — Análisis bursátil con LLM en varios mercados + ejecución programada a coste cero, la misma clase de necesidad que tu informe vespertino de criptomonedas y tu plataforma de trading; puedes comparar su diseño de cotizaciones de varias fuentes y de envío</li>
+<li><strong>sherlock-project/sherlock</strong> — La veterana herramienta OSINT número uno de todo el sitio, con una lógica clara en un solo archivo; sirve como muestra de código para estudiar «cómo un programita llega a 110,000 estrellas»</li>
+<li><strong>NVIDIA/SkillSpector</strong> — Escanea la inyección de prompts y los riesgos de la cadena de suministro en las skills de agente; has instalado bastantes skills de Claude Code / OpenCode, así que escanearlas antes de instalarlas es un buen hábito</li>
+</ol>
+<hr />
+<h2>Fuentes de datos</h2>
+<ul>
+<li>Lista oficial semanal de GitHub Trending: https://github.com/trending?since=weekly y sus sublistas por lenguaje (python / typescript / javascript / rust / go / java), verificada el 2026-11-14 08:00 CST</li>
+<li>Instantánea de un agregador de terceros: gaojihao.github.io/github-hot/trending-weekly.html (actualizada el 2026-11-14 03:57, hora de Pekín)</li>
+<li>El total de estrellas de sherlock, 111,117, procede de la API de GitHub (consulta en tiempo real el 2026-11-14); su aumento de estrellas de la semana no aparece en la instantánea, por eso no se indica</li>
+<li>Comparación con el número anterior (2026-11-07): la lista general vuelve a renovarse en gran parte; solo unos pocos proyectos, como anthropics/skills, OpenMausBot, agent-browser, zed, floci, etc., siguen en la lista; el tema pasa de la «memoria y colaboración de los agentes» al «entorno de ejecución del agente (navegador / escritorio / sandbox) + seguridad del agente», y al mismo tiempo vuelven proyectos veteranos como sherlock y mujoco, mientras los veteranos de infraestructura de Go/Java siguen dominando</li>
+</ul>
+<p><em>Nota: las cifras de rendimiento que declaran los propios proyectos (como la reducción de tokens o la velocidad de inferencia) son sus propios benchmarks, sin reproducción por terceros; antes de importarlos, se recomienda volver a medirlos con tu propia carga de trabajo.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

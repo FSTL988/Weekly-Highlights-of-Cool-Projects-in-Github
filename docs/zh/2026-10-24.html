@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 热门项目周报 — 最近一周</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="2026-10-24.html" selected>中文</option><option value="en" data-url="../en/2026-10-24.html">English</option><option value="fr" data-url="../fr/2026-10-24.html">Français</option><option value="ja" data-url="../ja/2026-10-24.html">日本語</option><option value="ko" data-url="../ko/2026-10-24.html">한국어</option><option value="es" data-url="../es/2026-10-24.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← 首页</a></p>
+<h1>GitHub 热门项目周报 — 最近一周</h1>
+<p><strong>时间窗口：</strong> 2026-10-18 至 2026-10-24（GitHub Trending <code>since=weekly</code>）
+<strong>查证时间：</strong> 2026-10-24 13:54 CST（Asia/Shanghai）
+<strong>口径说明：</strong> 排名以 GitHub 官方 Trending 周榜展示顺序为准；本周增星数引用第三方汇总站快照（2026-10-24 12:55 北京时间），不同汇总站因抓取时间不同，增星数会有差异。</p>
+<hr />
+<h2>本周总览</h2>
+<p>这一周的主线非常明确：几乎所有榜单都被 AI Agent / 编程助手占领。</p>
+<ol>
+<li><strong>Agent 工程从拼功能转向拼成本</strong> — context-mode、xerj、ECC、caveman 都在解决同一件事：让 Agent 少读、少写、少烧 Token。脉络窗口是有限资源，工具输出和文件读取是最大的消耗来源。</li>
+<li><strong>插件 / 技能分发制度化</strong> — Anthropic 推出官方插件目录，superpowers 把开发方法论做成可安装物件，K-Dense-AI 把科研流程收拢成 177 个技能。</li>
+<li><strong>推理与创作工具同步落到本地</strong> — DeepSeek 的 DeepInfer、TokenSpeed、VoiceStudio、ComfyUI、FilmCraft 都强调本地运行，并预留 Agent 可调用的接口。</li>
+</ol>
+<hr />
+<h2>1. 全站总榜 Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>morluto/rea</td>
+<td>TypeScript</td>
+<td>让 Agent 做逆向工程，从应用行为一路分析到原生二进制。本周新增约 88,243 星（第三方汇总口径）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>anthropics/claude-plugins-official</td>
+<td>Python</td>
+<td>Anthropic 官方维护的 Claude Code 插件目录。本周新增约 4,250 星</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ruvnet/ruflo</td>
+<td>TypeScript</td>
+<td>多 Agent 集群 / 工作流 harness，带自适应记忆、自学习、联邦协作、向量 RAG，集成 Claude Code / Codex / Hermes 等</td>
+</tr>
+<tr>
+<td>4</td>
+<td>android/skills</td>
+<td>Kotlin</td>
+<td>Android 官方技能库。本周新增约 1,471 星</td>
+</tr>
+<tr>
+<td>5</td>
+<td>anomalyco/opencode</td>
+<td>TypeScript</td>
+<td>开源编程 Agent。本周新增约 6,765 星</td>
+</tr>
+</tbody>
+</table></div>
+<p>紧随其后：stablyai/orca（本周 +9,545）、cursor/plugins、akitaonrails/ai-memory、HKUDS/CLI-Anything、Comfy-Org/ComfyUI、debpalash/VoiceStudio、heygen-com/hyperframes、K-Dense-AI/scientific-agent-skills、NationalSecurityAgency/ghidra。</p>
+<blockquote>
+<p>注：另一个按纯增星排序的周榜（2026-10-23）前五为：rea、orca、hyperframes、claude-plugins-official、ghidra，排序差异来自口径和抓取时间。</p>
+</blockquote>
+<p>项目链接：
+- https://github.com/morluto/rea
+- https://github.com/anthropics/claude-plugins-official
+- https://github.com/ruvnet/ruflo
+- https://github.com/android/skills
+- https://github.com/anomalyco/opencode</p>
+<hr />
+<h2>2. Python / AI 与数据 Top 5</h2>
+<ol>
+<li><strong>anthropics/claude-plugins-official</strong> — Claude Code 官方插件目录
+   https://github.com/anthropics/claude-plugins-official</li>
+<li><strong>HKUDS/CLI-Anything</strong> — “让所有软件都变成 Agent-Native” 的 CLI 工具集，CLI-Hub: clianything.cc
+   https://github.com/HKUDS/CLI-Anything</li>
+<li><strong>Comfy-Org/ComfyUI</strong> — 模块化扩散模型 GUI / API / 后端，节点图界面，本地推理
+   https://github.com/Comfy-Org/ComfyUI</li>
+<li><strong>debpalash/VoiceStudio</strong> — 完全本地的 ElevenLabs 替代品，语音克隆、语音设计、视频配音、听写、转写与有声书，支持 646 种语言
+   https://github.com/debpalash/VoiceStudio</li>
+<li><strong>K-Dense-AI/scientific-agent-skills</strong> — 把 Agent 变成 AI 科学家，177 个已验证科研技能 + 100+ 科学数据库，覆盖生物、化学、医学、药物发现，兼容 Cursor / Claude Code / Codex 等
+   https://github.com/K-Dense-AI/scientific-agent-skills</li>
+</ol>
+<p>后面值得注意：vllm-project/vllm、fastapi/fastapi、sgl-project/sglang、yt-dlp/yt-dlp 持续上榜。</p>
+<hr />
+<h2>3. TypeScript / 前端与 Agent 工具 Top 5</h2>
+<ol>
+<li><strong>morluto/rea</strong> — Agent 逆向工程工具
+   https://github.com/morluto/rea</li>
+<li><strong>ruvnet/ruflo</strong> — Agent 集群 harness
+   https://github.com/ruvnet/ruflo</li>
+<li><strong>anomalyco/opencode</strong> — 开源编程 Agent
+   https://github.com/anomalyco/opencode</li>
+<li><strong>stablyai/orca</strong> — 统一管理一队编程 Agent（Grok Bot、Claude Code 等）的平台，用自己的订阅运行，支持桌面、移动和远程运行时
+   https://github.com/stablyai/orca</li>
+<li><strong>cursor/plugins</strong> — Cursor 插件规范和官方插件
+   https://github.com/cursor/plugins</li>
+</ol>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>michael-denyer/pstack-claude</strong> — 把 pstack 的严谨 Agent 工作流移植到 Claude Code、Codex、Copilot、Pi、OpenCode、Gemini 等多个 harness
+   https://github.com/michael-denyer/pstack-claude</li>
+<li><strong>hmjz100/LinkSwift</strong> — 网盘直链下载工具，支持百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘八大网盘
+   https://github.com/hmjz100/LinkSwift</li>
+<li><strong>cloudflare/security-audit-skill</strong> — 让编程 Agent 做多阶段安全审计，独立验证、机器可读的结果
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>DietrichGebert/ponytail</strong> — 让 AI Agent 像“最懒的资深工程师”一样思考：最好的代码是你没写的代码
+   https://github.com/DietrichGebert/ponytail</li>
+<li><strong>plugin87/ux-ui-agent-skills</strong> — 把 Claude 变成资深设计架构师：DTCG tokens、52 个组件、WCAG 2.2、138 个设计系统
+   https://github.com/plugin87/ux-ui-agent-skills</li>
+</ol>
+<hr />
+<h2>5. Rust / 系统工具 Top 5</h2>
+<ol>
+<li><strong>akitaonrails/ai-memory</strong> — 给编程 Agent CLI 做长期记忆，支持不同 Agent 厂商之间交接 handoff
+   https://github.com/akitaonrails/ai-memory</li>
+<li><strong>xerj-org/xerj</strong> — 本地优先搜索引擎 + MCP Server，单个 Rust 二进制索引代码、文档、日志、JSONL/CSV、PDF，支持 BM25 全文、向量和混合搜索，兼容 Elasticsearch API
+   https://github.com/xerj-org/xerj</li>
+<li><strong>oven-sh/bun</strong> — 极快的 JavaScript 运行时、打包器、测试器和包管理器，一体化
+   https://github.com/oven-sh/bun</li>
+<li><strong>mixelpixx/Konnect</strong> — AI 辅助 PCB 设计，KiCad 10 原生 Rust 插件，217 个原理图/布局/布线/审查工具暴露给 LLM
+   https://github.com/mixelpixx/Konnect</li>
+<li><strong>GCWing/OpenBitFun</strong> — Rust 高性能 Agent 运行时 + 精致桌面应用，兼具 Code Agent 深度和通用工作能力
+   https://github.com/GCWing/OpenBitFun</li>
+</ol>
+<hr />
+<h2>6. Go / 云原生与 AI 服务 Top 5</h2>
+<ol>
+<li><strong>ollama/ollama</strong> — 本地跑大模型：Kimi、GLM、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等
+   https://github.com/ollama/ollama</li>
+<li><strong>gitleaks/gitleaks</strong> — 扫描代码和提交里的密钥泄漏
+   https://github.com/gitleaks/gitleaks</li>
+<li><strong>mudler/LocalAI</strong> — 开源本地 AI 引擎，跑 LLM、视觉、语音、图像、视频，任意硬件，无 GPU 也可
+   https://github.com/mudler/LocalAI</li>
+<li><strong>etcd-io/etcd</strong> — 分布式可靠键值存储，用于分布式系统最关键的数据
+   https://github.com/etcd-io/etcd</li>
+<li><strong>Asymptote-Labs/agent-beacon</strong> — 跨 harness 的 Agent 自改进记忆层
+   https://github.com/Asymptote-Labs/agent-beacon</li>
+</ol>
+<p>后面值得注意：gin-gonic/gin、helm/helm、vxcontrol/pentagi（自主渗透测试 Agent）、github/github-mcp-server、hashicorp/terraform。</p>
+<hr />
+<h2>7. Java / Android 与逆向 Top 5</h2>
+<p><em>按 GitHub Trending Java 周榜展示顺序</em></p>
+<ol>
+<li><strong>NationalSecurityAgency/ghidra</strong> — NSA 开源软件逆向工程（SRE）框架，本周 +4,221 星，是被 rea 带火的老牌项目
+   https://github.com/NationalSecurityAgency/ghidra</li>
+<li><strong>HMCL-dev/HMCL</strong> — 多功能、跨平台的 Minecraft 启动器
+   https://github.com/HMCL-dev/HMCL</li>
+<li><strong>iBotPeaches/Apktool</strong> — Android APK 逆向工程工具，本周 +660 星
+   https://github.com/iBotPeaches/Apktool</li>
+<li><strong>AbdurazaaqMohammed/MP-Manager</strong> — 专注 APK 的双栏 Android 文件管理器
+   https://github.com/AbdurazaaqMohammed/MP-Manager</li>
+<li><strong>modelcontextprotocol/java-sdk</strong> — Model Context Protocol 官方 Java SDK，与 Spring AI 合作维护
+   https://github.com/modelcontextprotocol/java-sdk</li>
+</ol>
+<p>Java 榜的特征很明显：逆向工程（ghidra、Apktool、jadx）和 Android / Minecraft 启动器占了大半。</p>
+<hr />
+<h2>值得 Xtop 亲自试的 4 个</h2>
+<p>结合你之前 Star 过的方向（AI/Agent 工具、本地模型、MCP）和你在做的项目：</p>
+<ol>
+<li><strong>morluto/rea</strong> — Agent + 逆向，新范式，看看它怎么用 Ghidra/Hopper 做后端</li>
+<li><strong>HKUDS/CLI-Anything</strong> — 把任何软件变成 Agent 可调用的 CLI，和 MCP 思路互补</li>
+<li><strong>xerj-org/xerj</strong> — Rust 单二进制本地搜索/RAG，省 Token 的思路对长上下文项目直接有用</li>
+<li><strong>mksglu/context-mode</strong>（TypeScript 榜第 15，本周周报重点项目）— 把工具输出关进沙箱，宣称 98% 上下文缩减，持久化会话记忆</li>
+</ol>
+<hr />
+<h2>数据来源</h2>
+<ul>
+<li>GitHub Trending 官方周榜：https://github.com/trending?since=weekly 及各语言子榜（python / typescript / javascript / rust / go / java）</li>
+<li>第三方汇总快照：gaojihao.github.io/github-hot/trending-weekly.html（更新于 2026-10-24 12:55 北京时间）</li>
+<li>CyberQ GitHub 趨勢周報 Vol.39（2026-10-23 查证）：https://cyberq.tw/2026/10/23/github-trends-weekly-report-vol-39-proxy/</li>
+<li>韩文周榜汇总（2026-10-23，按增星排序）：https://blog.amuse.ing/github-trending-2026-10-23/</li>
+</ul>
+<p><em>说明：项目自述的性能数字（如 token 缩减、推理速度）均为项目方自家基准，未经第三方复现，导入前建议用自己的工作负载重测。</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

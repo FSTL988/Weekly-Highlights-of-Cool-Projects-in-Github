@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 热门项目周报 — 最近一周</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="2026-10-31.html" selected>中文</option><option value="en" data-url="../en/2026-10-31.html">English</option><option value="fr" data-url="../fr/2026-10-31.html">Français</option><option value="ja" data-url="../ja/2026-10-31.html">日本語</option><option value="ko" data-url="../ko/2026-10-31.html">한국어</option><option value="es" data-url="../es/2026-10-31.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← 首页</a></p>
+<h1>GitHub 热门项目周报 — 最近一周</h1>
+<p><strong>时间窗口：</strong> 2026-10-25 至 2026-10-31（GitHub Trending <code>since=weekly</code>）
+<strong>查证时间：</strong> 2026-10-31 07:58 CST（Asia/Shanghai）
+<strong>口径说明：</strong> 排名以 GitHub 官方 Trending 周榜展示顺序为准；本周增星数引用第三方汇总站快照（2026-10-31 02:08 北京时间），不同汇总站因抓取时间不同，增星数会有差异。官方榜单的展示顺序并不完全按增星数排序。</p>
+<hr />
+<h2>本周总览</h2>
+<p>这一周的关键词仍然是 <strong>Agent 技能（skills）</strong>，但风向从“做更多技能”转向了“管好技能”和“让 Agent 更有品味”。</p>
+<ol>
+<li><strong>技能安全与质量成为新焦点</strong> — 全站第一的 cloudflare/security-audit-skill（一周 +14,320 星）让 Agent 自己做多阶段安全审计；NVIDIA 的 SkillSpector 专门扫描技能里的提示注入、恶意代码和数据外泄。技能装得越多，越需要有人检查技能本身。</li>
+<li><strong>大厂亲自下场发技能</strong> — Anthropic 为知识工作者推出 knowledge-work-plugins，AWS 推出官方 agent-toolkit-for-aws，Anthropic 的 skills 仓库继续上榜；技能分发从社区自发变成官方标配。</li>
+<li><strong>Agent 开始讲“品味”和“审美”</strong> — pbakaus/impeccable（一周 +9,713 星）给 Agent 一套设计词汇，taste-skill 和 jakubkrehel/skills 教 Agent 做界面、做艺术指导；AI 写的页面能不能看，开始有人认真管了。</li>
+<li><strong>金融 Agent 热度回升</strong> — TauricResearch/TradingAgents（一周 +5,557 星）重回全站前五，多智能体交易框架再次受到关注；同时 Rust 榜出现了 WiFi 信号感知、机器人小鸭等跨界项目。</li>
+</ol>
+<hr />
+<h2>1. 全站总榜 Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>cloudflare/security-audit-skill</td>
+<td>JavaScript</td>
+<td>让编程 Agent 做多阶段安全审计，独立验证、机器可读的结果。本周新增约 14,320 星</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AgriciDaniel/claude-seo</td>
+<td>Python</td>
+<td>Claude Code 通用 SEO 技能：26 个子技能 + 19 个子代理，覆盖技术 SEO、E-E-A-T、schema、GEO/AEO 等。本周新增约 4,110 星</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pbakaus/impeccable</td>
+<td>Rust</td>
+<td>给编码 Agent 的设计词汇：引导写出精致大胆的设计，评审时做 critique 和 audit，在 AI 味页面上线前拦截。本周新增约 9,713 星</td>
+</tr>
+<tr>
+<td>4</td>
+<td>obra/superpowers</td>
+<td>Shell</td>
+<td>Agent 技能框架与软件开发方法论。本周新增约 4,894 星</td>
+</tr>
+<tr>
+<td>5</td>
+<td>TauricResearch/TradingAgents</td>
+<td>Python</td>
+<td>多智能体 LLM 金融交易框架。本周新增约 5,557 星</td>
+</tr>
+</tbody>
+</table></div>
+<p>紧随其后：multica-ai/andrej-karpathy-skills（本周 +4,250）、Leonxlnx/taste-skill（本周 +4,359）、jakubkrehel/skills、pingdotgg/t3code、anthropics/knowledge-work-plugins、affaan-m/ECC（本周 +6,594）、anthropics/skills、ruvnet/ruflo。</p>
+<p>项目链接：
+- https://github.com/cloudflare/security-audit-skill
+- https://github.com/AgriciDaniel/claude-seo
+- https://github.com/pbakaus/impeccable
+- https://github.com/obra/superpowers
+- https://github.com/TauricResearch/TradingAgents</p>
+<hr />
+<h2>2. Python / AI 与数据 Top 5</h2>
+<ol>
+<li><strong>AgriciDaniel/claude-seo</strong> — Claude Code 通用 SEO 技能，26 个子技能 + 19 个子代理
+   https://github.com/AgriciDaniel/claude-seo</li>
+<li><strong>TauricResearch/TradingAgents</strong> — 多智能体 LLM 金融交易框架
+   https://github.com/TauricResearch/TradingAgents</li>
+<li><strong>anthropics/knowledge-work-plugins</strong> — Anthropic 官方插件库，主要面向 Claude Cowork 的知识工作者
+   https://github.com/anthropics/knowledge-work-plugins</li>
+<li><strong>anthropics/skills</strong> — Anthropic 官方 Agent Skills 公共仓库
+   https://github.com/anthropics/skills</li>
+<li><strong>aws/agent-toolkit-for-aws</strong> — AWS 官方 MCP 服务器、技能与插件，帮助 AI Agent 在 AWS 上构建
+   https://github.com/aws/agent-toolkit-for-aws</li>
+</ol>
+<p>后面值得注意：higgsfield-ai/skills、NVIDIA/SkillSpector（扫描技能的安全风险）、sgl-project/sglang、debpalash/VoiceStudio、vllm-project/vllm、HKUDS/DeepTutor（终身个性化家教）。</p>
+<hr />
+<h2>3. TypeScript / 前端与 Agent 工具 Top 5</h2>
+<ol>
+<li><strong>pingdotgg/t3code</strong> — T3 团队的编程 Agent 工具
+   https://github.com/pingdotgg/t3code</li>
+<li><strong>ruvnet/ruflo</strong> — Agent 集群 harness（连续两周上榜）
+   https://github.com/ruvnet/ruflo</li>
+<li><strong>gitroomhq/postiz-app</strong> — Agent 化社交媒体排期工具
+   https://github.com/gitroomhq/postiz-app</li>
+<li><strong>anomalyco/opencode</strong> — 开源编程 Agent
+   https://github.com/anomalyco/opencode</li>
+<li><strong>google-gemini/gemini-cli</strong> — 把 Gemini 带进终端的开源 AI Agent
+   https://github.com/google-gemini/gemini-cli</li>
+</ol>
+<p>后面值得注意：anthropics/sandbox-runtime（轻量进程沙箱）、heygen-com/hyperframes（写 HTML 生成视频）、JetBrains/thinkrail、microsoft/skill-recorder（把屏幕操作录成可复用技能）、langfuse/langfuse。</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — 让编程 Agent 做多阶段安全审计，独立验证、机器可读。本周新增约 14,320 星
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>Leonxlnx/taste-skill</strong> — 给编码 Agent“品味”的技能：艺术指导、参考图、浏览器实测，拒绝通用 AI 页面
+   https://github.com/Leonxlnx/taste-skill</li>
+<li><strong>affaan-m/ECC</strong> — Agent harness 性能优化系统：技能、本能、记忆、安全与研究优先开发
+   https://github.com/affaan-m/ECC</li>
+<li><strong>hmjz100/LinkSwift</strong> — 网盘直链下载工具，支持百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘八大网盘
+   https://github.com/hmjz100/LinkSwift</li>
+<li><strong>citrolabs/ego-lite</strong> — 给 AI Agent 的最快浏览器：共享已登录的浏览器状态做浏览器自动化，零成本、零配置
+   https://github.com/citrolabs/ego-lite</li>
+</ol>
+<p>后面值得注意：OpenWhispr/openwhispr（本地语音转文字）、ulsklyc/yuvomi（自托管家庭计划器）、nodejs/node。</p>
+<hr />
+<h2>5. Rust / 系统工具 Top 5</h2>
+<ol>
+<li><strong>pbakaus/impeccable</strong> — 给编码 Agent 的设计词汇。本周新增约 9,713 星
+   https://github.com/pbakaus/impeccable</li>
+<li><strong>akitaonrails/ai-memory</strong> — 给编程 Agent CLI 做长期记忆，支持不同 Agent 厂商之间交接 handoff
+   https://github.com/akitaonrails/ai-memory</li>
+<li><strong>agentgateway/agentgateway</strong> — 下一代 Agentic Proxy，面向 AI Agent 与 MCP 服务器
+   https://github.com/agentgateway/agentgateway</li>
+<li><strong>pollen-robotics/microduck</strong> — 一只微型双足鸭子机器人 🦆
+   https://github.com/pollen-robotics/microduck</li>
+<li><strong>macro-inc/macro</strong> — 统一工作空间：邮件、聊天、文档、任务、Agent、通话与 CRM，共享 AI 记忆
+   https://github.com/macro-inc/macro</li>
+</ol>
+<p>后面值得注意：xerj-org/xerj、ruvnet/RuView（用 WiFi 信号做实时空间感知与生命体征监测）、ZSeven-W/openpencil（AI 原生矢量设计工具）、NVIDIA/cuda-rust、rustdesk/rustdesk。</p>
+<hr />
+<h2>6. Go / 云原生与 AI 服务 Top 5</h2>
+<ol>
+<li><strong>infiniflow/ragflow</strong> — 开源 RAG 引擎，把前沿 RAG 与 Agent 能力融合成 LLM 的上下文层
+   https://github.com/infiniflow/ragflow</li>
+<li><strong>slavakurilyak/awesome-ai-agents</strong> — 300+ Agent AI 资源精选清单
+   https://github.com/slavakurilyak/awesome-ai-agents</li>
+<li><strong>multica-ai/multica</strong> — 让人类与 AI Agent 像一个团队协作，开源、可自托管
+   https://github.com/multica-ai/multica</li>
+<li><strong>QuantumNous/new-api</strong> — 开源 AI 网关：自托管 LLM 网关，兼容 OpenAI / Claude / Gemini API，带模型路由、访问控制与用量计费
+   https://github.com/QuantumNous/new-api</li>
+<li><strong>plandex-ai/plandex</strong> — 开源 AI 编程 Agent，面向大型项目与真实任务
+   https://github.com/plandex-ai/plandex</li>
+</ol>
+<p>后面值得注意：router-for-me/CLIProxyAPI、grafana/loki、wailsapp/wails、chaitin/SafeLine、ollama/ollama、tailscale/tailscale、github/gh-aw（GitHub Agentic Workflows）。</p>
+<hr />
+<h2>7. Java / Android 与逆向 Top 5</h2>
+<p><em>按 GitHub Trending Java 周榜展示顺序</em></p>
+<ol>
+<li><strong>krahets/hello-algo</strong> — 《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持多语言与多语言代码实现
+   https://github.com/krahets/hello-algo</li>
+<li><strong>TheAlgorithms/Java</strong> — Java 实现的全部经典算法
+   https://github.com/TheAlgorithms/Java</li>
+<li><strong>kksimp/Mac.apk</strong> — 在 Apple Silicon Mac 上原生运行 Android 应用
+   https://github.com/kksimp/Mac.apk</li>
+<li><strong>HMCL-dev/HMCL</strong> — 多功能、跨平台的 Minecraft 启动器（连续两周上榜）
+   https://github.com/HMCL-dev/HMCL</li>
+<li><strong>DependencyTrack/dependency-track</strong> — 智能组件分析平台，识别并降低软件供应链风险
+   https://github.com/DependencyTrack/dependency-track</li>
+</ol>
+<p>后面值得注意：halo-dev/halo、alibaba/nacos、iBotPeaches/Apktool、spring-projects/spring-framework、elastic/elasticsearch、apache/flink、cryptomator/cryptomator。</p>
+<hr />
+<h2>值得 Xtop 亲自试的 4 个</h2>
+<p>结合你之前 Star 过的方向（AI/Agent 工具、本地模型、MCP）和你在做的项目：</p>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — 本周全站第一。让 Agent 自己做安全审计的思路可以直接用到你的 Pro Crypto 项目上，审计 API key 与数据库配置</li>
+<li><strong>NVIDIA/SkillSpector</strong> — 技能装得越多越要防投毒：扫描技能里的提示注入与数据外泄，装新技能前先过一遍</li>
+<li><strong>pbakaus/impeccable</strong> — 如果你让 Agent 写前端页面，这个设计词汇能直接提升成品观感，拦截“AI 味”</li>
+<li><strong>anthropics/sandbox-runtime</strong> — 轻量进程沙箱，不用容器就能给任意进程加文件系统与网络限制，适合把 Agent 的工具调用关进沙箱</li>
+</ol>
+<hr />
+<h2>数据来源</h2>
+<ul>
+<li>GitHub Trending 官方周榜：https://github.com/trending?since=weekly 及各语言子榜（python / typescript / javascript / rust / go / java），查证于 2026-10-31 07:58 CST</li>
+<li>第三方汇总快照：gaojihao.github.io/github-hot/trending-weekly.html（更新于 2026-10-31 02:08 北京时间）</li>
+<li>与上期（2026-10-24）对比：全站榜单几乎全部换血，仅 ruflo、opencode、ECC、LinkSwift、ai-memory、xerj、ollama、HMCL、Apktool 等少数项目连续两周在榜；Agent 技能主题从上周延续至今，但焦点从“技能数量”转向“技能安全与质量”</li>
+</ul>
+<p><em>说明：项目自述的性能数字（如 token 缩减、推理速度）均为项目方自家基准，未经第三方复现，导入前建议用自己的工作负载重测。</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

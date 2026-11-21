@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Highlights</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/index.html">中文</option><option value="en" data-url="../en/index.html">English</option><option value="fr" data-url="index.html" selected>Français</option><option value="ja" data-url="../ja/index.html">日本語</option><option value="ko" data-url="../ko/index.html">한국어</option><option value="es" data-url="../es/index.html">Español</option></select></label></header>
+<main>
+<h1>Weekly Highlights</h1>
+<p>Sélection hebdomadaire des projets GitHub les plus populaires. Source : le classement hebdomadaire officiel GitHub Trending (<code>since=weekly</code>) et ses classements par langage, organisés par domaine sous forme de liste ; un nouveau numéro chaque samedi matin à 8 h, le rapport complet se trouve dans <code>reports/&lt;date&gt;/</code>.</p>
+<blockquote>
+<p>Note : il s&rsquo;agit de la version liste — les projets sont recensés sous forme de liens, sans copie du code des dépôts en amont. Cliquez sur le nom d&rsquo;un projet pour accéder au dépôt d&rsquo;origine.</p>
+</blockquote>
+<h2>Dernier numéro : 2026-11-21 (du 2026-11-15 au 2026-11-21)</h2>
+<ul>
+<li>Rapport complet : <a href="2026-11-21.html">reports/2026-11-21/github-weekly-2026-11-21.md</a></li>
+</ul>
+<p>Thème de la semaine : l&rsquo;agent passe de « capable de travailler » à « digne de confiance pour travailler », tandis que les « skills » continuent de se diffuser vers des cas d&rsquo;usage verticaux.
+1. L&rsquo;humain dans la boucle en tête — backnotprop/plannotator premier du classement général ; openworker de l&rsquo;équipe d&rsquo;Andrew Ng (andrewyng/openworker) fait de l&rsquo;approbation, de l&rsquo;audit et du sandbox l&rsquo;architecture par défaut ; Tencent/LoopForge ajoute aussi une étape d&rsquo;approbation humaine dans son processus de livraison.
+2. Les « skills » poursuivent leur verticalisation — last30days-skill (recherche), claude-trading-skills (trading), ffmpeg-skill (montage vidéo) et marketingskills (marketing) figurent au classement la même semaine.
+3. Les agents de revue de code entrent dans la pratique des grandes entreprises — open-code-review d&rsquo;Alibaba (alibaba/open-code-review, 4ᵉ du classement général) et modern-web-guidance-src de GoogleChrome (3ᵉ du classement général) figurent au classement la même semaine.
+4. Les projets d&rsquo;équipes chinoises émergent en nombre — Alibaba, Tencent, dream-num/univer, jeecgboot/JeecgBoot et jiangshan-map figurent au classement la même semaine ; le classement Java est globalement en retrait.</p>
+<h3>Top 5 du classement général</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a></td>
+<td>Un espace de travail qui permet à l&rsquo;humain de garder le contrôle dans la boucle de l&rsquo;agent</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></td>
+<td>Une bibliothèque d&rsquo;Agent Skills conçue pour le serveur MCP Stitch</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></td>
+<td>Pour que les agents de codage suivent les dernières bonnes pratiques du Web</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></td>
+<td>Un outil de revue de code validé à l&rsquo;échelle d&rsquo;Alibaba</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></td>
+<td>Une skill d&rsquo;agent pour faire des recherches sur n&rsquo;importe quel sujet sur plusieurs plateformes</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Top 5 Python / IA et données</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/mvanhorn/last30days-skill">mvanhorn/last30days-skill</a></td>
+<td>Une skill d&rsquo;agent pour faire des recherches sur n&rsquo;importe quel sujet sur Reddit, X, YouTube, HN et d&rsquo;autres plateformes</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/tradermonty/claude-trading-skills">tradermonty/claude-trading-skills</a></td>
+<td>Des skills de trading Claude Code pour les investisseurs particuliers</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a></td>
+<td>Un éditeur vidéo local pour les agents de codage</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/ZhuLinsen/daily_stock_analysis">ZhuLinsen/daily_stock_analysis</a></td>
+<td>Un système d&rsquo;analyse boursière intelligente multi-marchés piloté par LLM</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/andrewyng/openworker">andrewyng/openworker</a></td>
+<td>L&rsquo;agent de bureau de l&rsquo;équipe d&rsquo;Andrew Ng : un collaborateur IA + le Harness SDK</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Top 5 TypeScript / Frontend et outils Agent</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a></td>
+<td>Un espace de travail qui permet à l&rsquo;humain de garder le contrôle dans la boucle de l&rsquo;agent</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></td>
+<td>Une bibliothèque d&rsquo;Agent Skills conçue pour le serveur MCP Stitch</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a></td>
+<td>Pour que les agents de codage suivent les dernières bonnes pratiques du Web</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a></td>
+<td>Chrome DevTools pour les agents de codage</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui-protocol/ag-ui</a></td>
+<td>Agent-User Interaction Protocol : amener l&rsquo;agent dans les applications frontend</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Top 5 JavaScript</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/Anil-matcha/Open-Generative-AI">Anil-matcha/Open-Generative-AI</a></td>
+<td>Une alternative open source non censurée aux plateformes vidéo IA, avec plus de 800 modèles</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/DeanChensj/jiangshan-map">DeanChensj/jiangshan-map</a></td>
+<td>Jiangshan Shixu · une frise chronologique interactive de l&rsquo;histoire de la Chine</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/coreyhaines31/marketingskills">coreyhaines31/marketingskills</a></td>
+<td>Des skills marketing pour Claude Code et les agents IA</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/jquery/jquery">jquery/jquery</a></td>
+<td>La bibliothèque JavaScript jQuery</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></td>
+<td>Un système d&rsquo;optimisation des performances des agent harnesses</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Top 5 Rust / Outils système</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/vercel-labs/agent-browser">vercel-labs/agent-browser</a></td>
+<td>Un CLI d&rsquo;automatisation de navigateur pour les agents IA</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/block/buzz">block/buzz</a></td>
+<td>Une plateforme de communication en essaim</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/ModernRelay/omnigraph">ModernRelay/omnigraph</a></td>
+<td>Une base de données graphe native du stockage objet</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/martin-olivier/airgorah">martin-olivier/airgorah</a></td>
+<td>Un logiciel d&rsquo;audit de sécurité WiFi</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/crmne/zapfast">crmne/zapfast</a></td>
+<td>Un client WhatsApp natif rapide en Rust + egui</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Top 5 Go / Cloud native et services IA</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a></td>
+<td>Un outil de revue de code validé à l&rsquo;échelle d&rsquo;Alibaba</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/getarcaneapp/arcane">getarcaneapp/arcane</a></td>
+<td>Un outil moderne de gestion Docker pour tout le monde</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/agent-substrate/substrate">agent-substrate/substrate</a></td>
+<td>Le système central d&rsquo;Agent Substrate</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/runkids/skillshare">runkids/skillshare</a></td>
+<td>Une seule commande pour synchroniser les skills vers tous les outils CLI d&rsquo;IA</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/Tencent/LoopForge">Tencent/LoopForge</a></td>
+<td>Un workflow de livraison d&rsquo;agents de codage auto-hébergé</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Top 5 Java / Android et rétro-ingénierie</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/openjdk/jdk">openjdk/jdk</a></td>
+<td>Le développement de la ligne principale du JDK</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://github.com/jeecgboot/JeecgBoot">jeecgboot/JeecgBoot</a></td>
+<td>Une plateforme low-code IA gratuite et open source</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://github.com/SeleniumHQ/selenium">SeleniumHQ/selenium</a></td>
+<td>Un framework d&rsquo;automatisation de navigateur et son écosystème</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://github.com/jean-voila/FeurStagram">jean-voila/FeurStagram</a></td>
+<td>Une application Instagram open source sans Reels ni publicité</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://github.com/TGX-Android/Telegram-X">TGX-Android/Telegram-X</a></td>
+<td>Le client alternatif officiel de Telegram X (Android)</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Numéros précédents</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Rapport complet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-21</td>
+<td><a href="2026-11-21.html">reports/2026-11-21/github-weekly-2026-11-21.md</a></td>
+</tr>
+<tr>
+<td>2026-11-14</td>
+<td><a href="2026-11-14.html">reports/2026-11-14/github-weekly-2026-11-14.md</a></td>
+</tr>
+<tr>
+<td>2026-11-07</td>
+<td><a href="2026-11-07.html">reports/2026-11-07/github-weekly-2026-11-07.md</a></td>
+</tr>
+<tr>
+<td>2026-10-31</td>
+<td><a href="2026-10-31.html">reports/2026-10-31/github-weekly-2026-10-31.md</a></td>
+</tr>
+<tr>
+<td>2026-10-24</td>
+<td><a href="2026-10-24.html">reports/2026-10-24/github-weekly-2026-10-24.md</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2>Sources des données</h2>
+<ul>
+<li>Classement hebdomadaire officiel GitHub Trending : https://github.com/trending?since=weekly et ses classements par langage</li>
+<li>Le classement est celui de l&rsquo;ordre d&rsquo;affichage du classement hebdomadaire officiel ; les nombres d&rsquo;étoiles / d&rsquo;étoiles gagnées proviennent d&rsquo;instantanés de sites agrégateurs tiers et peuvent varier selon les sources en raison des différences d&rsquo;heure de collecte</li>
+<li>Les chiffres de performance annoncés par les projets sont leurs propres benchmarks et n&rsquo;ont pas été reproduits par des tiers</li>
+</ul>
+<h2>Numéros précédents</h2>
+<ul class="issue-list">
+<li><a href="2026-10-24.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-10-24</span></li><li><a href="2026-10-31.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-10-31</span></li><li><a href="2026-11-07.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-07</span></li><li><a href="2026-11-14.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-14</span></li><li><a href="2026-11-21.html">GitHub 热门项目周报 — 最近一周</a><span class="date">2026-11-21</span></li>
+</ul>
+
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rapport hebdomadaire des projets populaires GitHub — la semaine écoulée</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-07.html">中文</option><option value="en" data-url="../en/2026-11-07.html">English</option><option value="fr" data-url="2026-11-07.html" selected>Français</option><option value="ja" data-url="../ja/2026-11-07.html">日本語</option><option value="ko" data-url="../ko/2026-11-07.html">한국어</option><option value="es" data-url="../es/2026-11-07.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← Accueil</a></p>
+<h1>Rapport hebdomadaire des projets populaires GitHub — la semaine écoulée</h1>
+<p><strong>Fenêtre temporelle :</strong> du 2026-11-01 au 2026-11-07 (GitHub Trending <code>since=weekly</code>)
+<strong>Heure de vérification :</strong> 2026-11-07 08:00 CST (Asia/Shanghai)
+<strong>Note méthodologique :</strong> le classement suit l&rsquo;ordre d&rsquo;affichage du classement hebdomadaire officiel GitHub Trending ; le nombre d&rsquo;étoiles gagnées cette semaine est tiré d&rsquo;un instantané d&rsquo;un site agrégateur tiers (2026-11-07 03:38, heure de Pékin) et peut varier d&rsquo;un agrégateur à l&rsquo;autre en raison des différences d&rsquo;heure de collecte. L&rsquo;ordre d&rsquo;affichage du classement officiel ne correspond pas entièrement au tri par étoiles gagnées.</p>
+<hr />
+<h2>Vue d&rsquo;ensemble de la semaine</h2>
+<p>Le fil conducteur de cette semaine passe des « skills » à <strong>la mémoire et à l&rsquo;infrastructure de collaboration des agents</strong>.</p>
+<ol>
+<li><strong>La mémoire des agents devient le nouveau goulot d&rsquo;étranglement</strong> — thedotmack/claude-mem, premier du classement général (+9 318 étoiles en une semaine), offre un contexte persistant entre sessions : il compresse ce que l&rsquo;agent a fait à chaque session puis l&rsquo;injecte dans les sessions futures. max-sixty/worktrunk (premier du classement Rust) utilise les Git worktrees pour que plusieurs agents travaillent en parallèle sans se marcher dessus, et herdrdev/herdr veut devenir « le runtime où vivent les agents ». Les skills installées, l&rsquo;étape suivante est de faire en sorte que l&rsquo;agent se souvienne et collabore bien.</li>
+<li><strong>Les agents commencent à prendre en charge toute la chaîne de production</strong> — Donchitos/Claude-Code-Game-Studios (2ᵉ du classement général) transforme Claude Code en studio de développement de jeux : 49 agents, 72 skills de workflow, avec une répartition des rôles calquée sur un vrai studio ; calesthio/OpenMontage est un système open source de production vidéo par agents, avec 12 pipelines de production et plus de 700 fichiers de skills. L&rsquo;agent passe de « écrire du code » à « faire tourner un projet complet ».</li>
+<li><strong>Le design anti-goût-IA figure au classement pour la troisième semaine consécutive</strong> — Nutlope/hallmark (5ᵉ du classement général), pbakaus/impeccable et Leonxlnx/taste-skill, trois projets de goût en design, dominent le classement en même temps : la « taxe esthétique » du contenu généré par IA devient une infrastructure à part entière.</li>
+<li><strong>Le retour des anciens de l&rsquo;infrastructure</strong> — le top 5 du classement Go est presque entièrement composé de piliers du cloud native comme moby, gitea, argo-cd et docker/compose, et le classement Java est lui aussi dominé par keycloak, elasticsearch, cryptomator et StarRocks ; en contraste avec les nouveaux venus agents, cela montre que l&rsquo;attention de cette semaine reflue vers l&rsquo;infrastructure de base.</li>
+<li><strong>L&rsquo;IA financière pointe le bout du nez</strong> — shiyu-coder/Kronos (6ᵉ du classement Python) est un modèle de langage de base pour les marchés financiers, à surveiller pour celles et ceux qui travaillent sur le trading / les cours.</li>
+</ol>
+<hr />
+<h2>1. Top 5 du classement général</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Projet</th>
+<th>Langage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>thedotmack/claude-mem</td>
+<td>TypeScript</td>
+<td>Un contexte persistant entre sessions : enregistre le comportement de l&rsquo;agent à chaque session, le compresse par IA puis l&rsquo;injecte dans les sessions futures, avec prise en charge de Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode, entre autres. Environ 9 318 étoiles gagnées cette semaine</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Donchitos/Claude-Code-Game-Studios</td>
+<td>Shell</td>
+<td>Transforme Claude Code en studio complet de développement de jeux : 49 agents IA, 72 skills de workflow, coordonnés selon la hiérarchie d&rsquo;un vrai studio. Environ 6 685 étoiles gagnées cette semaine</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pingdotgg/t3code</td>
+<td>TypeScript</td>
+<td>L&rsquo;outil d&rsquo;agent de programmation de l&rsquo;équipe T3 (deuxième semaine consécutive au classement). Environ 16 235 étoiles gagnées cette semaine (selon l&rsquo;agrégateur tiers ; l&rsquo;ordre d&rsquo;affichage officiel ne correspond pas entièrement au tri par étoiles gagnées)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>max-sixty/worktrunk</td>
+<td>Rust</td>
+<td>Un CLI de gestion des Git worktrees pour les workflows d&rsquo;agents IA en parallèle. Environ 1 802 étoiles gagnées cette semaine</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Nutlope/hallmark</td>
+<td>CSS</td>
+<td>Une skill de design anti-goût-IA, pour Claude Code, Cursor et Codex. Environ 6 994 étoiles gagnées cette semaine</td>
+</tr>
+</tbody>
+</table></div>
+<p>Juste derrière : anthropics/skills (+3 072 cette semaine), milind-soni/OpenMausBot (+5 580 cette semaine), pbakaus/impeccable (+9 303 cette semaine), obra/superpowers (+5 131 cette semaine), HKUDS/DeepTutor (+6 229 cette semaine).</p>
+<p>Liens des projets :
+- https://github.com/thedotmack/claude-mem
+- https://github.com/Donchitos/Claude-Code-Game-Studios
+- https://github.com/pingdotgg/t3code
+- https://github.com/max-sixty/worktrunk
+- https://github.com/Nutlope/hallmark</p>
+<hr />
+<h2>2. Top 5 Python / IA et données</h2>
+<ol>
+<li><strong>anthropics/skills</strong> — Le dépôt public officiel des Agent Skills d&rsquo;Anthropic (troisième semaine consécutive au classement)
+   https://github.com/anthropics/skills</li>
+<li><strong>HKUDS/DeepTutor</strong> — Un tuteur personnalisé pour la vie : Lifelong Personalized Tutoring. Environ 6 229 étoiles gagnées cette semaine
+   https://github.com/HKUDS/DeepTutor</li>
+<li><strong>calesthio/OpenMontage</strong> — Le premier système open source de production vidéo par agents au monde : 12 pipelines de production, plus de 100 outils, plus de 700 skills d&rsquo;agent et fichiers de connaissances de production. Environ 4 132 étoiles gagnées cette semaine
+   https://github.com/calesthio/OpenMontage</li>
+<li><strong>The-PR-Agent/pr-agent</strong> — Un agent open source de revue de PR
+   https://github.com/The-PR-Agent/pr-agent</li>
+<li><strong>D4Vinci/Scrapling</strong> — Un framework de web scraping haute performance, de la requête unique au scraping à grande échelle. Environ 7 487 étoiles gagnées cette semaine
+   https://github.com/D4Vinci/Scrapling</li>
+</ol>
+<p>À noter également : shiyu-coder/Kronos (un modèle de langage de base pour les marchés financiers, +2 979 cette semaine), github/spec-kit (un kit d&rsquo;outils de développement piloté par les spécifications), blader/humanizer (une skill d&rsquo;agent pour effacer les traces d&rsquo;écriture IA), AgriciDaniel/claude-seo, ethanplusai/sellbird (une plateforme d&rsquo;outreach open source).</p>
+<hr />
+<h2>3. Top 5 TypeScript / Frontend et outils Agent</h2>
+<ol>
+<li><strong>thedotmack/claude-mem</strong> — Un contexte persistant entre sessions pour les agents
+   https://github.com/thedotmack/claude-mem</li>
+<li><strong>pingdotgg/t3code</strong> — L&rsquo;outil d&rsquo;agent de programmation de l&rsquo;équipe T3
+   https://github.com/pingdotgg/t3code</li>
+<li><strong>milind-soni/OpenMausBot</strong> — Une alternative open source à Grok Bot, avec sa propre machine virtuelle pour le bot. Environ 5 580 étoiles gagnées cette semaine
+   https://github.com/milind-soni/OpenMausBot</li>
+<li><strong>nightly-labs/openbot</strong> — Un espace de travail de bureau local-first pour un coéquipier IA persistant : Codex, Claude et Grok ont chacun leur espace de travail dédié, avec file de tâches, partage de fichiers et collaboration entre agents. Environ 2 085 étoiles gagnées cette semaine
+   https://github.com/nightly-labs/openbot</li>
+<li><strong>garrytan/gstack</strong> — La configuration Claude Code de Garry Tan : 23 outils répartis entre CEO, designer, engineering manager, release manager, ingénieur documentation et QA
+   https://github.com/garrytan/gstack</li>
+</ol>
+<p>À noter également : Vincentwei1021/video-shotcraft (une skill vidéo IA, des vidéos promotionnelles produites avec Remotion), CopilotKit/OpenBot (un ordinateur dédié pour chaque collègue IA), tashfeenahmed/freellmapi (34 fournisseurs LLM gratuits agrégés en une seule interface /v1), remotion/remotion, openclaw/openclaw, stablyai/orca.</p>
+<hr />
+<h2>4. Top 5 JavaScript</h2>
+<ol>
+<li><strong>cloudflare/security-audit-skill</strong> — Fait faire à un agent de programmation un audit de sécurité en plusieurs étapes, avec vérification indépendante et des résultats lisibles par machine (troisième semaine consécutive en tête du classement JS)
+   https://github.com/cloudflare/security-audit-skill</li>
+<li><strong>Leonxlnx/taste-skill</strong> — Une skill qui donne du « goût » à un agent de codage : direction artistique, images de référence, tests réels dans le navigateur, et refus des pages génériques à la sauce IA
+   https://github.com/Leonxlnx/taste-skill</li>
+<li><strong>HunYiSage/dsh-purge</strong> — Un outil de jailbreak pour DeepSeek Harness : permet à tous les modèles de changer de prompt pour faire un jailbreak, avec un prompt par défaut orienté vers les modèles chinois
+   https://github.com/HunYiSage/dsh-purge</li>
+<li><strong>affaan-m/ECC</strong> — Un système d&rsquo;optimisation des performances des agent harnesses : skills, instincts, mémoire, sécurité et recherche en priorité
+   https://github.com/affaan-m/ECC</li>
+<li><strong>github/awesome-copilot</strong> — Une sélection communautaire d&rsquo;instructions, d&rsquo;agents, de skills et de configurations Copilot
+   https://github.com/github/awesome-copilot</li>
+</ol>
+<p>À noter également : techjarves/Portable-Local-Studio (un studio IA local portable : génération d&rsquo;images, modèles locaux GGUF, synthèse et transcription vocales), DeanChensj/jiangshan-map (Jiangshan Shixu · une carte interactive de l&rsquo;histoire de la Chine), coreyhaines31/marketingskills, ConardLi/garden-skills.</p>
+<hr />
+<h2>5. Top 5 Rust / Outils système</h2>
+<ol>
+<li><strong>max-sixty/worktrunk</strong> — Un CLI de gestion des Git worktrees pour les workflows d&rsquo;agents IA en parallèle
+   https://github.com/max-sixty/worktrunk</li>
+<li><strong>pbakaus/impeccable</strong> — Un vocabulaire de design pour les agents de codage (troisième semaine consécutive au classement)
+   https://github.com/pbakaus/impeccable</li>
+<li><strong>herdrdev/herdr</strong> — « Le runtime où vit votre agent de codage »
+   https://github.com/herdrdev/herdr</li>
+<li><strong>openai/codex</strong> — Un agent de codage léger qui tourne dans le terminal
+   https://github.com/openai/codex</li>
+<li><strong>zed-industries/zed</strong> — Un éditeur de code haute performance et multi-joueurs, par l&rsquo;équipe d&rsquo;origine d&rsquo;Atom et de Tree-sitter
+   https://github.com/zed-industries/zed</li>
+</ol>
+<p>À noter également : cjpais/Handy (transcription vocale open source entièrement hors ligne), vercel-labs/agent-browser (un CLI d&rsquo;automatisation de navigateur pour les agents IA), leepokai/Codync (une alternative open source à Grok Bot, écrite en Rust), xai-org/x-algorithm (l&rsquo;algorithme du flux de recommandations de X, open source), agentgateway/agentgateway.</p>
+<hr />
+<h2>6. Top 5 Go / Cloud native et services IA</h2>
+<ol>
+<li><strong>moby/moby</strong> — Le projet Moby : un projet collaboratif pour l&rsquo;écosystème des conteneurs
+   https://github.com/moby/moby</li>
+<li><strong>multica-ai/multica</strong> — Permet aux humains et aux agents IA de collaborer comme une équipe, open source et auto-hébergeable (deuxième semaine consécutive au classement)
+   https://github.com/multica-ai/multica</li>
+<li><strong>go-gitea/gitea</strong> — Un service de développement logiciel auto-hébergé tout-en-un : hébergement Git, revue de code, collaboration, registre de paquets et CI/CD
+   https://github.com/go-gitea/gitea</li>
+<li><strong>argoproj/argo-cd</strong> — Le déploiement continu déclaratif pour Kubernetes
+   https://github.com/argoproj/argo-cd</li>
+<li><strong>docker/compose</strong> — Définir et faire tourner des applications multi-conteneurs
+   https://github.com/docker/compose</li>
+</ol>
+<p>À noter également : netbirdio/netbird (un réseau zero trust basé sur WireGuard), infiniflow/ragflow, prometheus/prometheus, golang/go, kubernetes/kubernetes, gastownhall/beads (une mise à niveau de la mémoire pour les agents de codage).</p>
+<hr />
+<h2>7. Top 5 Java / Android et rétro-ingénierie</h2>
+<p><em>Selon l&rsquo;ordre d&rsquo;affichage du classement hebdomadaire Java de GitHub Trending</em></p>
+<ol>
+<li><strong>floci-io/floci</strong> — Une alternative locale et gratuite à AWS, légère
+   https://github.com/floci-io/floci</li>
+<li><strong>keycloak/keycloak</strong> — La gestion open source des identités et des accès pour les applications et services modernes
+   https://github.com/keycloak/keycloak</li>
+<li><strong>elastic/elasticsearch</strong> — Un moteur de recherche distribué RESTful, gratuit et open source
+   https://github.com/elastic/elasticsearch</li>
+<li><strong>cryptomator/cryptomator</strong> — Un outil de chiffrement côté client pour le stockage cloud, qui protège la vie privée et le contrôle des données
+   https://github.com/cryptomator/cryptomator</li>
+<li><strong>StarRocks/starrocks</strong> — L&rsquo;un des moteurs de requête open source les plus rapides au monde, avec des analyses en moins d&rsquo;une seconde dans et hors du lakehouse
+   https://github.com/StarRocks/starrocks</li>
+</ol>
+<p>À noter également : spring-projects/spring-framework, openjdk/jdk, skylot/jadx (un décompilateur Dex vers Java), termux/termux-app, bazelbuild/bazel, floci-io/floci-az (un simulateur local d&rsquo;Azure).</p>
+<hr />
+<h2>4 projets à essayer pour Xtop</h2>
+<p>En lien avec les directions que vous avez déjà mises en favori (outils IA/Agent, modèles locaux, MCP) et les projets sur lesquels vous travaillez :</p>
+<ol>
+<li><strong>thedotmack/claude-mem</strong> — Premier du classement général cette semaine. La mémoire entre sessions des agents est précisément le point douloureux que vous rencontrerez sans cesse dans votre projet Pro Crypto et dans votre apprentissage d&rsquo;ingénieur IA : faire en sorte que l&rsquo;agent se souvienne où il en était la dernière fois et des pièges qu&rsquo;il a déjà rencontrés</li>
+<li><strong>max-sixty/worktrunk</strong> — Utilise les Git worktrees pour que plusieurs agents modifient différentes fonctionnalités en parallèle sans interférer, et se combine très bien avec OpenCode / Claude Code</li>
+<li><strong>Donchitos/Claude-Code-Game-Studios</strong> — Un système de coordination de 49 agents répartis selon la hiérarchie d&rsquo;un studio, dont les idées d&rsquo;architecture peuvent être directement reprises dans la conception d&rsquo;une collaboration multi-agents</li>
+<li><strong>shiyu-coder/Kronos</strong> — Un modèle de langage de base pour les marchés financiers, directement lié à votre intérêt pour les cours et le trading ; à regarder pour voir comment il transforme les données de marché en langage</li>
+</ol>
+<hr />
+<h2>Sources des données</h2>
+<ul>
+<li>Classement hebdomadaire officiel GitHub Trending : https://github.com/trending?since=weekly et ses classements par langage (python / typescript / javascript / rust / go / java), vérifié le 2026-11-07 08:00 CST</li>
+<li>Instantané d&rsquo;un agrégateur tiers : gaojihao.github.io/github-hot/trending-weekly.html (mis à jour le 2026-11-07 à 03:38, heure de Pékin)</li>
+<li>Par rapport au numéro précédent (2026-10-31) : le classement général a presque entièrement changé, seuls t3code, anthropics/skills, impeccable, superpowers et quelques autres projets figurent au classement en continu ; le thème passe de la « quantité et sécurité des skills » à la « mémoire des agents, la collaboration en parallèle et l&rsquo;agentification de toute la chaîne de production », tandis que les anciens de l&rsquo;infrastructure cloud native et Java reviennent nettement</li>
+</ul>
+<p><em>Note : les chiffres de performance annoncés par les projets (comme la réduction de tokens ou la vitesse d&rsquo;inférence) sont leurs propres benchmarks et n&rsquo;ont pas été reproduits par des tiers ; avant d&rsquo;adopter un projet, il est recommandé de le retester avec votre propre charge de travail.</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>

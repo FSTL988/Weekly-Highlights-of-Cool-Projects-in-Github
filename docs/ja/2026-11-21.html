@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 人気プロジェクト週報 — 直近1週間</title>
+<style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB",
+"Microsoft YaHei",sans-serif;line-height:1.65;color:#1f2937;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{color:#e5e7eb;background:#111827}
+  a{color:#7dd3fc}
+  code{background:#1f2937}
+  pre{background:#1f2937}
+  th{background:#1f2937}
+  td,th{border-color:#374151}
+  .langbar{background:#1f2937;border-color:#374151}
+}
+.topbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;
+align-items:center;justify-content:space-between;padding:.6rem 1rem;
+background:#0f172a;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .langbar{display:flex;align-items:center;gap:.5rem;font-size:.95rem}
+.topbar select{font:inherit;padding:.35rem .5rem;border-radius:.5rem;
+border:1px solid #cbd5e1;background:#fff;color:#0f172a;cursor:pointer}
+main{max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.8rem;line-height:1.3}
+h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid #e5e7eb;padding-bottom:.3rem}
+h3{font-size:1.15rem}
+a{color:#0369a1}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto}
+pre{overflow-x:auto;background:#f3f4f6;padding:1rem;border-radius:.5rem}
+code{background:#f3f4f6;padding:.1rem .3rem;border-radius:.3rem;font-size:.92em}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid #38bdf8;
+background:#f0f9ff;color:#334155}
+@media(prefers-color-scheme:dark){blockquote{background:#0c1a2b;color:#cbd5e1}}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #d1d5db;padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f1f5f9;white-space:nowrap}
+.issue-list{list-style:none;padding:0}
+.issue-list li{padding:.6rem 0;border-bottom:1px solid #e5e7eb}
+.issue-list a{font-weight:600;text-decoration:none}
+.issue-list .date{color:#6b7280;font-size:.9rem;margin-left:.5rem}
+.lang-links{list-style:none;padding:0;display:grid;gap:.5rem}
+.lang-links a{display:block;padding:.7rem 1rem;border:1px solid #d1d5db;
+border-radius:.5rem;text-decoration:none;font-weight:600}
+@media(max-width:640px){
+  h1{font-size:1.45rem}
+  main{padding:1rem .9rem 2.5rem}
+  .topbar{padding:.55rem .8rem}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Weekly Highlights</a><label class="langbar">🌐 <span>Language / 语言</span> <select id="lang-select" aria-label="Language / 语言"><option value="zh" data-url="../zh/2026-11-21.html">中文</option><option value="en" data-url="../en/2026-11-21.html">English</option><option value="fr" data-url="../fr/2026-11-21.html">Français</option><option value="ja" data-url="2026-11-21.html" selected>日本語</option><option value="ko" data-url="../ko/2026-11-21.html">한국어</option><option value="es" data-url="../es/2026-11-21.html">Español</option></select></label></header>
+<main>
+<p><a href="index.html">← ホーム</a></p>
+<h1>GitHub 人気プロジェクト週報 — 直近1週間</h1>
+<p><strong>対象期間：</strong> 2026-11-15 〜 2026-11-21（GitHub Trending <code>since=weekly</code>）
+<strong>確認日時：</strong> 2026-11-21 08:00 CST（Asia/Shanghai）
+<strong>集計の注記：</strong> 順位は GitHub 公式 Trending 週間ランキングの表示順に準拠。週間スター増加数は公式ランキングページ自体（「X stars this week」）から取得し、総スター数は GitHub API のリアルタイム照会（2026-11-21 08:00 前後）とサードパーティ集計サイトのスナップショット（2026-11-21 04:41 北京時間）によります。公式ランキングの表示順は、スター増加数順と完全には一致しません。</p>
+<hr />
+<h2>今週の概要</h2>
+<p>今週の主軸は <strong>Agent が「仕事ができる」から「安心して任せられる」へ進む一方で、「スキル」が垂直分野へ拡散を続けたこと</strong> です。</p>
+<ol>
+<li><strong>人間参加型（human-in-the-loop）が首位に</strong> — 全サイト 1 位の backnotprop/plannotator は「Agent のループの中で人が主導権を握り続けられる」ワークスペースです。Python ランキング 5 位の andrewyng/openworker（アンドリュー・ン氏のチーム）は「承認、監査、サンドボックス」をデスクトップ Agent のデフォルトアーキテクチャに組み込み、Tencent/LoopForge もデリバリーフローに人間の承認ステップを追加しました。Agent が有能になるほど、人が見張る必要があります。</li>
+<li><strong>「スキル」の垂直化が続く</strong> — 先週はまだ汎用スキルパックでしたが、今週はすでに具体的な職種へ分化しています。mvanhorn/last30days-skill（Reddit／X／YouTube／HN 横断の調査スキル）、tradermonty/claude-trading-skills（個人投資家向け取引スキル）、kajisho5/ffmpeg-skill（ローカル動画編集スキル）、coreyhaines31/marketingskills（マーケティングスキル）です。スキルは「Agent のプラグイン」から「ある職業のワークフロー」へ変わりつつあります。</li>
+<li><strong>コードレビュー Agent が大手の実戦レベルへ</strong> — アリババの alibaba/open-code-review（全サイト 4 位、総スター数 54,766）は「アリババ規模で検証された決定論的パイプライン + LLM Agent」を掲げ、GoogleChrome/modern-web-guidance-src（全サイト 3 位）はコーディング Agent を最新の Web ベストプラクティスに追いつかせるものです。レビューと規範が、Agent を現場に落とし込む次の関門になっています。</li>
+<li><strong>Agent とフロントエンドのプロトコル層が登場</strong> — ag-ui-protocol/ag-ui（Agent-User Interaction Protocol）と a2ui-project/a2ui（生成 UI フレームワーク）が同週にランクイン。Agent はもうテキストだけを出力するのではなく、アプリの UI に直接コンポーネントを「生やす」ようになります。</li>
+<li><strong>中国チームのプロジェクトが集中して台頭</strong> — アリババ、テンセント、dream-num/univer、jeecgboot/JeecgBoot、DeanChensj/jiangshan-map（中国歴史インタラクティブ地図）が同週にランクインし、コードレビュー、Agent デリバリー、オフィススイート、ローコード、文化コンテンツをカバーしています。</li>
+<li><strong>ベテランがランキングの周辺で存在感を示し続ける</strong> — jquery が JS ランキング 4 位に返り咲き、openjdk/jdk と SeleniumHQ/selenium が Java ランキングをリード。affaan-m/ECC は今週さらに 5,598 スター増え、総スター数はすでに 307,847 に達しました。Agent の波の中でも、老舗インフラのスター数の土台は依然として堅いです。</li>
+</ol>
+<hr />
+<h2>1. 全サイト総合 Top 5</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>プロジェクト</th>
+<th>言語</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>backnotprop/plannotator</td>
+<td>TypeScript</td>
+<td>Agent のループの中で人が主導権を握り続けられるワークスペース：整形、意思決定、計画、注釈、コードレビューを行い、ワンクリックでフィードバックを Agent に送ります。今週の増加は約 3,468 スター、総スター数 13,888</td>
+</tr>
+<tr>
+<td>2</td>
+<td>google-labs-code/stitch-skills</td>
+<td>TypeScript</td>
+<td>Stitch MCP サーバー向けに設計された Agent Skills ライブラリ。Agent Skills オープン標準に準拠し、Antigravity、Gemini CLI、Claude Code、Cursor と互換。今週の増加は約 1,829 スター、総スター数 11,022</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GoogleChrome/modern-web-guidance-src</td>
+<td>TypeScript</td>
+<td>コーディング Agent を最新の Web ベストプラクティスに追いつかせる。今週の増加は約 6,858 スター、総スター数 9,522</td>
+</tr>
+<tr>
+<td>4</td>
+<td>alibaba/open-code-review</td>
+<td>Go</td>
+<td>アリババ規模で検証されたコードレビューツール：決定論的パイプライン + LLM Agent、行単位の精確なコメント、多言語ルールセット内蔵（NPE、スレッドセーフティ、XSS、SQL インジェクション）。今週の増加は約 4,492 スター、総スター数 54,766</td>
+</tr>
+<tr>
+<td>5</td>
+<td>mvanhorn/last30days-skill</td>
+<td>Python</td>
+<td>Reddit、X、YouTube、HN、Polymarket、全網を横断して任意のトピックを調査する Agent スキル。根拠のある要約を出力します。今週の増加は約 3,179 スター、総スター数 71,431</td>
+</tr>
+</tbody>
+</table></div>
+<p>その後に続くのは：dream-num/univer（今週 +7,248）、meta/astryx（今週 +4,977）、milind-soni/OpenMausBot（今週 +4,228）、ag-ui-protocol/ag-ui（今週 +3,455）、tradermonty/claude-trading-skills（今週 +3,385）、ChromeDevTools/chrome-devtools-mcp（今週 +3,229）、we-promise/sure（今週 +3,226）、kajisho5/ffmpeg-skill（今週 +2,998）。</p>
+<p>プロジェクトリンク：
+- https://github.com/backnotprop/plannotator
+- https://github.com/google-labs-code/stitch-skills
+- https://github.com/GoogleChrome/modern-web-guidance-src
+- https://github.com/alibaba/open-code-review
+- https://github.com/mvanhorn/last30days-skill</p>
+<hr />
+<h2>2. Python / AI・データ Top 5</h2>
+<ol>
+<li><strong>mvanhorn/last30days-skill</strong> — Reddit、X、YouTube、HN、Polymarket、全網を横断して任意のトピックを調査する Agent スキル。根拠のある要約を出力します。今週の増加は約 3,179 スター
+   https://github.com/mvanhorn/last30days-skill</li>
+<li><strong>tradermonty/claude-trading-skills</strong> — 個人投資家向けの Claude Code トレーディングスキル：市場分析、テクニカルチャート、経済カレンダー、銘柄スクリーナー、取引戦略の開発。今週の増加は約 3,385 スター
+   https://github.com/tradermonty/claude-trading-skills</li>
+<li><strong>kajisho5/ffmpeg-skill</strong> — コーディング Agent 向けのローカル動画エディタ：42 の FFmpeg ツール + 機械可読契約 + MCP サーバー。編集、字幕、再構成、ラウドネス、マルチプラットフォーム書き出しに対応し、クラウドなし、API Key 不要。今週の増加は約 2,998 スター
+   https://github.com/kajisho5/ffmpeg-skill</li>
+<li><strong>ZhuLinsen/daily_stock_analysis</strong> — LLM 駆動のマルチマーケット株式インテリジェント分析システム：マルチソースの相場、リアルタイムニュース、意思決定ダッシュボード、自動プッシュを備え、ゼロコスト定期実行に対応（2 週連続ランクイン）。今週の増加は約 2,595 スター
+   https://github.com/ZhuLinsen/daily_stock_analysis</li>
+<li><strong>andrewyng/openworker</strong> — アンドリュー・ン氏のチームによるデスクトップ Agent：日常業務の AI コラボレーター + Agent アプリを構築する Harness SDK。承認、監査証跡、サンドボックスがデフォルトのアーキテクチャで、モデル内蔵、ローカル優先。今週の増加は約 460 スター
+   https://github.com/andrewyng/openworker</li>
+</ol>
+<p>そのほか注目すべきもの：anthropics/skills（今週 +4,235、5 週連続ランクイン）、elementalsouls/Claude-BugHunter（今週 +6,517、82 のバグハントスキル + 681 の既知脆弱性パターン）、jingyaogong/minimind（2 時間でゼロから 64M モデルを学習、今週 +1,612）、zhouxiaoka/autoclip（AI 動画編集デスクトップツール、今週 +717）、FujiwaraChoki/supoclip（オープンソースの OpusClip 代替品、今週 +711）、soxoj/maigret（ユーザー名で 6K サイトから個人プロファイルを収集、今週 +548）。</p>
+<hr />
+<h2>3. TypeScript / フロントエンド・Agent ツール Top 5</h2>
+<ol>
+<li><strong>backnotprop/plannotator</strong> — Agent のループの中で人が主導権を握り続けられるワークスペース。今週の増加は約 3,468 スター
+   https://github.com/backnotprop/plannotator</li>
+<li><strong>google-labs-code/stitch-skills</strong> — Stitch MCP サーバー向けに設計された Agent Skills ライブラリ。今週の増加は約 1,829 スター
+   https://github.com/google-labs-code/stitch-skills</li>
+<li><strong>GoogleChrome/modern-web-guidance-src</strong> — コーディング Agent を最新の Web ベストプラクティスに追いつかせる。今週の増加は約 6,858 スター
+   https://github.com/GoogleChrome/modern-web-guidance-src</li>
+<li><strong>ChromeDevTools/chrome-devtools-mcp</strong> — コーディング Agent 向けの Chrome DevTools。今週の増加は約 3,229 スター
+   https://github.com/ChromeDevTools/chrome-devtools-mcp</li>
+<li><strong>ag-ui-protocol/ag-ui</strong> — Agent-User Interaction Protocol：Agent をフロントエンドアプリに組み込む。今週の増加は約 3,455 スター
+   https://github.com/ag-ui-protocol/ag-ui</li>
+</ol>
+<p>そのほか注目すべきもの：dream-num/univer（今週 +7,248、AI オフィススイート SDK）、meta/astryx（今週 +4,977、Agent-ready オープンソースデザインシステム）、milind-soni/OpenMausBot（今週 +4,228、2 週連続ランクイン）、openai/codex-security（今週 +2,150、2 週連続ランクイン）、CopilotKit/OpenBot（今週 +1,624）、QwenLM/qwen-code（ターミナル内のオープンソース AI コーディング Agent、今週 +1,190）、lobehub/lobehub（今週 +751）、a2ui-project/a2ui（生成 UI フレームワーク、今週 +480）。</p>
+<hr />
+<h2>4. JavaScript Top 5</h2>
+<ol>
+<li><strong>Anil-matcha/Open-Generative-AI</strong> — 検閲なしのオープンソース AI 動画プラットフォーム代替品：800 以上のモデルで無料の画像・動画生成。セルフホスト、MIT ライセンス（JS ランキングで 2 週連続 1 位）。今週の増加は約 1,168 スター
+   https://github.com/Anil-matcha/Open-Generative-AI</li>
+<li><strong>DeanChensj/jiangshan-map</strong> — 江山时序・中国歴史インタラクティブ地図タイムライン（403 BCE – Present）。18 王朝、198 の領域スナップショット、古今の地名の系譜と詩のルート。今週の増加は約 2,960 スター
+   https://github.com/DeanChensj/jiangshan-map</li>
+<li><strong>coreyhaines31/marketingskills</strong> — Claude Code と AI Agent 向けのマーケティングスキル：CRO、コピーライティング、SEO、データ分析、グロースエンジニアリング（2 週連続ランクイン）。今週の増加は約 1,572 スター
+   https://github.com/coreyhaines31/marketingskills</li>
+<li><strong>jquery/jquery</strong> — jQuery JavaScript ライブラリ。老舗プロジェクトがランキングに復帰。今週の増加は約 523 スター
+   https://github.com/jquery/jquery</li>
+<li><strong>affaan-m/ECC</strong> — Agent ハーネスのパフォーマンス最適化システム：スキル、本能、記憶、セキュリティ、研究優先の開発。Claude Code、Codex、OpenCode、Cursor などをカバー。今週の増加は約 5,598 スター、総スター数 307,847
+   https://github.com/affaan-m/ECC</li>
+</ol>
+<p>そのほか注目すべきもの：addyosmani/agent-skills（今週 +2,765、2 週連続ランクイン）、sveltejs/svelte（今週 +1,669）、louislam/uptime-kuma（今週 +1,146）、vercel-labs/agent-skills（Vercel 公式 Agent スキルコレクション、今週 +613）、GoogleChrome/lighthouse（今週 +115）。</p>
+<hr />
+<h2>5. Rust / システムツール Top 5</h2>
+<ol>
+<li><strong>vercel-labs/agent-browser</strong> — AI Agent 向けのブラウザ自動化 CLI（Rust ランキングで 2 週連続 1 位）。今週の増加は約 2,691 スター、総スター数 53,079
+   https://github.com/vercel-labs/agent-browser</li>
+<li><strong>block/buzz</strong> — スウォーム思考コミュニケーションプラットフォーム。今週の増加は約 549 スター、総スター数 37,630
+   https://github.com/block/buzz</li>
+<li><strong>ModernRelay/omnigraph</strong> — オブジェクトストレージ・ネイティブのグラフデータベース。ブランチと型付きオントロジーに対応。今週の増加は約 1,094 スター、総スター数 3,152
+   https://github.com/ModernRelay/omnigraph</li>
+<li><strong>martin-olivier/airgorah</strong> — WiFi セキュリティ監査ソフトウェア。今週の増加は約 1,560 スター、総スター数 6,737
+   https://github.com/martin-olivier/airgorah</li>
+<li><strong>crmne/zapfast</strong> — Rust + egui 製の高速ネイティブ WhatsApp クライアント。今週の増加は約 523 スター、総スター数 4,819
+   https://github.com/crmne/zapfast</li>
+</ol>
+<p>そのほか注目すべきもの：rustfs/rustfs（S3 互換の高性能オブジェクトストレージ、今週 +310）、ViceVerse-cz/Serein（100% ネイティブ Rust の Discord クライアント、今週 +215）。</p>
+<hr />
+<h2>6. Go / クラウドネイティブ・AI サービス Top 5</h2>
+<ol>
+<li><strong>alibaba/open-code-review</strong> — アリババ規模で検証されたコードレビューツール。今週の増加は約 4,492 スター
+   https://github.com/alibaba/open-code-review</li>
+<li><strong>getarcaneapp/arcane</strong> — 誰もが使えるモダンな Docker 管理ツール。今週の増加は約 1,820 スター
+   https://github.com/getarcaneapp/arcane</li>
+<li><strong>agent-substrate/substrate</strong> — Agent Substrate コアシステム。今週の増加は約 1,263 スター
+   https://github.com/agent-substrate/substrate</li>
+<li><strong>runkids/skillshare</strong> — 1 つのコマンドでスキル、Agent、MCP、プラグインをすべての AI CLI ツールに同期し、チーム共有を簡単にします。今週の増加は約 178 スター
+   https://github.com/runkids/skillshare</li>
+<li><strong>Tencent/LoopForge</strong> — セルフホストのコーディング Agent デリバリーワークフロー：スクリプトと人間の承認ステップで CodeBuddy、Codex、Claude Code を編成します。今週の増加は約 3,540 スター、総スター数 5,271
+   https://github.com/Tencent/LoopForge</li>
+</ol>
+<p>そのほか注目すべきもの：JuliusBrussee/caveman（今週 +2,279、2 週連続ランクイン）、docker/compose（今週 +641）、opensandbox-group/OpenSandbox（今週 +416、2 週連続ランクイン）、aquasecurity/trivy（今週 +289）、cli/cli（今週 +156）。</p>
+<hr />
+<h2>7. Java / Android・リバースエンジニアリング Top 5</h2>
+<p><em>GitHub Trending Java 週間ランキングの表示順。今週の Java ランキングは全体的に低調で、上位 5 件の多くは週間スター増加数が 200 未満の老舗プロジェクト</em></p>
+<ol>
+<li><strong>openjdk/jdk</strong> — JDK メインライン開発。今週の増加は約 34 スター、総スター数 23,556
+   https://github.com/openjdk/jdk</li>
+<li><strong>jeecgboot/JeecgBoot</strong> — 無料オープンソースの AI ローコードプラットフォーム。AI 時代に複雑な業務システムを構築するためのオープンソース基盤。AI Skills で一言で完全なシステムを生成できます。今週の増加は約 95 スター、総スター数 48,550
+   https://github.com/jeecgboot/JeecgBoot</li>
+<li><strong>SeleniumHQ/selenium</strong> — ブラウザ自動化フレームワークとエコシステム。今週の増加は約 27 スター、総スター数 34,601
+   https://github.com/SeleniumHQ/selenium</li>
+<li><strong>jean-voila/FeurStagram</strong> — Reels、フィード、広告のない Instagram：オープンソースで更新可能な Android 版 Instagram アプリ。DM と Stories はそのまま残ります。今週の増加は約 154 スター、総スター数 1,410
+   https://github.com/jean-voila/FeurStagram</li>
+<li><strong>TGX-Android/Telegram-X</strong> — Telegram X 公式代替クライアント（Android）。今週の増加は約 39 スター、総スター数 6,223
+   https://github.com/TGX-Android/Telegram-X</li>
+</ol>
+<p>そのほか注目すべきもの：termux/termux-app（今週 +560、今週の Java ランキングで実際の増加数が最多）、elastic/elasticsearch（今週 +389）、TeamNewPipe/NewPipe（今週 +248）、MewX/light-novel-library_Wenku8_Android（今週 +151）、keycloak/keycloak（今週 +148）、LSPosed/LSPosed（今週 +125）。</p>
+<hr />
+<h2>Xtop がぜひ自分で試してほしい 4 つ</h2>
+<p>あなたがこれまで Star してきた方向性（AI／Agent ツール、ローカルモデル、MCP）と、取り組んでいるプロジェクトを踏まえて：</p>
+<ol>
+<li><strong>tradermonty/claude-trading-skills</strong> — トレーディングスキルパック：市場分析、テクニカルチャート、経済カレンダー、銘柄スクリーナー、戦略開発。あなたの取引プラットフォームや暗号資産イブニングレポートと同じワークフローで、そのスキル構造を参考に自分の相場分析フローを組み立てられます</li>
+<li><strong>andrewyng/openworker</strong> — アンドリュー・ン氏のチームによるデスクトップ Agent。「承認、監査、サンドボックス」がデフォルトのアーキテクチャです。あなたの取引プラットフォームに自動アラートや自動執行を追加するなら、その 4 層の管理設計（ハードライン、分級承認、監査証跡、サンドボックス）が最も参考になるお手本です</li>
+<li><strong>backnotprop/plannotator</strong> — 今週の全サイト 1 位、「Agent のループに人が参加する」ワークスペース。Agent を使って取引プラットフォームのコードを書くとき、コードレビュー、注釈、フィードバック送信の中心に置くことで、チャット欄にコードを貼り合うよりコンテキストを節約できます</li>
+<li><strong>alibaba/open-code-review</strong> — 決定論的パイプライン + LLM Agent によるコードレビュー。NPE、スレッドセーフティ、XSS、SQL インジェクションなどのルールセットを内蔵しています。あなたの取引プラットフォームのバックエンドに一度かけてみて、どんな問題を検出できるか確認してみましょう</li>
+</ol>
+<hr />
+<h2>データ出典</h2>
+<ul>
+<li>GitHub Trending 公式週間ランキング：https://github.com/trending?since=weekly および各言語別サブランキング（python / typescript / javascript / rust / go / java）。2026-11-21 08:00 CST に確認。今週のスター増加数は公式ランキングページ自体から取得</li>
+<li>サードパーティ集計スナップショット：gaojihao.github.io/github-hot/trending-weekly.html（2026-11-21 04:41 北京時間に更新）。全サイト上位 13 件の順位と増加数をクロスチェックするために使用</li>
+<li>総スター数は GitHub API のリアルタイム照会（2026-11-21 08:00 前後）によるもの。スナップショットサイトの総スター数と API のリアルタイム数値にはわずかな差があります（例：plannotator はスナップショット 13,855、API リアルタイム 13,888）。公式ページ／API の数値を基準としてください</li>
+<li>前号（2026-11-14）との比較：全サイト上位 5 件はすべて入れ替わり、anthropics/skills、OpenMausBot、agent-browser、codex-security、daily_stock_analysis、marketingskills、agent-skills、caveman、OpenSandbox、termux、elasticsearch、NewPipe、keycloak など少数のプロジェクトだけが連続ランクイン。テーマは「Agent の実行環境＋Agent セキュリティ」から「人間参加型の管理＋スキルの垂直化＋コードレビューの実戦」へ移り、アリババ、テンセントなど中国チームのプロジェクトが集中して台頭する一方、Java ランキングは全体的に低調でした</li>
+</ul>
+<p><em>注記：プロジェクトが自称する性能数値（トークン削減率や推論速度など）はすべてプロジェクト側の独自ベンチマークによるもので、第三者による再現は行われていません。導入前には自分のワークロードで再測定することをおすすめします。</em></p>
+</main>
+
+<script>
+(function(){
+  var KEY='gh-weekly-lang';
+  var sel=document.getElementById('lang-select');
+  if(!sel) return;
+  sel.addEventListener('change',function(){
+    var opt=sel.options[sel.selectedIndex];
+    if(!opt||!opt.value) return;
+    try{localStorage.setItem(KEY,opt.value);}catch(e){}
+    window.location.href=opt.getAttribute('data-url');
+  });
+})();
+</script>
+
+</body>
+</html>
