@@ -1,5 +1,9 @@
 # Weekly Highlights
 
+> 🌐 在线阅读（中文 / English / Français / 日本語 / 한국어 / Español，六种语言）：https://fstl988.github.io/Weekly-Highlights-of-Cool-Projects-in-Github/
+>
+> 英文版 README：[README_EN.md](README_EN.md)
+
 每周 GitHub 热门项目精选。来源是 GitHub Trending 官方周榜（`since=weekly`）及各语言子榜，按领域整理成清单；每周六早上 8 点更新一期，完整周报见 `reports/<日期>/`。
 
 > 说明：这里是项目清单版 — 项目以链接形式收录，不把上游仓库的代码本体复制进来。点击项目名即可跳转到原仓库。
