@@ -4,13 +4,13 @@
 >
 > 英文版 README：[README_EN.md](README_EN.md)
 
-每周 GitHub 热门项目精选。来源是 GitHub Trending 官方周榜（`since=weekly`）及各语言子榜，按领域整理成清单；每周六早上 8 点更新一期，完整周报见 `reports/<日期>/`。
+每周 GitHub 热门项目精选。来源是 GitHub Trending 官方周榜（`since=weekly`）及各语言子榜，按领域整理成清单；每周六早上 8 点更新一期，完整周报见 `reports/<年月>/`。
 
 > 说明：这里是项目清单版 — 项目以链接形式收录，不把上游仓库的代码本体复制进来。点击项目名即可跳转到原仓库。
 
 ## 最新一期：2026-11-21（2026-11-15 至 2026-11-21）
 
-- 完整周报：[reports/2026-11-21/github-weekly-2026-11-21.md](reports/2026-11-21/github-weekly-2026-11-21.md)
+- 完整周报：[reports/2026-11/github-weekly-2026-11-21.md](reports/2026-11/github-weekly-2026-11-21.md)
 
 本周主线：Agent 从“能干活”走向“让人放心地干活”，同时“技能”继续向垂直场景扩散。
 1. 人在回路登顶 — backnotprop/plannotator 全站第一；吴恩达团队的 andrewyng/openworker 把审批、审计、沙箱做成默认架构；Tencent/LoopForge 也在交付流程里加了人工审批关卡。
@@ -92,11 +92,11 @@
 
 | 日期 | 完整周报 |
 |------|----------|
-| 2026-11-21 | [reports/2026-11-21/github-weekly-2026-11-21.md](reports/2026-11-21/github-weekly-2026-11-21.md) |
-| 2026-11-14 | [reports/2026-11-14/github-weekly-2026-11-14.md](reports/2026-11-14/github-weekly-2026-11-14.md) |
-| 2026-11-07 | [reports/2026-11-07/github-weekly-2026-11-07.md](reports/2026-11-07/github-weekly-2026-11-07.md) |
-| 2026-10-31 | [reports/2026-10-31/github-weekly-2026-10-31.md](reports/2026-10-31/github-weekly-2026-10-31.md) |
-| 2026-10-24 | [reports/2026-10-24/github-weekly-2026-10-24.md](reports/2026-10-24/github-weekly-2026-10-24.md) |
+| 2026-11-21 | [reports/2026-11/github-weekly-2026-11-21.md](reports/2026-11/github-weekly-2026-11-21.md) |
+| 2026-11-14 | [reports/2026-11/github-weekly-2026-11-14.md](reports/2026-11/github-weekly-2026-11-14.md) |
+| 2026-11-07 | [reports/2026-11/github-weekly-2026-11-07.md](reports/2026-11/github-weekly-2026-11-07.md) |
+| 2026-10-31 | [reports/2026-10/github-weekly-2026-10-31.md](reports/2026-10/github-weekly-2026-10-31.md) |
+| 2026-10-24 | [reports/2026-10/github-weekly-2026-10-24.md](reports/2026-10/github-weekly-2026-10-24.md) |
 
 ## 数据来源
 

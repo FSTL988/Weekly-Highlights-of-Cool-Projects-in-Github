@@ -4,13 +4,13 @@
 >
 > Chinese version: [README.md](README.md)
 
-A curated selection of trending GitHub projects, published weekly. Sources are GitHub Trending's official weekly chart (`since=weekly`) and its per-language sub-charts, organized by domain into a list; a new issue is published every Saturday at 8:00 AM, with the full weekly report in `reports/<date>/`.
+A curated selection of trending GitHub projects, published weekly. Sources are GitHub Trending's official weekly chart (`since=weekly`) and its per-language sub-charts, organized by domain into a list; a new issue is published every Saturday at 8:00 AM, with the full weekly report in `reports/<YYYY-MM>/`.
 
 > Note: this is the list version — projects are included as links, and upstream repositories' code is not copied here. Click a project name to jump to the original repository.
 
 ## Latest issue: 2026-11-21 (2026-11-15 to 2026-11-21)
 
-- Full weekly report: [reports/2026-11-21/github-weekly-2026-11-21.md](reports/2026-11-21/github-weekly-2026-11-21.md)
+- Full weekly report: [reports/2026-11/github-weekly-2026-11-21.md](reports/2026-11/github-weekly-2026-11-21.md)
 
 This week's main thread: agents are moving from "able to do the work" to "safe to trust with the work", while "skills" keep spreading into vertical use cases.
 1. Human-in-the-loop takes the top spot — backnotprop/plannotator ranks #1 overall; Andrew Ng's team's andrewyng/openworker makes approvals, auditing, and sandboxing the default architecture; Tencent/LoopForge also adds human approval gates to its delivery flow.
@@ -92,11 +92,11 @@ This week's main thread: agents are moving from "able to do the work" to "safe t
 
 | Date | Full Weekly Report |
 |------|--------------------|
-| 2026-11-21 | [reports/2026-11-21/github-weekly-2026-11-21.md](reports/2026-11-21/github-weekly-2026-11-21.md) |
-| 2026-11-14 | [reports/2026-11-14/github-weekly-2026-11-14.md](reports/2026-11-14/github-weekly-2026-11-14.md) |
-| 2026-11-07 | [reports/2026-11-07/github-weekly-2026-11-07.md](reports/2026-11-07/github-weekly-2026-11-07.md) |
-| 2026-10-31 | [reports/2026-10-31/github-weekly-2026-10-31.md](reports/2026-10-31/github-weekly-2026-10-31.md) |
-| 2026-10-24 | [reports/2026-10-24/github-weekly-2026-10-24.md](reports/2026-10-24/github-weekly-2026-10-24.md) |
+| 2026-11-21 | [reports/2026-11/github-weekly-2026-11-21.md](reports/2026-11/github-weekly-2026-11-21.md) |
+| 2026-11-14 | [reports/2026-11/github-weekly-2026-11-14.md](reports/2026-11/github-weekly-2026-11-14.md) |
+| 2026-11-07 | [reports/2026-11/github-weekly-2026-11-07.md](reports/2026-11/github-weekly-2026-11-07.md) |
+| 2026-10-31 | [reports/2026-10/github-weekly-2026-10-31.md](reports/2026-10/github-weekly-2026-10-31.md) |
+| 2026-10-24 | [reports/2026-10/github-weekly-2026-10-24.md](reports/2026-10/github-weekly-2026-10-24.md) |
 
 ## Data Sources
 
