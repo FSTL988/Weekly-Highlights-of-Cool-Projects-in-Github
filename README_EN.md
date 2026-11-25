@@ -1,6 +1,6 @@
 # Weekly Highlights
 
-> 🌐 Read online in 6 languages (中文 / English / Français / 日本語 / 한국어 / Español): https://fstl988.github.io/Weekly-Highlights-of-Cool-Projects-in-Github/
+> 🌐 Read online in 6 languages (中文 / English / Français / 日本語 / 한국어 / Español): https://fstl988.github.io/Weekly-Highlights-of-Cool-Projects-on-Github/
 >
 > Chinese version: [README.md](README.md)
 
